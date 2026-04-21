@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 const navItems = [
   { to: "/", label: "Domů", end: true },
@@ -17,8 +18,12 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between md:h-20">
-        <Link to="/" className="font-display text-2xl font-bold tracking-tight text-primary md:text-3xl">
-          Galimatyáš
+        <Link to="/" className="flex items-center" aria-label="Spolek Galimatyáš — domů">
+          <img
+            src={logo}
+            alt="Spolek Galimatyáš"
+            className="h-12 w-12 rounded-full md:h-16 md:w-16"
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
