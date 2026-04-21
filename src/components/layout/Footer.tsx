@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
 import { Facebook, Mail, MapPin, Phone } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
     <footer className="mt-24 border-t border-border/60 bg-secondary/40">
       <div className="container grid gap-10 py-14 md:grid-cols-3">
         <div>
-          <h3 className="font-display text-2xl font-bold text-primary">Galimatyáš</h3>
-          <p className="mt-3 max-w-xs text-sm text-muted-foreground">
+          <img
+            src={logo}
+            alt="Spolek Galimatyáš"
+            className="h-20 w-20 rounded-full"
+          />
+          <p className="mt-4 max-w-xs text-sm text-muted-foreground">
             Hudebně-dramatické centrum v Šumperku. Divadlo, hudba a fantazie pro malé i velké.
           </p>
         </div>
