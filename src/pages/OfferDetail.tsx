@@ -105,6 +105,23 @@ const OfferDetail = () => {
                 <p className="mt-4 text-base leading-relaxed text-foreground/85">
                   {c.text}
                 </p>
+                {c.images && c.images.length > 0 && (
+                  <div className="mt-5 grid grid-cols-2 gap-2">
+                    {c.images.map((src, idx) => (
+                      <div
+                        key={src}
+                        className="aspect-[4/3] overflow-hidden rounded-xl bg-muted"
+                      >
+                        <img
+                          src={src}
+                          alt={`${c.title} – fotka ${idx + 1}`}
+                          loading="lazy"
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
               </Card>
             ))}
           </div>
