@@ -1,49 +1,7 @@
-import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Mail, Phone } from "lucide-react";
-
-type Book = {
-  id: string;
-  title: string;
-  date: string;
-  excerpt: string;
-  link?: string;
-};
-
-const books: Book[] = [
-  {
-    id: "obchudek-splnena-prani",
-    title: "Obchůdek Splněná přání",
-    date: "15. srpna 2021",
-    excerpt:
-      "Nakupujte kouzelné maličkosti našich známých přátel z říše kouzel a přeneste si trochu té magie i k sobě domů. Knihy, kalendáře a další drobnosti.",
-    link: "https://www.spolekgalimatyas.cz/obchudek-splnena-prani-2/",
-  },
-  {
-    id: "pohadky-o-skritku-lupinkovi",
-    title: "Pohádky o skřítku Lupínkovi",
-    date: "21. června 2021",
-    excerpt:
-      "Audio zpracování půvabných pohádek o maličkém skřítkovi Lupínkovi a jeho všedních i nevšedních starostech. Pohádky byly uvedeny v Radiu Proglas jako nedělní program pro děti, ve skvělé interpretaci Kateřiny.",
-    link: "https://www.spolekgalimatyas.cz/pohadky-o-skritku-lupinkovi/",
-  },
-  {
-    id: "nils",
-    title: "Nils aneb Cesta k vlastní velikosti",
-    date: "21. června 2021",
-    excerpt:
-      "S divadelní přestávkou vám nabízíme knihu poezie o transformaci partnerských vztahů a společnosti. Kniha vznikla na motivy stejnojmenné inscenace a prodáváme ji společně s CD nádherných skladeb Kamila Duraje. Cena za knihu a CD je 310 Kč.",
-    link: "https://www.spolekgalimatyas.cz/nils-aneb-cesta-k-vlastni-velikosti-2/",
-  },
-  {
-    id: "posledni-uder-draciho-srdce",
-    title: "Poslední úder dračího srdce",
-    date: "2. června 2021",
-    excerpt:
-      "Nakladatelství Limonáda nabízí první vydanou knihu k prodeji. Zatím je v nabídce u nás v Hudebně-dramatickém centru Galimatyáš v Šumperku. Knihu prodáváme ve speciálním balíčku s ručně šitým originálním drakem.",
-    link: "https://www.spolekgalimatyas.cz/zkouska-aktualita-limonada/",
-  },
-];
+import { Mail, Phone } from "lucide-react";
+import { books } from "@/data/books";
 
 const Limonada = () => {
   return (
@@ -79,34 +37,38 @@ const Limonada = () => {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-16 md:py-20">
         <div className="container">
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {books.map((book) => (
-              <Card
+              <Link
                 key={book.id}
-                className="flex flex-col border-border/60 p-8 shadow-card transition-shadow hover:shadow-lg"
+                to={`/nakladatelstvi-limonada/${book.id}`}
+                className="group flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
               >
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/15 text-accent">
-                  <BookOpen className="h-6 w-6" />
+                <div className="aspect-[4/5] overflow-hidden bg-muted">
+                  <img
+                    src={book.image}
+                    alt={book.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                  {book.date}
-                </p>
-                <h3 className="mt-2 font-display text-2xl text-primary">{book.title}</h3>
-                <p className="mt-3 flex-1 text-muted-foreground">{book.excerpt}</p>
-                {book.link && (
-                  <Button
-                    asChild
-                    variant="link"
-                    className="mt-4 self-start px-0 text-accent"
-                  >
-                    <a href={book.link} target="_blank" rel="noopener noreferrer">
-                      Více info →
-                    </a>
-                  </Button>
-                )}
-              </Card>
+                <div className="flex flex-1 flex-col p-6">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    {book.date}
+                  </p>
+                  <h3 className="mt-2 font-display text-xl text-primary">
+                    {book.title}
+                  </h3>
+                  <p className="mt-3 line-clamp-3 flex-1 text-sm text-muted-foreground">
+                    {book.excerpt}
+                  </p>
+                  <span className="mt-4 inline-flex items-center text-sm font-medium text-accent transition-colors group-hover:text-primary">
+                    Více →
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
         </div>

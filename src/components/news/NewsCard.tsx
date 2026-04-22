@@ -1,4 +1,5 @@
-import { ArrowUpRight, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import type { NewsCategory, NewsItem } from "@/data/news";
 
@@ -18,51 +19,55 @@ const formatDate = (iso: string) =>
 
 const NewsCard = ({ item }: { item: NewsItem }) => {
   return (
-    <article className="group flex h-full flex-col rounded-3xl border border-border/60 bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
-      <div className="mb-4 flex items-center justify-between gap-3">
+    <Link
+      to={`/aktualne/${item.id}`}
+      className="group flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+    >
+      <div className="relative aspect-[4/5] overflow-hidden bg-muted">
+        <img
+          src={item.image}
+          alt={item.title}
+          loading="lazy"
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
         <span
           className={cn(
-            "inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold",
+            "absolute left-4 top-4 inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold backdrop-blur-sm",
             categoryStyles[item.category],
           )}
         >
           {item.category}
         </span>
+      </div>
+
+      <div className="flex flex-1 flex-col p-6">
         <time
           dateTime={item.date}
-          className="text-xs font-medium text-muted-foreground"
+          className="text-xs font-medium uppercase tracking-widest text-muted-foreground"
         >
           {formatDate(item.date)}
         </time>
-      </div>
 
-      <h3 className="font-display text-xl font-semibold leading-tight text-foreground">
-        {item.title}
-      </h3>
+        <h3 className="mt-2 font-display text-xl font-semibold leading-tight text-foreground">
+          {item.title}
+        </h3>
 
-      {item.location && (
-        <p className="mt-2 flex items-center gap-1.5 text-sm text-muted-foreground">
-          <MapPin className="h-4 w-4 shrink-0 text-accent" />
-          {item.location}
+        {item.location && (
+          <p className="mt-2 flex items-center gap-1.5 text-sm text-muted-foreground">
+            <MapPin className="h-4 w-4 shrink-0 text-accent" />
+            {item.location}
+          </p>
+        )}
+
+        <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
+          {item.excerpt}
         </p>
-      )}
 
-      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-        {item.excerpt}
-      </p>
-
-      {item.link && (
-        <a
-          href={item.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-        >
-          Více info
-          <ArrowUpRight className="h-4 w-4" />
-        </a>
-      )}
-    </article>
+        <span className="mt-4 inline-flex items-center text-sm font-medium text-accent transition-colors group-hover:text-primary">
+          Více →
+        </span>
+      </div>
+    </Link>
   );
 };
 
