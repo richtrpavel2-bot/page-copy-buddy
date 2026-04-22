@@ -9,6 +9,7 @@ import News from "./pages/News";
 import NewsDetail from "./pages/NewsDetail";
 import About from "./pages/About";
 import Offer from "./pages/Offer";
+import OfferDetail from "./pages/OfferDetail";
 import Studio from "./pages/Studio";
 import Limonada from "./pages/Limonada";
 import BookDetail from "./pages/BookDetail";
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/aktualne/:slug" element={<NewsDetail />} />
             <Route path="/o-nas" element={<About />} />
             <Route path="/co-nabizime" element={<Offer />} />
+            <Route path="/co-nabizime/:slug" element={<OfferDetail />} />
             <Route path="/studio-my-dve" element={<Studio />} />
             <Route path="/nakladatelstvi-limonada" element={<Limonada />} />
             <Route path="/nakladatelstvi-limonada/:slug" element={<BookDetail />} />

@@ -1,35 +1,8 @@
 import { Card } from "@/components/ui/card";
-import { Drama, Palette, CalendarDays, GraduationCap, PartyPopper } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const services = [
-  {
-    icon: Drama,
-    title: "Divadelní představení",
-    text: "Vlastní inscenace pro děti i dospělé. Hrajeme v sálech, ve školách, na festivalech i na zámeckých nádvořích.",
-  },
-  {
-    icon: Palette,
-    title: "Tvořivé dílny",
-    text: "Workshopy zaměřené na herectví, hlas, pohyb a výtvarno. Vhodné pro školy i firmy.",
-  },
-  {
-    icon: CalendarDays,
-    title: "Volnočasové aktivity",
-    text: "Pravidelné kroužky a kluby pro děti a mládež — divadelní, hudební a výtvarné.",
-  },
-  {
-    icon: GraduationCap,
-    title: "Semináře pro lektory",
-    text: "Vzdělávací programy pro učitele, vychovatele a vedoucí amatérských souborů.",
-  },
-  {
-    icon: PartyPopper,
-    title: "Akce na míru",
-    text: "Připravíme kulturní program pro vaši obec, školu, firmu nebo soukromou oslavu.",
-  },
-];
+import { offer, offerGroups } from "@/data/offer";
 
 const Offer = () => {
   return (
@@ -37,52 +10,77 @@ const Offer = () => {
       <section className="bg-hero">
         <div className="container py-20 md:py-28">
           <div className="mx-auto max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-widest text-accent">Co nabízíme</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-accent">
+              Co nabízíme
+            </p>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary md:text-6xl">
               Od malých dílen po velká představení
             </h1>
             <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-              Naše činnost stojí na pěti pilířích. Můžete si u nás objednat jednorázové
-              představení, dlouhodobou spolupráci nebo si dát dohromady program podle vlastních
-              představ.
+              Naše činnost stojí na dvou pilířích — pravidelných volnočasových aktivitách
+              a vzdělávacích či kulturních akcích. Vyberte si oblast, která vás zajímá.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="container">
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {services.map(({ icon: Icon, title, text }, i) => (
-              <Card
-                key={title}
-                className="group flex flex-col border-border/60 p-8 transition-all hover:-translate-y-1 hover:shadow-soft"
-                style={{ animationDelay: `${i * 80}ms` }}
-              >
-                <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-accent/15 text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
-                  <Icon className="h-7 w-7" />
-                </div>
-                <h3 className="font-display text-2xl text-primary">{title}</h3>
-                <p className="mt-3 flex-1 text-muted-foreground">{text}</p>
-              </Card>
-            ))}
-          </div>
+      {offerGroups.map((group) => {
+        const items = offer.filter((o) => o.group === group.id);
+        return (
+          <section key={group.id} className="py-16 md:py-20">
+            <div className="container">
+              <div className="mx-auto max-w-3xl">
+                <h2 className="font-display text-3xl text-primary md:text-4xl">
+                  {group.label}
+                </h2>
+                <p className="mt-3 text-muted-foreground md:text-lg">
+                  {group.description}
+                </p>
+              </div>
 
-          <div className="mx-auto mt-16 max-w-3xl rounded-3xl border border-dashed border-border p-8 text-center">
-            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-              Doplň text
-            </p>
-            <p className="mt-2 text-muted-foreground">
-              Konkrétní tituly, ceny, fotografie a reference doplníme po předání podkladů.
-            </p>
-          </div>
-        </div>
-      </section>
+              <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {items.map((item) => (
+                  <Link
+                    key={item.slug}
+                    to={`/co-nabizime/${item.slug}`}
+                    className="group block focus:outline-none"
+                  >
+                    <Card className="flex h-full flex-col overflow-hidden border-border/60 p-0 transition-all group-hover:-translate-y-1 group-hover:shadow-soft group-focus-visible:ring-2 group-focus-visible:ring-ring">
+                      <div className="aspect-[4/5] overflow-hidden bg-muted">
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          loading="lazy"
+                          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                      </div>
+                      <div className="flex flex-1 flex-col p-6">
+                        <h3 className="font-display text-2xl text-primary">
+                          {item.title}
+                        </h3>
+                        <p className="mt-3 flex-1 text-muted-foreground">
+                          {item.shortText}
+                        </p>
+                        <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent">
+                          Více
+                          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        </span>
+                      </div>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })}
 
-      <section className="py-16">
+      <section className="pb-20">
         <div className="container">
           <div className="rounded-3xl bg-primary p-10 text-center text-primary-foreground md:p-16 shadow-soft">
-            <h2 className="font-display text-3xl md:text-4xl">Máte konkrétní představu?</h2>
+            <h2 className="font-display text-3xl md:text-4xl">
+              Máte konkrétní představu?
+            </h2>
             <p className="mx-auto mt-3 max-w-xl text-primary-foreground/80">
               Napište nám, co potřebujete — připravíme nabídku přímo pro vás.
             </p>
