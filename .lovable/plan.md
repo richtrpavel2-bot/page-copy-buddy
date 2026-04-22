@@ -1,44 +1,62 @@
 
 
-# Plán: Naplnění stránky „Aktuálně" obsahem ze starého webu
+# Plán: Funkční sekce „Co nabízíme" s podstránkami
 
-Přepíšu placeholdery v `src/data/news.ts` skutečnými 9 aktualitami ze stávajícího webu spolekgalimatyas.cz/aktualne. Layout, komponenty ani routing se nemění — pouze data.
+## Problém
+Karty na `/co-nabizime` nejsou klikatelné — jsou to jen `<Card>` bez `<Link>`. Na původním webu ale pod „Co nabízíme" byly **dvě skupiny po několika podstránkách** s texty a fotkami.
 
-## Co se přidá (9 položek, řazení automaticky od nejnovějšího)
+## Struktura podle původního webu
 
-Všechny mají kategorii **„Představení"** nebo **„Novinka"** (akce jsou divadelní/hudební události, oznámení o festivalu) a kde to dává smysl, doplním odkaz na detail na původním webu, aby měl návštěvník odkud čerpat víc info.
+```text
+CO NABÍZÍME
+├── Volnočasové aktivity
+│   ├── Pro děti
+│   ├── Pro dospělé
+│   └── Prázdninové akce
+└── Vzdělávací a kulturní akce
+    ├── Pro pedagogické pracovníky
+    └── Pro veřejnost
+```
 
-| Datum | Kategorie | Název |
-|---|---|---|
-| 3. 1. 2026 | Představení | Komponovaný večer hudby a přednesu |
-| 3. 1. 2026 | Představení | Náš první společný výlet po stopách Alfréda Schönberga |
-| 3. 1. 2026 | Představení | Brány Jeseníků se otevírají |
-| 3. 1. 2026 | Novinka | Zpátky ke kořenům aneb Jeseníky – Ráj na Zemi |
-| 27. 12. 2025 | Představení | Pátý divadelní vánoční den |
-| 27. 12. 2025 | Představení | Čtvrtý divadelní vánoční den |
-| 27. 12. 2025 | Představení | Třetí divadelní vánoční den |
-| 27. 12. 2025 | Představení | Stále druhý divadelní vánoční den |
-| 27. 12. 2025 | Představení | Druhý divadelní vánoční den |
-| 27. 12. 2025 | Představení | První divadelní vánoční den |
+## Co se změní
 
-(Pozn.: na starém webu je 9 položek vánočních dnů + 4 lednové; první položku „První divadelní vánoční den" jsem zahrnul také — celkem tedy 10.)
+### 1. Přepsaná stránka `/co-nabizime`
+Místo 5 nesouvisejících karet bude přehled **2 skupin × jejich podstránek** (5 klikatelných karet vedoucích na detail). Každá karta = obrázek 4:5 + nadpis + krátký popis + šipka „Více". Sjednocený design s Aktuálně / LIMONÁDA / Studio.
 
-## Detaily implementace
+### 2. Nových 5 podstránek
+Vzniknou skutečné stránky s obsahem a fotkami převzatými z původního webu:
 
-- **Soubor**: pouze `src/data/news.ts` — přepíšu pole `news` všemi 10 položkami
-- **Pole `excerpt`**: použiju krátké popisky doslovně z původního webu (1–2 věty každý)
-- **Pole `location`**: většinou prázdné (na starém webu místo není uvedené); u „Komponovaného večera" doplním „klášterní kostel, Šumperk" (zmíněno v textu)
-- **Pole `link`**: u každé položky odkaz na odpovídající detail na `spolekgalimatyas.cz/...` (slug z URL)
-- **Pole `id`**: česká slug-verze názvu (např. `komponovany-vecer`, `prvni-divadelni-den`)
-- **Datum**: ISO formát (`2026-01-03`, `2025-12-27`) — komponenta to už formátuje česky
+| Cesta | Obsah |
+|---|---|
+| `/co-nabizime/pro-deti` | Hudebně-dramatická přípravka „Raz dva tři!", „Kdo hraje, je frajer(ka)!" + další kroužky, rozvrhy, fotky |
+| `/co-nabizime/pro-dospele` | Aktivity pro dospělé (texty + foto z původního webu) |
+| `/co-nabizime/prazdninove-akce` | Tábory a prázdninové programy |
+| `/co-nabizime/pro-pedagogy` | Semináře a vzdělávání pro učitele |
+| `/co-nabizime/pro-verejnost` | Komponované večery, kulturní akce |
 
-## Co se NEmění
+### 3. Datový soubor `src/data/offer.ts`
+Jeden zdroj pravdy — typ `OfferItem` se slug, title, group ("volny-cas" / "vzdelavani"), shortText, image, body (rich obsah: nadpisy, odstavce, obrázky). Snadno editovatelné.
 
-- `News.tsx`, `NewsCard.tsx`, navigace, routing, design
-- Žádné nové fotky se nestahují — texty mluví samy za sebe (kategorie+datum+popis)
-- Pokud bys později chtěl skutečné fotky z akcí, zařídíme zvlášť (přidáme pole `image` do typu)
+### 4. Šablona `src/pages/OfferDetail.tsx`
+Jedna komponenta pro všech 5 podstránek (čte slug, vyrendruje obsah). Konzistentní layout s `NewsDetail` a `BookDetail`.
 
-## Poznámka pro tebe
+### 5. Routing v `App.tsx`
+Přidá se `<Route path="/co-nabizime/:slug" element={<OfferDetail />} />`.
 
-Texty jsou převzaté doslovně z původního webu. Jako copywriter je můžeš v `src/data/news.ts` snadno přepsat — každá položka je jeden objekt s 5–6 poli, žádné HTML.
+### 6. Asset management
+Stáhnu dostupné obrázky z původního webu do `src/assets/offer/` (Pro děti je dostupné, Pro veřejnost má hero, ostatní 3 stránky jsou v JS — tam dám placeholder a doplníš později nebo se pokusím přes Wayback). U podstránek bez obsahu vytvořím kostru s krátkým úvodem a poznámkou „obsah se připravuje" — strukturu nasadíme, texty doplníš.
+
+## Co zůstane
+
+- Hero sekce stránky `/co-nabizime` (texty zachovány)
+- CTA „Máte konkrétní představu?" dole
+- Header / Footer / barvy / fonty beze změny
+
+## Otevřená otázka pro fázi implementace
+3 z 5 stránek originálu se nedaly stáhnout (JavaScript). Pro ně buď:
+- (A) zkusím Wayback Machine
+- (B) nasadím kostru s placeholderem, texty pošleš
+- (C) zkopíruji obsah z `Pro děti` jako dočasnou výplň
+
+Rozhodneme až po pokusu o Wayback — nemusíš se k tomu teď vyjadřovat.
 
