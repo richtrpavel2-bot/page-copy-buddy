@@ -1,54 +1,44 @@
 
 
-# Plán: Nová stránka „Aktuálně"
+# Plán: Naplnění stránky „Aktuálně" obsahem ze starého webu
 
-Přidám do webu šestou stránku se seznamem aktuálních akcí, novinek a oznámení. Stránka bude statická — obsah (události) se bude editovat přímo v jednom datovém souboru, takže ty jako copywriter můžeš snadno přidávat/měnit položky bez zásahu do layoutu.
+Přepíšu placeholdery v `src/data/news.ts` skutečnými 9 aktualitami ze stávajícího webu spolekgalimatyas.cz/aktualne. Layout, komponenty ani routing se nemění — pouze data.
 
-## Co vznikne
+## Co se přidá (9 položek, řazení automaticky od nejnovějšího)
 
-1. **Nová stránka** `/aktualne` — `src/pages/News.tsx`
-   - Hero/úvod: nadpis „Aktuálně", krátký podtitul („Co se u nás právě děje")
-   - Seznam karet (události/novinky) seřazený od nejnovější
-   - Prázdný stav: pokud nic není, hezká hláška „Zatím nic nového, ale pracujeme na tom."
+Všechny mají kategorii **„Představení"** nebo **„Novinka"** (akce jsou divadelní/hudební události, oznámení o festivalu) a kde to dává smysl, doplním odkaz na detail na původním webu, aby měl návštěvník odkud čerpat víc info.
 
-2. **Datový soubor** `src/data/news.ts`
-   - Pole objektů s typem `NewsItem`:
-     - `id` (string)
-     - `title` (název akce/novinky)
-     - `date` (datum konání nebo zveřejnění, ISO formát)
-     - `category` ("Představení" | "Dílna" | "Novinka" | "Oznámení")
-     - `location` (volitelné — město/místo)
-     - `excerpt` (krátký popis, 1–3 věty)
-     - `link` (volitelné — URL na FB událost / přihlášku)
-   - Naplním 3–4 ukázkovými položkami jako placeholder (jasně označenými „PŘÍKLAD — uprav nebo smaž")
+| Datum | Kategorie | Název |
+|---|---|---|
+| 3. 1. 2026 | Představení | Komponovaný večer hudby a přednesu |
+| 3. 1. 2026 | Představení | Náš první společný výlet po stopách Alfréda Schönberga |
+| 3. 1. 2026 | Představení | Brány Jeseníků se otevírají |
+| 3. 1. 2026 | Novinka | Zpátky ke kořenům aneb Jeseníky – Ráj na Zemi |
+| 27. 12. 2025 | Představení | Pátý divadelní vánoční den |
+| 27. 12. 2025 | Představení | Čtvrtý divadelní vánoční den |
+| 27. 12. 2025 | Představení | Třetí divadelní vánoční den |
+| 27. 12. 2025 | Představení | Stále druhý divadelní vánoční den |
+| 27. 12. 2025 | Představení | Druhý divadelní vánoční den |
+| 27. 12. 2025 | Představení | První divadelní vánoční den |
 
-3. **Komponenta karty** `src/components/news/NewsCard.tsx`
-   - Datum + barevný štítek kategorie nahoře
-   - Nadpis, místo, popis
-   - Tlačítko „Více info" (jen pokud je `link`)
-   - Vzhled: zaoblená karta v duchu zbytku webu (krémové pozadí, jemný stín, hover efekt)
+(Pozn.: na starém webu je 9 položek vánočních dnů + 4 lednové; první položku „První divadelní vánoční den" jsem zahrnul také — celkem tedy 10.)
 
-4. **Navigace**
-   - Do `Header.tsx` (desktop i mobil) přidám položku **„Aktuálně"** mezi „Domů" a „O spolku" (logické místo — to nejdůležitější hned po úvodu)
-   - Do `Footer.tsx` doplním stejný odkaz do seznamu navigace
+## Detaily implementace
 
-5. **Routing**
-   - V `App.tsx` přidám `<Route path="/aktualne" element={<News />} />` nad catch-all
-
-## Vizuální detaily
-
-- Karty v gridu: 1 sloupec na mobilu, 2 na tabletu, 3 na desktopu
-- Štítky kategorií barevně odlišené (využijí stávající brand barvy — primární zelená, akcentní okrová, neutrální)
-- Datum formátované česky („15. května 2026")
-- Řazení automaticky od nejnovějšího data sestupně
-
-## Co zůstane na tobě
-
-- Po vygenerování otevřeš `src/data/news.ts` (nebo mi řekneš a udělám to já) a vyplníš skutečné akce
-- Pro každou akci stačí 5 polí — žádný HTML, jen text
+- **Soubor**: pouze `src/data/news.ts` — přepíšu pole `news` všemi 10 položkami
+- **Pole `excerpt`**: použiju krátké popisky doslovně z původního webu (1–2 věty každý)
+- **Pole `location`**: většinou prázdné (na starém webu místo není uvedené); u „Komponovaného večera" doplním „klášterní kostel, Šumperk" (zmíněno v textu)
+- **Pole `link`**: u každé položky odkaz na odpovídající detail na `spolekgalimatyas.cz/...` (slug z URL)
+- **Pole `id`**: česká slug-verze názvu (např. `komponovany-vecer`, `prvni-divadelni-den`)
+- **Datum**: ISO formát (`2026-01-03`, `2025-12-27`) — komponenta to už formátuje česky
 
 ## Co se NEmění
 
-- Žádná jiná stránka, layout, barvy ani fonty
-- Žádný backend — vše statické, edituje se v jednom TS souboru
+- `News.tsx`, `NewsCard.tsx`, navigace, routing, design
+- Žádné nové fotky se nestahují — texty mluví samy za sebe (kategorie+datum+popis)
+- Pokud bys později chtěl skutečné fotky z akcí, zařídíme zvlášť (přidáme pole `image` do typu)
+
+## Poznámka pro tebe
+
+Texty jsou převzaté doslovně z původního webu. Jako copywriter je můžeš v `src/data/news.ts` snadno přepsat — každá položka je jeden objekt s 5–6 poli, žádné HTML.
 
