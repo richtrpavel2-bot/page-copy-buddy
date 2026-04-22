@@ -10,6 +10,7 @@ const navItems = [
   { to: "/o-nas", label: "O spolku" },
   { to: "/co-nabizime", label: "Co nabízíme" },
   { to: "/studio-my-dve", label: "Studio My Dvě" },
+  { to: "/nakladatelstvi-limonada", label: "Nakladatelství LIMONÁDA" },
   { to: "/kontakt", label: "Kontakt" },
 ];
 
