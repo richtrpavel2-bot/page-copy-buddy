@@ -8,6 +8,7 @@ import tabor2021Draci from "@/assets/offer/tabor-2021-draci.jpg";
 import tabor2020Vyska from "@/assets/offer/tabor-2020-vyska.jpg";
 import tabor2019 from "@/assets/offer/tabor-2019.jpg";
 import tabor2018 from "@/assets/offer/tabor-2018.jpg";
+import cloveceNezlobNaNas from "@/assets/offer/clovece-nezlob-na-nas.jpg";
 
 export type OfferGroup = "volny-cas" | "vzdelavani";
 
@@ -218,11 +219,23 @@ export const offer: OfferItem[] = [
     title: "Pro veřejnost",
     group: "vzdelavani",
     groupLabel: "Vzdělávací a kulturní akce",
-    image: proVerejnostImg,
+    image: cloveceNezlobNaNas,
     shortText:
-      "Komponované večery, autorská čtení a kulturní akce pro širokou veřejnost.",
+      "Divadelní představení, komponované večery a autorská čtení pro širokou veřejnost.",
     intro:
-      "Pro veřejnost připravujeme komponované večery hudby a přednesu, autorská čtení a další kulturní akce. Aktuální termíny najdete v sekci Aktuálně.",
+      "Pro veřejnost připravujeme divadelní představení umělecké platformy Galimatyáš, komponované večery hudby a přednesu i autorská čtení. Aktuální termíny najdete v sekci Aktuálně.",
+    editions: [
+      {
+        year: "2025",
+        title: "Člověče, nezlob se na nás!",
+        subtitle: "Divadelní představení · na motivy světových pohádek",
+        image: cloveceNezlobNaNas,
+        meta:
+          "Sobota 18. 10. 2025 v 17:00 · Starobranská 16, Šumperk · vstupné 200 / 150 Kč",
+        text:
+          "Galimatyáš — umělecká platforma (divadlo, koncerty, galerie) — vás srdečně zve na divadelní představení Člověče, nezlob se na nás! na motivy světových pohádek. Žal i štěstí, smích i zamyšlení v jednom večeru.",
+      },
+    ],
     body:
       "Mezi naše opakující se akce patří například Komponovaný večer hudby a přednesu v klášterním kostele v Šumperku, autorské večery k novým knihám nakladatelství LIMONÁDA a doprovodné programy k představením Studia My dvě.\n\n" +
       "Pokud máte zájem o konkrétní program pro vaši obec, knihovnu, školu nebo spolek, ozvěte se nám — připravíme nabídku na míru.",
