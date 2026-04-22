@@ -9,6 +9,7 @@ import News from "./pages/News";
 import About from "./pages/About";
 import Offer from "./pages/Offer";
 import Studio from "./pages/Studio";
+import Limonada from "./pages/Limonada";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/o-nas" element={<About />} />
             <Route path="/co-nabizime" element={<Offer />} />
             <Route path="/studio-my-dve" element={<Studio />} />
+            <Route path="/nakladatelstvi-limonada" element={<Limonada />} />
             <Route path="/kontakt" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

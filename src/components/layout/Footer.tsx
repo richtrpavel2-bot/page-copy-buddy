@@ -53,6 +53,7 @@ const Footer = () => {
             <Link to="/o-nas" className="text-muted-foreground hover:text-foreground">O spolku</Link>
             <Link to="/co-nabizime" className="text-muted-foreground hover:text-foreground">Co nabízíme</Link>
             <Link to="/studio-my-dve" className="text-muted-foreground hover:text-foreground">Studio My Dvě</Link>
+            <Link to="/nakladatelstvi-limonada" className="text-muted-foreground hover:text-foreground">Nakladatelství LIMONÁDA</Link>
             <Link to="/kontakt" className="text-muted-foreground hover:text-foreground">Kontakt</Link>
           </nav>
         </div>
