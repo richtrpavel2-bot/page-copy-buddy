@@ -3,6 +3,11 @@ import proDospeleImg from "@/assets/offer/pro-dospele.jpg";
 import prazdninoveImg from "@/assets/offer/prazdninove-akce.jpg";
 import proPedagogyImg from "@/assets/offer/pro-pedagogy.jpg";
 import proVerejnostImg from "@/assets/offer/pro-verejnost.jpg";
+import tabor2021Vesmir from "@/assets/offer/tabor-2021-vesmir.jpg";
+import tabor2021Draci from "@/assets/offer/tabor-2021-draci.jpg";
+import tabor2020Vyska from "@/assets/offer/tabor-2020-vyska.jpg";
+import tabor2019 from "@/assets/offer/tabor-2019.jpg";
+import tabor2018 from "@/assets/offer/tabor-2018.jpg";
 
 export type OfferGroup = "volny-cas" | "vzdelavani";
 
@@ -14,6 +19,16 @@ export interface OfferCourse {
   full?: boolean;
 }
 
+export interface OfferEdition {
+  year: string;
+  title: string;
+  subtitle?: string;
+  image?: string;
+  youtubeId?: string;
+  text: string;
+  meta?: string;
+}
+
 export interface OfferItem {
   slug: string;
   title: string;
@@ -23,6 +38,7 @@ export interface OfferItem {
   image: string;
   intro?: string;
   courses?: OfferCourse[];
+  editions?: OfferEdition[];
   /** Volitelné odstavce na konci stránky. */
   body?: string;
 }
@@ -113,13 +129,63 @@ export const offer: OfferItem[] = [
       "Letní příměstské i pobytové tábory pro děti — příběhové, dobrodružné, plné fantazie.",
     intro:
       "Naše tábory jsou příběhové — staneme se hlavními hybateli děje na dobrodružné cestě. Jsou koncipované tak, abychom v dětech podporovali jejich fantazii. Pořádáme je každý rok ve spolupráci se SVČ Doris Šumperk.",
-    body:
-      "Letní příměstský tábor 2021 – Cestou necestou s hlavou ve hvězdách. Skřítek Jiřin svolává prďolky na pomoc obrovi zaseknutému ve vesmíru.\n\n" +
-      "Letní příměstský tábor 2021 – Cestou necestou do hloubi dračího srdce.\n\n" +
-      "Letní příměstský tábor 2020 – Cestou necestou po stopách posvátných zvířat. Návrat dávné indiánské magie do světa lidí.\n\n" +
-      "Letní pobytový tábor 2019 – Cestou necestou do světa kouzel. Tábor pro 30 dětí ve věku 6–12 let na TZ Krásné – Hraběšice.\n\n" +
-      "Letní pobytový tábor 2018 – Cestou necestou do Země Nezemě (Petr Pan), ve spolupráci se SVČ Doris ve Švagrově.\n\n" +
-      "Konkrétní termíny a přihlašování k aktuálnímu ročníku najdete v sekci Aktuálně nebo na vyžádání e-mailem.",
+    editions: [
+      {
+        year: "2021",
+        title: "Cestou necestou s hlavou ve hvězdách",
+        subtitle: "Letní příměstský tábor",
+        image: tabor2021Vesmir,
+        text:
+          "Skřítek Jiřin svolává prďolky na pomoc obrovi, který se zasekl někde ve vesmíru. Při úplňku ve střelci a zatmění měsíce se rozevřelo nebe — a od té chvíle je jasné, že ve vesmíru panuje úplně jiný pořádek než na Zemi a čeká nás pořádná jízda. „Mějte se hezky a držte si čepičky! Páčko, Skřítek Jiřin — vrchní vyšetřovatel vesmírného obrova trápení.“",
+      },
+      {
+        year: "2021",
+        title: "Cestou necestou do hloubi dračího srdce",
+        subtitle: "Letní příměstský tábor",
+        image: tabor2021Draci,
+        text:
+          "Druhý běh příměstského tábora roku 2021 — výprava do hloubi dračího srdce a za tajemstvím, které se v něm ukrývá.",
+      },
+      {
+        year: "2020",
+        title: "Cestou necestou po stopách posvátných zvířat",
+        subtitle: "Letní příměstský tábor",
+        youtubeId: "p4rkfZ6nLMQ",
+        text:
+          "Kdysi dávno, když ještě neexistovalo nic z toho, co máme jako lidé k dispozici, existovala posvátná zvířata. Po pokroku se ze strachu o své kouzelné schopnosti odebrala do ústraní — a po tisíce let o nich nikdo nevěděl. Až nyní. Po letním slunovratu se odvážila znovu prozkoumat tento svět a naplnit jej dávnou indiánskou magií. Jsi nositelem kouzelné indiánské magie. Jsi předurčen. Přijď a tvůj život nikdy nebude jako dřív.",
+      },
+      {
+        year: "2020",
+        title: "Cestou necestou do výšky a zase na zem",
+        subtitle: "Příměstský tábor — Andělská Akademie",
+        image: tabor2020Vyska,
+        youtubeId: "S1E9ImZqk4s",
+        text:
+          "Pozvánka k zápisu do Andělské Akademie od profesora Tenčase: „Byla jsi vybrána jakožto zástupce lidí k absolvování Andělské Akademie. Je tomu tak poprvé v celé nebeské historii, co se andělé setkají s lidmi na půdě mé školy. Přijď s úžasem v očích a radostí v srdci — protože jen šťastní lidé dosáhnou nebeských výšin.“",
+      },
+      {
+        year: "2019",
+        title: "Cestou necestou do světa kouzel",
+        subtitle: "Letní pobytový tábor",
+        image: tabor2019,
+        youtubeId: "O2wB5usc5yg",
+        meta:
+          "28. 7. – 4. 8. 2019 · TZ Krásné–Hraběšice (SVČ Doris) · max. 30 dětí, 6–12 let · vedoucí: Tereza Karlíková, Lucie Kučerová, Eliška Komárková, Yvona Jurčíková",
+        text:
+          "Nad světem kouzel už od pradávna visí kletba temných sil. Zůstalo snad v někom něco dobrého? Vždyť je to tak snadné a lákavé škodit ostatním. Co se ale stane, když se Malá čarodějka rozhodne jinak? A co je ukryté v Knize bílé magie?",
+      },
+      {
+        year: "2018",
+        title: "Cestou necestou do Země Nezemě",
+        subtitle: "Letní pobytový tábor",
+        image: tabor2018,
+        meta:
+          "29. 7. – 4. 8. 2018 · ekologické středisko Švagrov (SVČ Doris) · 7–12 let",
+        text:
+          "Země Nezemě je v ohrožení. Děti přestaly snít. Vílí prášek se rozpadl v prach. Indiáni nerozumí řeči ptáků a neslyší šeptat stromy. Mořské víly ztratily svůj hlas ukrytý v lastuře a piráti mají strach vyplout zpět na moře… Kdo ovládl Zemi Nezemi? Kdo ukradl dětem snění? Pomozte!",
+      },
+    ],
+    body: "Konkrétní termíny a přihlašování k aktuálnímu ročníku najdete v sekci Aktuálně nebo na vyžádání e-mailem.",
   },
   {
     slug: "pro-pedagogy",
@@ -130,7 +196,7 @@ export const offer: OfferItem[] = [
     shortText:
       "Akreditované semináře DVPP zaměřené na divadelní a literární výchovu.",
     intro:
-      "Hudebně-dramatickému centru Galimatyáš byla udělena akreditace instituce a akreditace v systému DVPP (další vzdělávání pedagogických pracovníků).",
+      "Hudebně-dramatickému centru Galimatyáš byla udělena akreditace instituce a akreditace v systému DVPP (další vzdělávání pedagogických pracovníků) v těchto kurzech:",
     courses: [
       {
         title: "Divadelní výchova na pozadí současné dětské literatury",
