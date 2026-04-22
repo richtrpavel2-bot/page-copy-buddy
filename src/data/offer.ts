@@ -9,6 +9,10 @@ import tabor2020Vyska from "@/assets/offer/tabor-2020-vyska.jpg";
 import tabor2019 from "@/assets/offer/tabor-2019.jpg";
 import tabor2018 from "@/assets/offer/tabor-2018.jpg";
 import cloveceNezlobNaNas from "@/assets/offer/clovece-nezlob-na-nas.jpg";
+import kdoHraje1 from "@/assets/offer/kdo-hraje-1.jpg";
+import kdoHraje2 from "@/assets/offer/kdo-hraje-2.jpg";
+import kdoHraje3 from "@/assets/offer/kdo-hraje-3.jpg";
+import kdoHraje4 from "@/assets/offer/kdo-hraje-4.jpg";
 
 export type OfferGroup = "volny-cas" | "vzdelavani";
 
@@ -18,6 +22,8 @@ export interface OfferCourse {
   schedule?: string;
   text: string;
   full?: boolean;
+  /** Volitelná galerie fotek z kurzu. */
+  images?: string[];
 }
 
 export interface OfferEdition {
@@ -66,8 +72,9 @@ export const offer: OfferItem[] = [
         title: "KDO HRAJE, JE FRAJER(KA)!",
         audience: "5.–7. třída (9–12 let)",
         schedule: "Čtvrtek 15:00 – 16:30",
-        text: "Literárně dramatická průprava. Učitel vede děti prostřednictvím dramatických metod k prožitku, rozvoji fantazie, osobnostnímu růstu. Skupina spolu funguje už několik let a má za sebou krajskou divadelní přehlídku v Olomouci s doporučením do celostátní přehlídky Dětská scéna ve Svitavách.",
+        text: "Literárně dramatická průprava. Učitel vede děti prostřednictvím dramatických metod k prožitku, rozvoji fantazie, osobnostnímu růstu. Divadelní představení není v literárně dramatické průpravě hlavním cílem — hlavní je naučit se fungovat ve skupině, spolupracovat s kamarády, respektovat společná pravidla, hrát si. Skupina spolu funguje už několik let a má za sebou krajskou divadelní přehlídku v Olomouci s doporučením do celostátní přehlídky Dětská scéna ve Svitavách.",
         full: true,
+        images: [kdoHraje1, kdoHraje2, kdoHraje3, kdoHraje4],
       },
       {
         title: "PRVOH(O)RY",
