@@ -6,6 +6,7 @@ import logo from "@/assets/logo.png";
 
 const navItems = [
   { to: "/", label: "Domů", end: true },
+  { to: "/aktualne", label: "Aktuálně" },
   { to: "/o-nas", label: "O spolku" },
   { to: "/co-nabizime", label: "Co nabízíme" },
   { to: "/studio-my-dve", label: "Studio My Dvě" },

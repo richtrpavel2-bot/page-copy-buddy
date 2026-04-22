@@ -49,6 +49,7 @@ const Footer = () => {
             Facebook
           </a>
           <nav className="mt-6 flex flex-col gap-1 text-sm">
+            <Link to="/aktualne" className="text-muted-foreground hover:text-foreground">Aktuálně</Link>
             <Link to="/o-nas" className="text-muted-foreground hover:text-foreground">O spolku</Link>
             <Link to="/co-nabizime" className="text-muted-foreground hover:text-foreground">Co nabízíme</Link>
             <Link to="/studio-my-dve" className="text-muted-foreground hover:text-foreground">Studio My Dvě</Link>

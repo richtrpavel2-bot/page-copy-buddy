@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
+import News from "./pages/News";
 import About from "./pages/About";
 import Offer from "./pages/Offer";
 import Studio from "./pages/Studio";
@@ -22,6 +23,7 @@ const App = () => (
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
+            <Route path="/aktualne" element={<News />} />
             <Route path="/o-nas" element={<About />} />
             <Route path="/co-nabizime" element={<Offer />} />
             <Route path="/studio-my-dve" element={<Studio />} />
