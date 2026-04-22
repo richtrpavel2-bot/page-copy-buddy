@@ -111,6 +111,64 @@ const OfferDetail = () => {
         </section>
       )}
 
+      {item.editions && item.editions.length > 0 && (
+        <section className="mx-auto mt-16 max-w-5xl">
+          <h2 className="font-display text-2xl text-primary md:text-3xl">
+            Z archivu táborů
+          </h2>
+          <div className="mt-8 space-y-12">
+            {item.editions.map((e, i) => (
+              <article
+                key={`${e.year}-${e.title}`}
+                className="grid gap-6 md:grid-cols-[5fr_7fr] md:gap-10"
+              >
+                <div className="overflow-hidden rounded-3xl bg-muted aspect-[4/5]">
+                  {e.youtubeId ? (
+                    <iframe
+                      src={`https://www.youtube-nocookie.com/embed/${e.youtubeId}`}
+                      title={e.title}
+                      loading="lazy"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="h-full w-full"
+                    />
+                  ) : e.image ? (
+                    <img
+                      src={e.image}
+                      alt={e.title}
+                      loading="lazy"
+                      className="h-full w-full object-cover"
+                    />
+                  ) : null}
+                </div>
+                <div className="flex flex-col">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-accent">
+                    {e.subtitle ? `${e.subtitle} ${e.year}` : e.year}
+                  </p>
+                  <h3 className="mt-2 font-display text-2xl text-primary md:text-3xl">
+                    {e.title}
+                  </h3>
+                  {e.meta && (
+                    <p className="mt-3 text-sm text-muted-foreground">{e.meta}</p>
+                  )}
+                  <p className="mt-4 text-base leading-relaxed text-foreground/85">
+                    {e.text}
+                  </p>
+                  {e.image && e.youtubeId && (
+                    <img
+                      src={e.image}
+                      alt={e.title}
+                      loading="lazy"
+                      className="mt-5 w-full rounded-2xl object-cover"
+                    />
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
       {item.body && (
         <section className="mx-auto mt-16 max-w-3xl space-y-4 text-base leading-relaxed text-muted-foreground">
           {item.body.split("\n\n").map((p, i) => (
