@@ -1,62 +1,45 @@
 
 
-# Plán: Funkční sekce „Co nabízíme" s podstránkami
+# Plán: Doplnit fotky z původního webu do celé sekce „Co nabízíme"
 
-## Problém
-Karty na `/co-nabizime` nejsou klikatelné — jsou to jen `<Card>` bez `<Link>`. Na původním webu ale pod „Co nabízíme" byly **dvě skupiny po několika podstránkách** s texty a fotkami.
+## Co se stalo
+Při minulé migraci jsem nasadil jen hero obrázky a 4 fotky ke kurzu „KDO HRAJE". Zbylé fotky z původního webu zůstaly nedotažené. Z Wayback Machine jsem teď ověřil, **kde fotky reálně byly**:
 
-## Struktura podle původního webu
+| Podstránka | Počet fotek na originále | Stav teď |
+|---|---|---|
+| Pro děti | **8** (přípravka + různé kroužky) | jen 4 u jednoho kurzu |
+| Pro dospělé | 0 (text-only) | OK |
+| Prázdninové akce | **6** (různé tábory + vystoupení) | máme 5 různých, doplním |
+| Pro pedagogy | 0 (text-only) | OK |
+| Pro veřejnost | 0 (text-only) | máme plakát Člověče — OK |
 
-```text
-CO NABÍZÍME
-├── Volnočasové aktivity
-│   ├── Pro děti
-│   ├── Pro dospělé
-│   └── Prázdninové akce
-└── Vzdělávací a kulturní akce
-    ├── Pro pedagogické pracovníky
-    └── Pro veřejnost
-```
+**Reálná práce je tedy ve dvou sekcích: Pro děti a Prázdninové akce.**
 
-## Co se změní
+## Co udělám
 
-### 1. Přepsaná stránka `/co-nabizime`
-Místo 5 nesouvisejících karet bude přehled **2 skupin × jejich podstránek** (5 klikatelných karet vedoucích na detail). Každá karta = obrázek 4:5 + nadpis + krátký popis + šipka „Více". Sjednocený design s Aktuálně / LIMONÁDA / Studio.
+### 1. Stáhnu fotky z Wayback Machine
+Z URL ve formátu `web.archive.org/.../wp-content/uploads/...` stáhnu plné rozlišení (bez `-450x300` suffixu). Uložím do `src/assets/offer/` s čitelnými názvy:
+- `deti-preprava-1.jpg` až `deti-preprava-8.jpg` (sekce Pro děti)
+- `tabor-galerie-1.jpg` až `tabor-galerie-6.jpg` (sekce Tábory)
 
-### 2. Nových 5 podstránek
-Vzniknou skutečné stránky s obsahem a fotkami převzatými z původního webu:
+### 2. Pro děti — doplním galerie ke kurzům
+Fotky rozdělím do galerií u jednotlivých kurzů podle obsahu (přípravka MŠ, starší skupiny, vystoupení). Každý kurz dostane 2–4 fotky. Použiju existující pole `images` na `OfferCourse`.
 
-| Cesta | Obsah |
-|---|---|
-| `/co-nabizime/pro-deti` | Hudebně-dramatická přípravka „Raz dva tři!", „Kdo hraje, je frajer(ka)!" + další kroužky, rozvrhy, fotky |
-| `/co-nabizime/pro-dospele` | Aktivity pro dospělé (texty + foto z původního webu) |
-| `/co-nabizime/prazdninove-akce` | Tábory a prázdninové programy |
-| `/co-nabizime/pro-pedagogy` | Semináře a vzdělávání pro učitele |
-| `/co-nabizime/pro-verejnost` | Komponované večery, kulturní akce |
+### 3. Prázdninové akce — přidám obecnou galerii pod úvod
+Nové pole `gallery?: string[]` na `OfferItem` pro fotky, které nepatří ke konkrétnímu ročníku. Pod intro před archiv ročníků se zobrazí mřížka 3 sloupců.
 
-### 3. Datový soubor `src/data/offer.ts`
-Jeden zdroj pravdy — typ `OfferItem` se slug, title, group ("volny-cas" / "vzdelavani"), shortText, image, body (rich obsah: nadpisy, odstavce, obrázky). Snadno editovatelné.
+### 4. Šablona `OfferDetail.tsx`
+- Vykreslím `item.gallery` jako mřížku přímo pod hero (pokud existuje)
+- Galerie u kurzů už funguje — beze změny
 
-### 4. Šablona `src/pages/OfferDetail.tsx`
-Jedna komponenta pro všech 5 podstránek (čte slug, vyrendruje obsah). Konzistentní layout s `NewsDetail` a `BookDetail`.
+### 5. Kontrola kvality
+Po stažení projdu každou fotku — žádné okraje prohlížeče, žádná lišta Windows, čisté JPG. Pokud něco nesedí, ořežu přes ImageMagick.
 
-### 5. Routing v `App.tsx`
-Přidá se `<Route path="/co-nabizime/:slug" element={<OfferDetail />} />`.
+## Co NEsahám
+- Pro dospělé / Pro pedagogy / Pro veřejnost — na originále fotky neměly, zůstává jak je
+- Hero obrázky 5 hlavních karet — beze změny
+- Texty, routing, layout — beze změny
 
-### 6. Asset management
-Stáhnu dostupné obrázky z původního webu do `src/assets/offer/` (Pro děti je dostupné, Pro veřejnost má hero, ostatní 3 stránky jsou v JS — tam dám placeholder a doplníš později nebo se pokusím přes Wayback). U podstránek bez obsahu vytvořím kostru s krátkým úvodem a poznámkou „obsah se připravuje" — strukturu nasadíme, texty doplníš.
-
-## Co zůstane
-
-- Hero sekce stránky `/co-nabizime` (texty zachovány)
-- CTA „Máte konkrétní představu?" dole
-- Header / Footer / barvy / fonty beze změny
-
-## Otevřená otázka pro fázi implementace
-3 z 5 stránek originálu se nedaly stáhnout (JavaScript). Pro ně buď:
-- (A) zkusím Wayback Machine
-- (B) nasadím kostru s placeholderem, texty pošleš
-- (C) zkopíruji obsah z `Pro děti` jako dočasnou výplň
-
-Rozhodneme až po pokusu o Wayback — nemusíš se k tomu teď vyjadřovat.
+## Otevřená otázka
+Fotky z Wayback nemají popisky — rozdělím je ke kurzům podle vlastního odhadu (věková skupina, scéna). Pokud po nasazení uvidíš, že nějaká fotka patří jinam, řekneš a přesunu. Souhlas?
 
