@@ -69,6 +69,26 @@ const OfferDetail = () => {
         </div>
       </header>
 
+      {item.gallery && item.gallery.length > 0 && (
+        <section className="mx-auto mt-12 max-w-5xl">
+          <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+            {item.gallery.map((src, idx) => (
+              <div
+                key={src}
+                className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted"
+              >
+                <img
+                  src={src}
+                  alt={`${item.title} – fotka ${idx + 1}`}
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {item.courses && item.courses.length > 0 && (
         <section className="mx-auto mt-16 max-w-5xl">
           <h2 className="font-display text-2xl text-primary md:text-3xl">

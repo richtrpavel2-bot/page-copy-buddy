@@ -8,11 +8,23 @@ import tabor2021Draci from "@/assets/offer/tabor-2021-draci.jpg";
 import tabor2020Vyska from "@/assets/offer/tabor-2020-vyska.jpg";
 import tabor2019 from "@/assets/offer/tabor-2019.jpg";
 import tabor2018 from "@/assets/offer/tabor-2018.jpg";
+import tabor2020Zvirata from "@/assets/offer/tabor-2020-zvirata.jpg";
+import taborGalerie1 from "@/assets/offer/tabor-galerie-1.jpg";
+import taborGalerie2 from "@/assets/offer/tabor-galerie-2.jpg";
 import cloveceNezlobNaNas from "@/assets/offer/clovece-nezlob-na-nas.jpg";
 import kdoHraje1 from "@/assets/offer/kdo-hraje-1.jpg";
 import kdoHraje2 from "@/assets/offer/kdo-hraje-2.jpg";
 import kdoHraje3 from "@/assets/offer/kdo-hraje-3.jpg";
 import kdoHraje4 from "@/assets/offer/kdo-hraje-4.jpg";
+import deti1 from "@/assets/offer/deti-1.jpg";
+import deti2 from "@/assets/offer/deti-2.jpg";
+import deti3 from "@/assets/offer/deti-3.jpg";
+import deti4 from "@/assets/offer/deti-4.jpg";
+import deti5 from "@/assets/offer/deti-5.jpg";
+import deti6 from "@/assets/offer/deti-6.jpg";
+import deti7 from "@/assets/offer/deti-7.jpg";
+import deti8 from "@/assets/offer/deti-8.jpg";
+import deti9 from "@/assets/offer/deti-9.jpg";
 
 export type OfferGroup = "volny-cas" | "vzdelavani";
 
@@ -44,6 +56,8 @@ export interface OfferItem {
   shortText: string;
   image: string;
   intro?: string;
+  /** Volitelná galerie fotek pro celou stránku (zobrazí se pod intro). */
+  gallery?: string[];
   courses?: OfferCourse[];
   editions?: OfferEdition[];
   /** Volitelné odstavce na konci stránky. */
@@ -81,6 +95,7 @@ export const offer: OfferItem[] = [
         audience: "4.–8. třída (9–13 let)",
         schedule: "Středa 16:00 – 17:30",
         text: "Literárně divadelní dílna pro děti s větší či menší zkušeností s dramatickou výchovou. Setkání jsou koncipována jako dlouhá tvůrčí cesta za tvarem, který na jejím konci může být nazván divadelním představením. Skupina vznikla loni — ideální pro nováčky.",
+        images: [deti3, deti7],
       },
       {
         title: "TVAROH(R)Y",
@@ -88,23 +103,27 @@ export const offer: OfferItem[] = [
         schedule: "Pondělí 16:30 – 18:00",
         text: "Literárně dramatická průprava navazující na předchozí dílny. Cílem je plnohodnotná divadelní inscenace. Skupina patří k nejzkušenějším — má za sebou dva přímé postupy na celostátní přehlídku Dětská scéna. Volné místo po domluvě.",
         full: true,
+        images: [deti2, deti9],
       },
       {
         title: "DIVADOVÁDIDLO",
         audience: "SŠ (15–18 let)",
         schedule: "Pátek 16:00 – 17:30",
         text: "Literárně divadelní dílna pro zkušené hráče. Skupina má za sebou mnoho představení a zájezdů po České republice včetně celostátní přehlídky Mladá scéna v Ústí nad Orlicí. Přijetí možné po domluvě a talentové zkoušce.",
+        images: [deti1, deti8],
       },
       {
         title: "DIVA DIVY",
         audience: "9. třída ZŠ a SŠ (15–19 let)",
         schedule: "Úterý 16:30 – 18:00",
         text: "Literárně divadelní dílna na principech Divadovádidla. Učitel se zde stává průvodcem a koordinátorem nápadů a tvůrčích pokusů. Skupina spolu funguje osm let; vhodné i jako příprava na talentové zkoušky uměleckých škol.",
+        images: [deti4, deti6],
       },
       {
         title: "SÓLOVÝ ZPĚV",
         audience: "děti i dospělí",
         text: "Hodiny zpěvu jednou týdně doplněné o průpravu mluvní i pohybovou. Možné využít jako přípravu na talentové zkoušky či jen tak pro radost.",
+        images: [deti5],
       },
     ],
   },
@@ -137,6 +156,7 @@ export const offer: OfferItem[] = [
       "Letní příměstské i pobytové tábory pro děti — příběhové, dobrodružné, plné fantazie.",
     intro:
       "Naše tábory jsou příběhové — staneme se hlavními hybateli děje na dobrodružné cestě. Jsou koncipované tak, abychom v dětech podporovali jejich fantazii. Pořádáme je každý rok ve spolupráci se SVČ Doris Šumperk.",
+    gallery: [taborGalerie1, taborGalerie2],
     editions: [
       {
         year: "2021",
@@ -158,6 +178,7 @@ export const offer: OfferItem[] = [
         year: "2020",
         title: "Cestou necestou po stopách posvátných zvířat",
         subtitle: "Letní příměstský tábor",
+        image: tabor2020Zvirata,
         youtubeId: "p4rkfZ6nLMQ",
         text:
           "Kdysi dávno, když ještě neexistovalo nic z toho, co máme jako lidé k dispozici, existovala posvátná zvířata. Po pokroku se ze strachu o své kouzelné schopnosti odebrala do ústraní — a po tisíce let o nich nikdo nevěděl. Až nyní. Po letním slunovratu se odvážila znovu prozkoumat tento svět a naplnit jej dávnou indiánskou magií. Jsi nositelem kouzelné indiánské magie. Jsi předurčen. Přijď a tvůj život nikdy nebude jako dřív.",
