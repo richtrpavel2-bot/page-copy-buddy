@@ -31,7 +31,7 @@
       }
     </script>
     <!-- is_embedded: False; context:  -->
-    <!-- navbar https://archive.org/web/navbar.php 0.05562s -->
+    <!-- navbar https://archive.org/web/navbar.php 0.17331s -->
     <!-- navbar script -->
     <script src="//archive.org/includes/athena.js?v=b10bf3ed" type="text/javascript"></script>
     <script src="//archive.org/includes/apollo.js?v=b10bf3ed" type="text/javascript"></script>
@@ -45,7 +45,7 @@
     <meta property="mediatype" content="">
     <meta property="primary_collection" content="">
     <!-- navbar end -->
-    <script type="text/javascript">if('archive_analytics' in window){var v=archive_analytics.values;v.path='/web';v.service='wb';v.server_name='wwwb-app220.us.archive.org';v.server_ms=2402;archive_analytics.send_pageview_on_load()}</script>
+    <script type="text/javascript">if('archive_analytics' in window){var v=archive_analytics.values;v.path='/web';v.service='wb';v.server_name='wwwb-app249.us.archive.org';v.server_ms=1318;archive_analytics.send_pageview_on_load()}</script>
     <link href="https://web-static.archive.org/_static/images/archive.ico" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -81,9 +81,9 @@ if (window!=window.top) {
       class="row js-donate-banner template-chevron background-default chevron-image-white  chevron-color-#F9BF3B formdesign-form"
       itemscope
       itemtype="http://schema.org/WPAdBlock"
-      data-donationSourceData="ctx=wb;uid=216aeb2e99257a813df64e309fad3ee4"
+      data-donationSourceData="ctx=wb;uid=f0e7bd45841f8daf91054ddf6be3cbf3"
       data-exp="20260421AprTestAvgAmt"
-      data-variant="WBAprTestAvg1400"
+      data-variant="WBAprTestAvg1436"
       data-platform="wb"
       data-baseUrl="https://archive.org"
       data-platform="wb"
@@ -99,7 +99,7 @@ if (window!=window.top) {
       data-donatePageSelectedTextColor="#000000"
       data-donatePageSelectedFillColor="#F9BF3B"
       data-psaBannerDestinationUrl=""
-      data-variantDollarAmounts='[10, 14, 50]'      data-variantAmountLayout='multi-line'      data-variantFrequencyMode='checkbox'            data-defaultSelectedAmount='14'            data-debugMode="false"
+      data-variantDollarAmounts='[10, 14.36, 50]'      data-variantAmountLayout='multi-line'      data-variantFrequencyMode='checkbox'            data-defaultSelectedAmount='14.36'            data-debugMode="false"
       style="--donationBannerFormTextColor: #000000;  "
     >
       <button id="donate-close-button" class="donate-close" type="button" aria-label="Close banner">
@@ -114,8 +114,8 @@ if (window!=window.top) {
             
             <div class="main-content">
               <div class="appeal-text" style="--donationBannerAppealTextColor: #000000;">
-                <div class="desktop-body-content"><b>Please Don't Scroll Past This</b><br><br>Can you chip in? The Wayback Machine is fighting for universal access to quality information; we keep the record straight by preserving government websites, news articles, historical data, and more. The Internet Archive, which runs this project, is a nonprofit powered by online donations averaging about $14. We’d be deeply grateful if you'd join the one in a thousand users that support us financially.<br><br>We understand that not everyone can donate right now, but if you can afford to contribute this Thursday, we promise it will be put to good use. Our resources are crucial for knowledge lovers everywhere—so if you find our resources useful, <b>please pitch in.</b></div>
-                <div class="mobile-body-content"><b>Please Don't Scroll Past This </b>We keep the record straight by preserving government websites, news articles, historical data, and more—all powered by online donations averaging about $14. If you find our archive useful, <b>please pitch in.</b></div>
+                <div class="desktop-body-content"><b>Please Don't Scroll Past This</b><br><br>Can you chip in? The Wayback Machine is fighting for universal access to quality information; we keep the record straight by preserving government websites, news articles, historical data, and more. The Internet Archive, which runs this project, is a nonprofit powered by online donations averaging about $14.36. We’d be deeply grateful if you'd join the one in a thousand users that support us financially.<br><br>We understand that not everyone can donate right now, but if you can afford to contribute this Thursday, we promise it will be put to good use. Our resources are crucial for knowledge lovers everywhere—so if you find our resources useful, <b>please pitch in.</b></div>
+                <div class="mobile-body-content"><b>Please Don't Scroll Past This </b>We keep the record straight by preserving government websites, news articles, historical data, and more—all powered by online donations averaging about $14.36. If you find our archive useful, <b>please pitch in.</b></div>
               </div>
 
                           </div>
@@ -130,7 +130,7 @@ if (window!=window.top) {
           <div class="white-box">
                                 <div class="donation-form-container">
         <donation-form-edit-donation
-          amountOptions='[10, 14, 50]'          defaultSelectedAmount='14'          amountSelectionLayout='multi-line'          frequencySelectionMode='checkbox'          stepNumberMode="hidenumbers"
+          amountOptions='[10, 14.36, 50]'          defaultSelectedAmount='14.36'          amountSelectionLayout='multi-line'          frequencySelectionMode='checkbox'          stepNumberMode="hidenumbers"
           style="--paymentButtonSelectedFontColor: #000000;--paymentButtonSelectedColor: #F9BF3B;--formSectionTextColor: #000000;"
         >
         </donation-form-edit-donation>
@@ -3074,7 +3074,7 @@ if (window!=window.top) {
       <div id="positionHome">
 	<div id="searchHome">
 	  <form name="form1" method="get" action="/web/submit">
-      <input class="form-control" type="text" name="url" value="http://www.spolekgalimatyas.cz/wp-content/uploads/2017/03/20230612_102212.jpg" size="40" onfocus="javascript:this.focus();this.select();" >
+      <input class="form-control" type="text" name="url" value="http://www.spolekgalimatyas.cz/wp-content/uploads/2017/03/20230612_102212-450x338.jpg" size="40" onfocus="javascript:this.focus();this.select();" >
 	    <button class="btn btn-default" type="submit" name="type" value="replay">Latest</button>
 	    <button class="btn btn-default" type="submit" name="type" value="urlquery">Show All</button>
 	  </form>

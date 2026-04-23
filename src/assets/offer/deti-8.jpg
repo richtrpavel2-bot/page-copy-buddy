@@ -31,7 +31,7 @@
       }
     </script>
     <!-- is_embedded: False; context:  -->
-    <!-- navbar https://archive.org/web/navbar.php 0.21231s -->
+    <!-- navbar https://archive.org/web/navbar.php 0.33928s -->
     <!-- navbar script -->
     <script src="//archive.org/includes/athena.js?v=b10bf3ed" type="text/javascript"></script>
     <script src="//archive.org/includes/apollo.js?v=b10bf3ed" type="text/javascript"></script>
@@ -45,7 +45,7 @@
     <meta property="mediatype" content="">
     <meta property="primary_collection" content="">
     <!-- navbar end -->
-    <script type="text/javascript">if('archive_analytics' in window){var v=archive_analytics.values;v.path='/web';v.service='wb';v.server_name='wwwb-app206.us.archive.org';v.server_ms=3352;archive_analytics.send_pageview_on_load()}</script>
+    <script type="text/javascript">if('archive_analytics' in window){var v=archive_analytics.values;v.path='/web';v.service='wb';v.server_name='wwwb-app247.us.archive.org';v.server_ms=5273;archive_analytics.send_pageview_on_load()}</script>
     <link href="https://web-static.archive.org/_static/images/archive.ico" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -81,7 +81,7 @@ if (window!=window.top) {
       class="row js-donate-banner template-chevron background-default chevron-image-white  chevron-color-#F9BF3B formdesign-form"
       itemscope
       itemtype="http://schema.org/WPAdBlock"
-      data-donationSourceData="ctx=wb;uid=114144c01d582caaaab9b811a5c7252c"
+      data-donationSourceData="ctx=wb;uid=159a49ea51a5eca958f7990ff7128e8f"
       data-exp="20260421AprTestAvgAmt"
       data-variant="WBAprTestAvg1400"
       data-platform="wb"
@@ -3074,7 +3074,7 @@ if (window!=window.top) {
       <div id="positionHome">
 	<div id="searchHome">
 	  <form name="form1" method="get" action="/web/submit">
-      <input class="form-control" type="text" name="url" value="http://www.spolekgalimatyas.cz/wp-content/uploads/2017/03/355704509_6632386580151930_7344413621680217880_n.jpg" size="40" onfocus="javascript:this.focus();this.select();" >
+      <input class="form-control" type="text" name="url" value="http://www.spolekgalimatyas.cz/wp-content/uploads/2017/03/355704509_6632386580151930_7344413621680217880_n-300x450.jpg" size="40" onfocus="javascript:this.focus();this.select();" >
 	    <button class="btn btn-default" type="submit" name="type" value="replay">Latest</button>
 	    <button class="btn btn-default" type="submit" name="type" value="urlquery">Show All</button>
 	  </form>
