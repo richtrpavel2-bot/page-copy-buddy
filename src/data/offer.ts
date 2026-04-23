@@ -156,6 +156,7 @@ export const offer: OfferItem[] = [
       "Letní příměstské i pobytové tábory pro děti — příběhové, dobrodružné, plné fantazie.",
     intro:
       "Naše tábory jsou příběhové — staneme se hlavními hybateli děje na dobrodružné cestě. Jsou koncipované tak, abychom v dětech podporovali jejich fantazii. Pořádáme je každý rok ve spolupráci se SVČ Doris Šumperk.",
+    gallery: [taborGalerie1, taborGalerie2],
     editions: [
       {
         year: "2021",
@@ -177,6 +178,7 @@ export const offer: OfferItem[] = [
         year: "2020",
         title: "Cestou necestou po stopách posvátných zvířat",
         subtitle: "Letní příměstský tábor",
+        image: tabor2020Zvirata,
         youtubeId: "p4rkfZ6nLMQ",
         text:
           "Kdysi dávno, když ještě neexistovalo nic z toho, co máme jako lidé k dispozici, existovala posvátná zvířata. Po pokroku se ze strachu o své kouzelné schopnosti odebrala do ústraní — a po tisíce let o nich nikdo nevěděl. Až nyní. Po letním slunovratu se odvážila znovu prozkoumat tento svět a naplnit jej dávnou indiánskou magií. Jsi nositelem kouzelné indiánské magie. Jsi předurčen. Přijď a tvůj život nikdy nebude jako dřív.",
