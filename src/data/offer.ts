@@ -56,6 +56,8 @@ export interface OfferItem {
   shortText: string;
   image: string;
   intro?: string;
+  /** Volitelná galerie fotek pro celou stránku (zobrazí se pod intro). */
+  gallery?: string[];
   courses?: OfferCourse[];
   editions?: OfferEdition[];
   /** Volitelné odstavce na konci stránky. */
