@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { Heart, Users, Sparkles } from "lucide-react";
+import { Heart, Users, Sparkles, Images, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const values = [
   { icon: Heart, title: "S láskou", text: "Vše, co děláme, dává smysl jen tehdy, když to děláme s radostí." },
@@ -87,16 +88,23 @@ const About = () => {
 
       <section className="py-20">
         <div className="container">
-          <div className="mx-auto max-w-3xl rounded-3xl border border-dashed border-border p-10 text-center">
-            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-              Doplň text
-            </p>
-            <h2 className="mt-2 font-display text-2xl text-primary">Výroční zpráva</h2>
-            <p className="mt-3 text-muted-foreground">
-              Sem patří odkaz na PDF výroční zprávy nebo shrnutí roku. (Placeholder
-              pro doplnění obsahu copywriterem.)
-            </p>
-          </div>
+          <Link
+            to="/fotogalerie"
+            className="group mx-auto flex max-w-3xl items-center justify-between gap-6 rounded-3xl border border-border/60 bg-secondary/40 p-8 shadow-card transition-shadow hover:shadow-lg md:p-10"
+          >
+            <div className="flex items-start gap-5">
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-accent/15 text-accent">
+                <Images className="h-6 w-6" />
+              </div>
+              <div>
+                <h2 className="font-display text-2xl text-primary">Fotogalerie</h2>
+                <p className="mt-2 text-muted-foreground">
+                  Představení, dílny, tábory a výstavy — fotky z akcí spolku.
+                </p>
+              </div>
+            </div>
+            <ArrowRight className="h-5 w-5 flex-shrink-0 text-accent transition-transform group-hover:translate-x-1" />
+          </Link>
         </div>
       </section>
     </>
