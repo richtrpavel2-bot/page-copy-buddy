@@ -8,11 +8,23 @@ import tabor2021Draci from "@/assets/offer/tabor-2021-draci.jpg";
 import tabor2020Vyska from "@/assets/offer/tabor-2020-vyska.jpg";
 import tabor2019 from "@/assets/offer/tabor-2019.jpg";
 import tabor2018 from "@/assets/offer/tabor-2018.jpg";
+import tabor2020Zvirata from "@/assets/offer/tabor-2020-zvirata.jpg";
+import taborGalerie1 from "@/assets/offer/tabor-galerie-1.jpg";
+import taborGalerie2 from "@/assets/offer/tabor-galerie-2.jpg";
 import cloveceNezlobNaNas from "@/assets/offer/clovece-nezlob-na-nas.jpg";
 import kdoHraje1 from "@/assets/offer/kdo-hraje-1.jpg";
 import kdoHraje2 from "@/assets/offer/kdo-hraje-2.jpg";
 import kdoHraje3 from "@/assets/offer/kdo-hraje-3.jpg";
 import kdoHraje4 from "@/assets/offer/kdo-hraje-4.jpg";
+import deti1 from "@/assets/offer/deti-1.jpg";
+import deti2 from "@/assets/offer/deti-2.jpg";
+import deti3 from "@/assets/offer/deti-3.jpg";
+import deti4 from "@/assets/offer/deti-4.jpg";
+import deti5 from "@/assets/offer/deti-5.jpg";
+import deti6 from "@/assets/offer/deti-6.jpg";
+import deti7 from "@/assets/offer/deti-7.jpg";
+import deti8 from "@/assets/offer/deti-8.jpg";
+import deti9 from "@/assets/offer/deti-9.jpg";
 
 export type OfferGroup = "volny-cas" | "vzdelavani";
 
