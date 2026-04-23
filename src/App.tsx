@@ -14,6 +14,8 @@ import Studio from "./pages/Studio";
 import Limonada from "./pages/Limonada";
 import BookDetail from "./pages/BookDetail";
 import Contact from "./pages/Contact";
+import Gallery from "./pages/Gallery";
+import GalleryDetail from "./pages/GalleryDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +37,8 @@ const App = () => (
             <Route path="/studio-my-dve" element={<Studio />} />
             <Route path="/nakladatelstvi-limonada" element={<Limonada />} />
             <Route path="/nakladatelstvi-limonada/:slug" element={<BookDetail />} />
+            <Route path="/fotogalerie" element={<Gallery />} />
+            <Route path="/fotogalerie/:slug" element={<GalleryDetail />} />
             <Route path="/kontakt" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
