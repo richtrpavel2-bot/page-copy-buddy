@@ -127,6 +127,8 @@ export const offer: OfferItem[] = [
       },
     ],
   },
+  {
+    slug: "pro-dospele",
     title: "Pro dospělé",
     group: "volny-cas",
     groupLabel: "Volnočasové aktivity",
