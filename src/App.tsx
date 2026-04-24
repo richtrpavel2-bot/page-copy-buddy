@@ -16,6 +16,10 @@ import BookDetail from "./pages/BookDetail";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import GalleryDetail from "./pages/GalleryDetail";
+import People from "./pages/People";
+import Partners from "./pages/Partners";
+import Support from "./pages/Support";
+import Sablony from "./pages/Sablony";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +36,10 @@ const App = () => (
             <Route path="/aktualne" element={<News />} />
             <Route path="/aktualne/:slug" element={<NewsDetail />} />
             <Route path="/o-nas" element={<About />} />
+            <Route path="/o-nas/lide" element={<People />} />
+            <Route path="/o-nas/podporuji-nas" element={<Partners />} />
+            <Route path="/o-nas/jak-nas-podporit" element={<Support />} />
+            <Route path="/o-nas/sablony" element={<Sablony />} />
             <Route path="/co-nabizime" element={<Offer />} />
             <Route path="/co-nabizime/:slug" element={<OfferDetail />} />
             <Route path="/studio-my-dve" element={<Studio />} />
