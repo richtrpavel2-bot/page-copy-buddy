@@ -1,6 +1,14 @@
 import { Card } from "@/components/ui/card";
-import { Heart, Users, Sparkles, Images, ArrowRight } from "lucide-react";
+import { Heart, Users, Sparkles, Images, ArrowRight, UserCircle2, HandHeart, HeartHandshake, FileBadge2 } from "lucide-react";
 import { Link } from "react-router-dom";
+
+const subpages = [
+  { to: "/o-nas/lide", title: "Lidé", text: "Kdo za spolkem stojí — zakladatelky a externí kolegové.", icon: UserCircle2 },
+  { to: "/o-nas/podporuji-nas", title: "Podporují nás", text: "Instituce, města a partneři, díky kterým můžeme tvořit.", icon: HandHeart },
+  { to: "/o-nas/jak-nas-podporit", title: "Jak nás můžete podpořit", text: "Možnosti, jak nám pomoct — od sdílení po finanční dar.", icon: HeartHandshake },
+  { to: "/o-nas/sablony", title: "Projekt Šablony", text: "Projekt s podporou Národního plánu obnovy a EU.", icon: FileBadge2 },
+  { to: "/fotogalerie", title: "Fotogalerie", text: "Představení, dílny, tábory a výstavy — fotky z akcí spolku.", icon: Images },
+];
 
 const values = [
   { icon: Heart, title: "S láskou", text: "Vše, co děláme, dává smysl jen tehdy, když to děláme s radostí." },
@@ -88,23 +96,29 @@ const About = () => {
 
       <section className="py-20">
         <div className="container">
-          <Link
-            to="/fotogalerie"
-            className="group mx-auto flex max-w-3xl items-center justify-between gap-6 rounded-3xl border border-border/60 bg-secondary/40 p-8 shadow-card transition-shadow hover:shadow-lg md:p-10"
-          >
-            <div className="flex items-start gap-5">
-              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-accent/15 text-accent">
-                <Images className="h-6 w-6" />
-              </div>
-              <div>
-                <h2 className="font-display text-2xl text-primary">Fotogalerie</h2>
-                <p className="mt-2 text-muted-foreground">
-                  Představení, dílny, tábory a výstavy — fotky z akcí spolku.
-                </p>
-              </div>
-            </div>
-            <ArrowRight className="h-5 w-5 flex-shrink-0 text-accent transition-transform group-hover:translate-x-1" />
-          </Link>
+          <h2 className="text-center font-display text-3xl font-semibold text-primary md:text-4xl">
+            Prozkoumejte další
+          </h2>
+          <div className="mx-auto mt-12 grid max-w-5xl gap-5 md:grid-cols-2">
+            {subpages.map(({ to, title, text, icon: Icon }) => (
+              <Link
+                key={to}
+                to={to}
+                className="group flex items-start gap-5 rounded-3xl border border-border/60 bg-secondary/40 p-6 shadow-card transition-shadow hover:shadow-lg md:p-8"
+              >
+                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-accent/15 text-accent">
+                  <Icon className="h-6 w-6" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center justify-between gap-3">
+                    <h3 className="font-display text-xl text-primary">{title}</h3>
+                    <ArrowRight className="h-5 w-5 flex-shrink-0 text-accent transition-transform group-hover:translate-x-1" />
+                  </div>
+                  <p className="mt-2 text-sm text-muted-foreground">{text}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </>
