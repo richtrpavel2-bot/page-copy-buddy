@@ -4,7 +4,7 @@ const ways = [
   { icon: Calendar, title: "Navštěvujte naše akce", text: "Každý divák je pro nás povzbuzením pokračovat." },
   { icon: Heart, title: "Hezky o nás mluvte", text: "Doporučení od přátel je ta nejlepší reklama." },
   { icon: Share2, title: "Sdílejte nás", text: "Najdete nás i na Facebooku — sdílejte naše akce se svými přáteli." },
-  { icon: ShoppingBag, title: "Nakupujte v obchůdku „Splněná přání"", text: "Každý nákup nás podpoří." },
+  { icon: ShoppingBag, title: "Nakupujte v obchůdku „Splněná přání“", text: "Každý nákup nás podpoří." },
   { icon: FileSignature, title: "Finanční dar", text: "Chcete-li nás podpořit finančně, sepíšeme s vámi darovací smlouvu." },
 ];
 
