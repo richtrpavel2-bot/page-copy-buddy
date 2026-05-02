@@ -1,8 +1,9 @@
 import { Card } from "@/components/ui/card";
-import { Heart, Users, Sparkles, Images, ArrowRight, UserCircle2, HandHeart, HeartHandshake, FileBadge2 } from "lucide-react";
+import { Heart, Users, Sparkles, Images, ArrowRight, UserCircle2, HandHeart, HeartHandshake, FileBadge2, BookMarked } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const subpages = [
+  { to: "/o-nas/spolek", title: "Spolek GALIMATYÁŠ", text: "Kdo jsme, co děláme a výroční zpráva ke stažení.", icon: BookMarked },
   { to: "/o-nas/lide", title: "Lidé", text: "Kdo za spolkem stojí — zakladatelky a externí kolegové.", icon: UserCircle2 },
   { to: "/o-nas/podporuji-nas", title: "Podporují nás", text: "Instituce, města a partneři, díky kterým můžeme tvořit.", icon: HandHeart },
   { to: "/o-nas/jak-nas-podporit", title: "Jak nás můžete podpořit", text: "Možnosti, jak nám pomoct — od sdílení po finanční dar.", icon: HeartHandshake },

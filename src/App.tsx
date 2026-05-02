@@ -20,6 +20,7 @@ import People from "./pages/People";
 import Partners from "./pages/Partners";
 import Support from "./pages/Support";
 import Sablony from "./pages/Sablony";
+import SpolekGalimatyas from "./pages/SpolekGalimatyas";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ const App = () => (
             <Route path="/aktualne" element={<News />} />
             <Route path="/aktualne/:slug" element={<NewsDetail />} />
             <Route path="/o-nas" element={<About />} />
+            <Route path="/o-nas/spolek" element={<SpolekGalimatyas />} />
             <Route path="/o-nas/lide" element={<People />} />
             <Route path="/o-nas/podporuji-nas" element={<Partners />} />
             <Route path="/o-nas/jak-nas-podporit" element={<Support />} />
