@@ -1,45 +1,36 @@
-
-
-# Plán: Doplnit fotky z původního webu do celé sekce „Co nabízíme"
-
-## Co se stalo
-Při minulé migraci jsem nasadil jen hero obrázky a 4 fotky ke kurzu „KDO HRAJE". Zbylé fotky z původního webu zůstaly nedotažené. Z Wayback Machine jsem teď ověřil, **kde fotky reálně byly**:
-
-| Podstránka | Počet fotek na originále | Stav teď |
-|---|---|---|
-| Pro děti | **8** (přípravka + různé kroužky) | jen 4 u jednoho kurzu |
-| Pro dospělé | 0 (text-only) | OK |
-| Prázdninové akce | **6** (různé tábory + vystoupení) | máme 5 různých, doplním |
-| Pro pedagogy | 0 (text-only) | OK |
-| Pro veřejnost | 0 (text-only) | máme plakát Člověče — OK |
-
-**Reálná práce je tedy ve dvou sekcích: Pro děti a Prázdninové akce.**
+# Plán: Obrázek do úvodu stránky O nás
 
 ## Co udělám
+V současné hero sekci na `/o-nas` je jen text na světlém pozadí. Přidám napravo od textu výrazný obrázek, aby úvod ožil.
 
-### 1. Stáhnu fotky z Wayback Machine
-Z URL ve formátu `web.archive.org/.../wp-content/uploads/...` stáhnu plné rozlišení (bez `-450x300` suffixu). Uložím do `src/assets/offer/` s čitelnými názvy:
-- `deti-preprava-1.jpg` až `deti-preprava-8.jpg` (sekce Pro děti)
-- `tabor-galerie-1.jpg` až `tabor-galerie-6.jpg` (sekce Tábory)
+## Layout
+Hero sekci přepracuju z jednosloupcového textu (`max-w-3xl`) na **dvousloupcový grid** na desktopu:
 
-### 2. Pro děti — doplním galerie ke kurzům
-Fotky rozdělím do galerií u jednotlivých kurzů podle obsahu (přípravka MŠ, starší skupiny, vystoupení). Každý kurz dostane 2–4 fotky. Použiju existující pole `images` na `OfferCourse`.
+```text
+┌─────────────────────┬──────────────────┐
+│ O spolku            │                  │
+│ Kdo je Galimatyáš   │   [ obrázek ]    │
+│ úvodní text…        │                  │
+└─────────────────────┴──────────────────┘
+```
 
-### 3. Prázdninové akce — přidám obecnou galerii pod úvod
-Nové pole `gallery?: string[]` na `OfferItem` pro fotky, které nepatří ke konkrétnímu ročníku. Pod intro před archiv ročníků se zobrazí mřížka 3 sloupců.
+- Mobil: obrázek pod textem, plná šířka
+- Desktop: text vlevo (3/5), obrázek vpravo (2/5), zaoblené rohy, jemný stín
+- Aspect ratio přibližně 4:3, `object-cover`
 
-### 4. Šablona `OfferDetail.tsx`
-- Vykreslím `item.gallery` jako mřížku přímo pod hero (pokud existuje)
-- Galerie u kurzů už funguje — beze změny
+## Výběr obrázku
+Použiju existující fotku ze složky `src/assets/galerie/` — atmosférický záběr ze spolkového života. Tři kandidáti, ze kterých vyberu:
 
-### 5. Kontrola kvality
-Po stažení projdu každou fotku — žádné okraje prohlížeče, žádná lišta Windows, čisté JPG. Pokud něco nesedí, ořežu přes ImageMagick.
+1. **`dilna-okolo/IMG_5723.jpg`** — divadelní dílna, společná práce (sedí k textu „spojujeme generace")
+2. **`stati-malo/IMG_5654.jpg`** — záběr z představení
+3. **`tabor-svetadily/2_(13).jpg`** — táborová akce
+
+Půjdu s **dílnou Okolo**, protože nejlépe vystihuje poslání („potkávají se profesionálové, dobrovolníci, děti"). Pokud se ti nebude líbit, snadno vyměním.
+
+## Soubory ke změně
+- `src/pages/About.tsx` — úprava hero sekce (řádky 22–37): přidat grid, `<img>` s importem assetu
 
 ## Co NEsahám
-- Pro dospělé / Pro pedagogy / Pro veřejnost — na originále fotky neměly, zůstává jak je
-- Hero obrázky 5 hlavních karet — beze změny
-- Texty, routing, layout — beze změny
-
-## Otevřená otázka
-Fotky z Wayback nemají popisky — rozdělím je ke kurzům podle vlastního odhadu (věková skupina, scéna). Pokud po nasazení uvidíš, že nějaká fotka patří jinam, řekneš a přesunu. Souhlas?
-
+- Sekce „Naše poslání", „Hodnoty", „Prozkoumejte další" — beze změny
+- Texty v úvodu — beze změny
+- Žádné nové fotky neimportuju, použiju existující asset
