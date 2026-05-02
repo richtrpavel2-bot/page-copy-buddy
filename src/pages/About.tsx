@@ -45,7 +45,7 @@ const About = () => {
             <p className="mt-5 text-muted-foreground">
               Tvoříme prostor, kde se potkávají profesionální umělci, dobrovolníci, děti
               a publikum. Připravujeme vlastní inscenace, vzdělávací programy a kulturní akce
-              šité na míru — pro školy, obce, festivaly i jednotlivce.
+              šité na míru — pro školy, obce, festivaly i jednotlivce..
             </p>
             <p className="mt-4 text-muted-foreground">
               Věříme, že kultura není luxus. Je to způsob, jak se domluvit, jak si rozumět
