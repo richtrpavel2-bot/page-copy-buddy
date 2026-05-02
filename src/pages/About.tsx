@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Heart, Users, Sparkles, Images, ArrowRight, UserCircle2, HandHeart, HeartHandshake, FileBadge2, BookMarked } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroAbout from "@/assets/galerie/dilna-okolo/IMG_5723.jpg";
 
 const subpages = [
   { to: "/o-nas/spolek", title: "Spolek GALIMATYÁŠ", text: "Kdo jsme, co děláme a výroční zpráva ke stažení.", icon: BookMarked },
@@ -22,16 +23,28 @@ const About = () => {
     <>
       <section className="bg-hero">
         <div className="container py-20 md:py-28">
-          <div className="mx-auto max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-widest text-accent">O spolku</p>
-            <h1 className="mt-3 font-display text-4xl font-bold text-primary md:text-6xl">
-              Kdo je Galimatyáš
-            </h1>
-            <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-              Spolek Galimatyáš je hudebně-dramatické centrum se sídlem v Šumperku. Vznikl
-              z přesvědčení, že divadlo a hudba patří do života každého z nás — bez ohledu
-              na věk, vzdělání nebo to, kolik nás na představení přijde.
-            </p>
+          <div className="grid items-center gap-10 md:grid-cols-5 md:gap-14">
+            <div className="md:col-span-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-accent">O spolku</p>
+              <h1 className="mt-3 font-display text-4xl font-bold text-primary md:text-6xl">
+                Kdo je Galimatyáš
+              </h1>
+              <p className="mt-6 text-lg text-muted-foreground md:text-xl">
+                Spolek Galimatyáš je hudebně-dramatické centrum se sídlem v Šumperku. Vznikl
+                z přesvědčení, že divadlo a hudba patří do života každého z nás — bez ohledu
+                na věk, vzdělání nebo to, kolik nás na představení přijde.
+              </p>
+            </div>
+            <div className="md:col-span-2">
+              <div className="overflow-hidden rounded-3xl shadow-card">
+                <img
+                  src={heroAbout}
+                  alt="Spolek Galimatyáš — divadelní dílna Okolo"
+                  className="aspect-[4/3] w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
