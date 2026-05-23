@@ -21,6 +21,7 @@ import Partners from "./pages/Partners";
 import Support from "./pages/Support";
 import Sablony from "./pages/Sablony";
 import SpolekGalimatyas from "./pages/SpolekGalimatyas";
+import FestivalKoreny from "./pages/FestivalKoreny";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
