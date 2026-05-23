@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Facebook, Mail, MapPin, Phone, Building2, CreditCard } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone, Building2, CreditCard, ShoppingBag } from "lucide-react";
 import { FormEvent, useState } from "react";
 
 const Contact = () => {
@@ -46,7 +46,20 @@ const Contact = () => {
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Sídlo</p>
                   <p className="mt-1 font-medium">Spolek Galimatyáš, z. s.</p>
-                  <p className="text-muted-foreground">Šumperk</p>
+                  <p className="text-muted-foreground">Sadová 158/4, Šumperk</p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="border-border/60 p-6 shadow-card">
+              <div className="flex items-start gap-4">
+                <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-accent/15 text-accent">
+                  <Building2 className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Provozovna</p>
+                  <p className="mt-1 font-medium">Starobranská 16</p>
+                  <p className="text-muted-foreground">787 01 Šumperk</p>
                 </div>
               </div>
             </Card>
@@ -58,8 +71,22 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Telefon</p>
-                  <a href="tel:+420000000000" className="mt-1 block font-medium hover:text-primary">
-                    +420 000 000 000
+                  <a href="tel:+420605173410" className="mt-1 block font-medium hover:text-primary">
+                    +420 605 173 410
+                  </a>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="border-border/60 p-6 shadow-card">
+              <div className="flex items-start gap-4">
+                <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-accent/15 text-accent">
+                  <ShoppingBag className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Kontakt na e-shop</p>
+                  <a href="tel:+420605173410" className="mt-1 block font-medium hover:text-primary">
+                    +420 605 173 410
                   </a>
                 </div>
               </div>
@@ -86,33 +113,32 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Číslo účtu</p>
-                  <p className="mt-1 font-medium">000000000/0000</p>
-                  <p className="text-xs text-muted-foreground">Doplň skutečné č. účtu</p>
+                  <p className="mt-1 font-medium">107-1746420217/0100</p>
+                  <p className="text-xs text-muted-foreground">Komerční banka</p>
                 </div>
               </div>
             </Card>
 
-            <Card className="border-border/60 p-6 shadow-card">
-              <div className="flex items-start gap-4">
-                <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-accent/15 text-accent">
-                  <Building2 className="h-5 w-5" />
-                </div>
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Fakturační údaje</p>
-                  <p className="mt-1 text-sm text-muted-foreground">IČO, DIČ — doplň</p>
-                </div>
-              </div>
-            </Card>
-
-            <a
-              href="https://www.facebook.com/spolekgalimatyas"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              <Facebook className="h-4 w-4" />
-              Sledujte nás na Facebooku
-            </a>
+            <div className="flex flex-wrap gap-2">
+              <a
+                href="https://www.facebook.com/SpolekGalimatyas1/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                <Facebook className="h-4 w-4" />
+                Facebook
+              </a>
+              <a
+                href="https://www.instagram.com/spolekgalimatyas/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                <Instagram className="h-4 w-4" />
+                Instagram
+              </a>
+            </div>
           </div>
 
           <Card className="border-border/60 p-8 shadow-soft md:p-10">

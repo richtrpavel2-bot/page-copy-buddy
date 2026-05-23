@@ -21,6 +21,7 @@ import Partners from "./pages/Partners";
 import Support from "./pages/Support";
 import Sablony from "./pages/Sablony";
 import SpolekGalimatyas from "./pages/SpolekGalimatyas";
+import FestivalKoreny from "./pages/FestivalKoreny";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +43,7 @@ const App = () => (
             <Route path="/o-nas/podporuji-nas" element={<Partners />} />
             <Route path="/o-nas/jak-nas-podporit" element={<Support />} />
             <Route path="/o-nas/sablony" element={<Sablony />} />
+            <Route path="/o-nas/festival-zpatky-ke-korenum" element={<FestivalKoreny />} />
             <Route path="/co-nabizime" element={<Offer />} />
             <Route path="/co-nabizime/:slug" element={<OfferDetail />} />
             <Route path="/studio-my-dve" element={<Studio />} />

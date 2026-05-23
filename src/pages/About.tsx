@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Heart, Users, Sparkles, Images, ArrowRight, UserCircle2, HandHeart, HeartHandshake, FileBadge2, BookMarked } from "lucide-react";
+import { Heart, Users, Sparkles, Images, ArrowRight, UserCircle2, HandHeart, HeartHandshake, Sparkle, BookMarked } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroAbout from "@/assets/galerie/dilna-okolo/IMG_5723.jpg";
 
@@ -8,8 +8,8 @@ const subpages = [
   { to: "/o-nas/lide", title: "Lidé", text: "Kdo za spolkem stojí — zakladatelky a externí kolegové.", icon: UserCircle2 },
   { to: "/o-nas/podporuji-nas", title: "Podporují nás", text: "Instituce, města a partneři, díky kterým můžeme tvořit.", icon: HandHeart },
   { to: "/o-nas/jak-nas-podporit", title: "Jak nás můžete podpořit", text: "Možnosti, jak nám pomoct — od sdílení po finanční dar.", icon: HeartHandshake },
-  { to: "/o-nas/sablony", title: "Projekt Šablony", text: "Projekt s podporou Národního plánu obnovy a EU.", icon: FileBadge2 },
-  { to: "/fotogalerie", title: "Fotogalerie", text: "Představení, dílny, tábory a výstavy — fotky z akcí spolku.", icon: Images },
+  { to: "/o-nas/festival-zpatky-ke-korenum", title: "Festival Zpátky ke kořenům", text: "Náš festival, který spojuje hudbu, divadlo a tradice.", icon: Sparkle },
+  { to: "/co-nabizime", title: "Co nabízíme", text: "Představení, dílny, vzdělávání a kulturní akce na míru.", icon: Images },
 ];
 
 const values = [
