@@ -37,7 +37,7 @@ const Home = () => {
                 variant="outline"
                 className="rounded-full border-primary-foreground/30 bg-transparent px-7 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
               >
-                <Link to="/studio-my-dve">Studio My Dvě</Link>
+                <Link to="/fotogalerie">Fotogalerie</Link>
               </Button>
             </div>
           </div>
