@@ -8,9 +8,9 @@ const navItems = [
   { to: "/", label: "Domů", end: true },
   { to: "/aktualne", label: "Aktuálně" },
   { to: "/o-nas", label: "O spolku" },
-  { to: "/co-nabizime", label: "Co nabízíme" },
-  { to: "/studio-my-dve", label: "Studio My Dvě" },
-  { to: "/nakladatelstvi-limonada", label: "Nakladatelství LIMONÁDA" },
+  { to: "/fotogalerie", label: "Fotogalerie" },
+  { to: "/studio-my-dve", label: "Komorní divadlo" },
+  { to: "/nakladatelstvi-limonada", label: "E-shop" },
   { to: "/kontakt", label: "Kontakt" },
 ];
 
