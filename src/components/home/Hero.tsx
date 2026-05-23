@@ -33,12 +33,9 @@ const Hero = () => {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild size="lg" className="rounded-full px-7">
-              <Link to="/co-nabizime">
-                Co nabízíme <ArrowRight className="ml-1 h-4 w-4" />
+              <Link to="/o-nas">
+                O spolku <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="rounded-full px-7">
-              <Link to="/o-nas">O spolku</Link>
             </Button>
           </div>
         </div>
