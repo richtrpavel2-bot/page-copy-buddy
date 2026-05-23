@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Facebook, Mail, MapPin, Phone, Building2, CreditCard } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone, Building2, CreditCard, ShoppingBag } from "lucide-react";
 import { FormEvent, useState } from "react";
 
 const Contact = () => {
