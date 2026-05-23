@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -21,12 +21,16 @@ const Footer = () => {
           <h4 className="mb-3 font-display text-lg font-semibold">Kontakt</h4>
           <p className="flex items-start gap-2 text-muted-foreground">
             <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-            <span>Spolek Galimatyáš, Šumperk</span>
+            <span>
+              Sídlo: Sadová 158/4, Šumperk
+              <br />
+              Provozovna: Starobranská 16, Šumperk 787 01
+            </span>
           </p>
           <p className="flex items-center gap-2 text-muted-foreground">
             <Phone className="h-4 w-4 shrink-0 text-accent" />
-            <a href="tel:+420000000000" className="hover:text-foreground">
-              +420 000 000 000
+            <a href="tel:+420605173410" className="hover:text-foreground">
+              +420 605 173 410
             </a>
           </p>
           <p className="flex items-center gap-2 text-muted-foreground">
@@ -39,21 +43,32 @@ const Footer = () => {
 
         <div>
           <h4 className="mb-3 font-display text-lg font-semibold">Sledujte nás</h4>
-          <a
-            href="https://www.facebook.com/spolekgalimatyas"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            <Facebook className="h-4 w-4" />
-            Facebook
-          </a>
+          <div className="flex flex-wrap gap-2">
+            <a
+              href="https://www.facebook.com/SpolekGalimatyas1/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              <Facebook className="h-4 w-4" />
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/spolekgalimatyas/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              <Instagram className="h-4 w-4" />
+              Instagram
+            </a>
+          </div>
           <nav className="mt-6 flex flex-col gap-1 text-sm">
             <Link to="/aktualne" className="text-muted-foreground hover:text-foreground">Aktuálně</Link>
             <Link to="/o-nas" className="text-muted-foreground hover:text-foreground">O spolku</Link>
-            <Link to="/co-nabizime" className="text-muted-foreground hover:text-foreground">Co nabízíme</Link>
-            <Link to="/studio-my-dve" className="text-muted-foreground hover:text-foreground">Studio My Dvě</Link>
-            <Link to="/nakladatelstvi-limonada" className="text-muted-foreground hover:text-foreground">Nakladatelství LIMONÁDA</Link>
+            <Link to="/fotogalerie" className="text-muted-foreground hover:text-foreground">Fotogalerie</Link>
+            <Link to="/studio-my-dve" className="text-muted-foreground hover:text-foreground">Komorní divadlo</Link>
+            <Link to="/nakladatelstvi-limonada" className="text-muted-foreground hover:text-foreground">E-shop</Link>
             <Link to="/kontakt" className="text-muted-foreground hover:text-foreground">Kontakt</Link>
           </nav>
         </div>
