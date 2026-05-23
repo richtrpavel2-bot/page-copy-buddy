@@ -12,7 +12,7 @@ const SpolekGalimatyas = () => {
             className="mb-6 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-accent"
           >
             <ArrowLeft className="h-4 w-4" />
-            Zpět na O nás
+            Zpět na O spolku
           </Link>
           <p className="text-xs font-semibold uppercase tracking-widest text-accent">O nás</p>
           <h1 className="mt-3 font-display text-4xl font-bold text-primary md:text-5xl">

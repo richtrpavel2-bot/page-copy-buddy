@@ -1,7 +1,26 @@
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Mail, Phone } from "lucide-react";
-import { books } from "@/data/books";
+import { ShoppingBag, ShieldCheck, FileText, ArrowRight } from "lucide-react";
+
+const tiles = [
+  {
+    icon: ShoppingBag,
+    title: "Internetový obchod",
+    text: "Připravujeme. Brzy zde najdete naše knihy, nahrávky a drobnosti.",
+    to: null as string | null,
+  },
+  {
+    icon: ShieldCheck,
+    title: "Pravidla ochrany soukromí",
+    text: "Jak nakládáme s vašimi osobními údaji.",
+    to: "/nakladatelstvi-limonada/ochrana-soukromi",
+  },
+  {
+    icon: FileText,
+    title: "Obchodní podmínky",
+    text: "Podmínky nákupu, dodání a reklamace.",
+    to: "/nakladatelstvi-limonada/obchodni-podminky",
+  },
+];
 
 const Limonada = () => {
   return (
@@ -10,66 +29,55 @@ const Limonada = () => {
         <div className="container py-20 md:py-28">
           <div className="mx-auto max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-widest text-accent">
-              Naše vlastní knihy a vydavatelská činnost
+              Knihy, nahrávky a drobnosti od Galimatyáše
             </p>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary md:text-6xl">
-              Nakladatelství Limonáda
+              E-shop
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-              Vydáváme knihy, audio nahrávky a drobnosti, které vznikají kolem našich
-              divadelních inscenací. Objednávky přijímáme mailem nebo telefonicky.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild variant="outline" className="rounded-full">
-                <a href="mailto:spolek.galimatyas@seznam.cz">
-                  <Mail className="mr-2 h-4 w-4" />
-                  spolek.galimatyas@seznam.cz
-                </a>
-              </Button>
-              <Button asChild variant="outline" className="rounded-full">
-                <a href="tel:+420732921452">
-                  <Phone className="mr-2 h-4 w-4" />
-                  732 921 452
-                </a>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
 
       <section className="py-16 md:py-20">
         <div className="container">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {books.map((book) => (
-              <Link
-                key={book.id}
-                to={`/nakladatelstvi-limonada/${book.id}`}
-                className="group flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-              >
-                <div className="aspect-[4/5] overflow-hidden bg-muted">
-                  <img
-                    src={book.image}
-                    alt={book.title}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                    {book.date}
-                  </p>
-                  <h3 className="mt-2 font-display text-xl text-primary">
-                    {book.title}
-                  </h3>
-                  <p className="mt-3 line-clamp-3 flex-1 text-sm text-muted-foreground">
-                    {book.excerpt}
-                  </p>
-                  <span className="mt-4 inline-flex items-center text-sm font-medium text-accent transition-colors group-hover:text-primary">
-                    Více →
-                  </span>
-                </div>
-              </Link>
-            ))}
+          <div className="mx-auto grid max-w-5xl gap-5 md:grid-cols-3">
+            {tiles.map(({ icon: Icon, title, text, to }) => {
+              const content = (
+                <>
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/15 text-accent">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <div className="flex items-center justify-between gap-3">
+                    <h3 className="font-display text-xl text-primary">{title}</h3>
+                    {to && (
+                      <ArrowRight className="h-5 w-5 flex-shrink-0 text-accent transition-transform group-hover:translate-x-1" />
+                    )}
+                  </div>
+                  <p className="mt-2 text-sm text-muted-foreground">{text}</p>
+                </>
+              );
+
+              if (!to) {
+                return (
+                  <div
+                    key={title}
+                    className="rounded-3xl border border-border/60 bg-secondary/40 p-6 shadow-card md:p-8"
+                  >
+                    {content}
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={title}
+                  to={to}
+                  className="group rounded-3xl border border-border/60 bg-secondary/40 p-6 shadow-card transition-shadow hover:shadow-lg md:p-8"
+                >
+                  {content}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -1,3 +1,6 @@
-# Welcome to your Lovable project
+# Spolek Galimatyáš
 
-TODO: Document your project here
+Webová prezentace hudebně-dramatického centra Spolek Galimatyáš ze Šumperka.
+
+Divadelní představení, dílny, semináře, volnočasové aktivity a kulturní akce
+pro děti i dospělé.
