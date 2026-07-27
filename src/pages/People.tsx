@@ -18,7 +18,7 @@ const People = () => {
             <p className="text-xs font-semibold uppercase tracking-widest text-accent">O spolku</p>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary md:text-6xl">Lidé</h1>
             <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-              Stojí za vším, co děláme. Dvojice zakladatelek a širší tým externích kolegů,
+              Stojí za vším, co děláme. Dvojice zakladatelek a širší tým kolegů,
               kteří nás dlouhodobě provázejí.
             </p>
           </div>
@@ -65,26 +65,41 @@ const People = () => {
       <section className="bg-secondary/40 py-16 md:py-20">
         <div className="container">
           <h2 className="text-center font-display text-3xl font-semibold text-primary md:text-4xl">
-            Další externí kolegové
+            Další kolegové
           </h2>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {externalTeam.map((m) => (
               <Card key={m.name} className="overflow-hidden border-border/60 shadow-card">
                 {m.image && (
                   <img
                     src={m.image}
-                    alt={m.name}
-                    className="aspect-square w-full object-cover"
+                    alt={m.secondary ? `${m.name} & ${m.secondary.name}` : m.name}
+                    className="aspect-[4/3] w-full object-cover"
                     loading="lazy"
                   />
                 )}
                 <div className="p-5">
                   <h3 className="font-display text-base text-primary">{m.name}</h3>
                   <p className="mt-1 text-sm text-muted-foreground">{m.role}</p>
+                  {m.tagline && (
+                    <p className="mt-1 text-sm italic text-accent">{m.tagline}</p>
+                  )}
+                  {m.secondary && (
+                    <div className="mt-4 border-t border-border/60 pt-4">
+                      <h3 className="font-display text-base text-primary">{m.secondary.name}</h3>
+                      <p className="mt-1 text-sm text-muted-foreground">{m.secondary.role}</p>
+                      {m.secondary.tagline && (
+                        <p className="mt-1 text-sm italic text-accent">{m.secondary.tagline}</p>
+                      )}
+                    </div>
+                  )}
                 </div>
               </Card>
             ))}
           </div>
+          <p className="mt-10 text-center text-muted-foreground">
+            …a další dospělí a děti, kteří nejsou tolik vidět, ale jsou s námi :)
+          </p>
         </div>
       </section>
     </>

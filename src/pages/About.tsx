@@ -1,7 +1,8 @@
 import { Card } from "@/components/ui/card";
-import { Heart, Users, Sparkles, Images, ArrowRight, UserCircle2, HandHeart, HeartHandshake, Sparkle, BookMarked } from "lucide-react";
+import { Feather, Users, Sparkles, Images, ArrowRight, UserCircle2, HandHeart, HeartHandshake, Sparkle, BookMarked } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroAbout from "@/assets/galerie/dilna-okolo/IMG_5723.jpg";
+import heroAboutAsset from "@/assets/o-spolku/o-spolku-hero.jpg.asset.json";
+const heroAbout = heroAboutAsset.url;
 
 const subpages = [
   { to: "/o-nas/spolek", title: "Spolek GALIMATYÁŠ", text: "Kdo jsme, co děláme a výroční zpráva ke stažení.", icon: BookMarked },
@@ -13,9 +14,9 @@ const subpages = [
 ];
 
 const values = [
-  { icon: Heart, title: "S láskou", text: "Vše, co děláme, dává smysl jen tehdy, když to děláme s radostí." },
-  { icon: Users, title: "Spolu", text: "Spojujeme generace, profesionály i amatéry, malá města i velká jeviště." },
-  { icon: Sparkles, title: "Hravě", text: "Fantazie je naše hlavní suroviny. I vážná témata umíme předat lehce." },
+  { icon: Feather, title: "S lehkostí", text: "Vše, co děláme nám působí radost a pohání nás to dál – k vám i do výšin umělecké tvorby." },
+  { icon: Users, title: "Společně", text: "Jsme tým, ve kterém se navzájem obohacujeme. Nezávisle na věku či profesním zaměření. Všichni na jednom krásném velkém jevišti světa." },
+  { icon: Sparkles, title: "Hravě", text: "Fantazie nás zavede daleko ve smýšlení i nazírání na vlastní život. Každá velká věc začíná v myšlence. A divadlo je plné těchto myšlenek." },
 ];
 
 const About = () => {
@@ -27,12 +28,13 @@ const About = () => {
             <div className="md:col-span-3">
               <p className="text-xs font-semibold uppercase tracking-widest text-accent">O spolku</p>
               <h1 className="mt-3 font-display text-4xl font-bold text-primary md:text-6xl">
-                Kdo je Galimatyáš
+                Kdo je Galimatyáš?
               </h1>
               <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-                Spolek Galimatyáš je hudebně-dramatické centrum se sídlem v Šumperku. Vznikl
-                z přesvědčení, že divadlo a hudba patří do života každého z nás — bez ohledu
-                na věk, vzdělání nebo to, kolik nás na představení přijde.
+                Jsme uskupení lidí, kteří stále hledají krásu v umění. Divadlo, hudba,
+                mluvený projev, obrazy, pohyb, světlo. Prostřednictvím našich kulturních
+                akcí nacházíme pospolitost a klid. A s notnou dávkou radosti sdružujeme
+                jedny z nejkreativnějších jedinců našeho města Šumperk i okolí.
               </p>
             </div>
             <div className="md:col-span-2">
@@ -56,13 +58,28 @@ const About = () => {
               Naše poslání
             </h2>
             <p className="mt-5 text-muted-foreground">
-              Tvoříme prostor, kde se potkávají profesionální umělci, dobrovolníci, děti
-              a publikum. Připravujeme vlastní inscenace, vzdělávací programy a kulturní akce
-              šité na míru — pro školy, obce, festivaly i jednotlivce..
+              Tvoříme bezpečný prostor —
             </p>
-            <p className="mt-4 text-muted-foreground">
-              Věříme, že kultura není luxus. Je to způsob, jak se domluvit, jak si rozumět
-              a jak si vážit místa, kde žijeme.
+            <ul className="mt-3 space-y-2 text-muted-foreground">
+              <li className="flex gap-3">
+                <span className="mt-2 inline-block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+                <span>pro naši divadelní tvorbu a všechny nápady, co přicházejí,</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-2 inline-block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+                <span>pro naše děti i dospělé divadelní i hudební múzou políbené,</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-2 inline-block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+                <span>a pro všechny diváky a další hosty, kteří našemu světu dodávají další rozměr.</span>
+              </li>
+            </ul>
+            <p className="mt-5 text-muted-foreground">
+              Věříme, že kultura se neodvíjí jen od velkých měst, není luxusem ani
+              nedostupnou zábavou určenou jen intelektuálům, a rozhodně není na ústupu
+              před dnešní technologickou a odcizenou dobou. Pro nás je kultura způsobem
+              komunikace, souznění, možnosti růstu a nekonečnou vděčností za místo,
+              kde žijeme a kde můžeme vytvářet lepší obraz toho našeho světa.
             </p>
           </div>
           <div className="rounded-3xl bg-secondary/60 p-8 md:p-10">

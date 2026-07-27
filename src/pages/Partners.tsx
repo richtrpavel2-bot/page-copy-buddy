@@ -30,18 +30,22 @@ const Partners = () => {
           <h2 className="font-display text-2xl font-semibold text-primary md:text-3xl">
             Veřejná podpora
           </h2>
-          <div className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-5">
+          <div className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-4">
             {publicPartners.map((p) => (
               <div
                 key={p.name}
                 className="flex aspect-[3/2] items-center justify-center rounded-2xl bg-card p-4 shadow-card"
               >
-                <img
-                  src={p.logo}
-                  alt={p.name}
-                  className="max-h-full max-w-full object-contain"
-                  loading="lazy"
-                />
+                {p.logo ? (
+                  <img
+                    src={p.logo}
+                    alt={p.name}
+                    className="max-h-full max-w-full object-contain"
+                    loading="lazy"
+                  />
+                ) : (
+                  <span className="text-center font-display text-sm text-primary">{p.name}</span>
+                )}
               </div>
             ))}
           </div>
@@ -49,18 +53,22 @@ const Partners = () => {
           <h2 className="mt-16 font-display text-2xl font-semibold text-primary md:text-3xl">
             Partneři a sponzoři
           </h2>
-          <div className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3">
+          <div className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-4">
             {corporatePartners.map((p) => (
               <div
                 key={p.name}
                 className="flex aspect-[3/2] items-center justify-center rounded-2xl bg-card p-4 shadow-card"
               >
-                <img
-                  src={p.logo}
-                  alt={p.name}
-                  className="max-h-full max-w-full object-contain"
-                  loading="lazy"
-                />
+                {p.logo ? (
+                  <img
+                    src={p.logo}
+                    alt={p.name}
+                    className="max-h-full max-w-full object-contain"
+                    loading="lazy"
+                  />
+                ) : (
+                  <span className="text-center font-display text-sm text-primary">{p.name}</span>
+                )}
               </div>
             ))}
           </div>

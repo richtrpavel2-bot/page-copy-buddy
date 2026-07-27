@@ -50,7 +50,7 @@ const SpolekGalimatyas = () => {
                   Nabízíme dopolední divadelní představení a dílny pro školní kolektivy MŠ, ZŠ a SŠ.
                   Více informací a aktuální program najdete v záložce{" "}
                   <Link to="/studio-my-dve" className="text-accent hover:underline">
-                    Studio „My dvě"
+                    Komorní divadlo
                   </Link>
                   .
                 </p>
