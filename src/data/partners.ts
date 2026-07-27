@@ -3,6 +3,7 @@ import sumperk from "@/assets/loga/sumperk.jpg";
 import ceramtec from "@/assets/loga/ceramtec.png";
 import perla from "@/assets/loga/perla.png";
 import autoservis from "@/assets/loga/autoservis.jpg";
+import hudebninyMalin from "@/assets/loga/hudebniny_malin.jpg.asset.json";
 
 export interface Partner {
   name: string;
@@ -18,5 +19,5 @@ export const corporatePartners: Partner[] = [
   { name: "CeramTec", logo: ceramtec },
   { name: "Perla — Netkaný textil", logo: perla },
   { name: "AutoServis Pas Křivky, Zábřeh na Moravě", logo: autoservis },
-  { name: "Hudebniny Nový Malín" },
+  { name: "Hudebniny Nový Malín", logo: hudebninyMalin.url },
 ];
