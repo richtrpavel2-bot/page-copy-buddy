@@ -1,13 +1,13 @@
 import tereza from "@/assets/lide/tereza.jpg";
 import lucie from "@/assets/lide/lucie.jpg";
-import slavomira from "@/assets/lide/slavomira.jpg";
-import franta from "@/assets/lide/franta.jpg";
-import jirina from "@/assets/lide/jirina.jpg";
-import vlastimil from "@/assets/lide/vlastimil.jpg";
-import marta from "@/assets/lide/marta.jpg";
-import uklizecka from "@/assets/lide/uklizecka.jpg";
-import muriela from "@/assets/lide/muriela.jpg";
-import karel from "@/assets/lide/karel.jpg";
+import sonaAsset from "@/assets/lide-new/sona_vavrova.jpg.asset.json";
+import zuzanaAsset from "@/assets/lide-new/zuzana_hoskova.jpg.asset.json";
+import janaPavelAsset from "@/assets/lide-new/jana_hrochova_pavel_skyva.jpg.asset.json";
+import evaAsset from "@/assets/lide-new/eva_psencikova.jpg.asset.json";
+import annaAsset from "@/assets/lide-new/anna_muratidisova.jpg.asset.json";
+import stanislavAsset from "@/assets/lide-new/stanislav_kucera.jpg.asset.json";
+import veronikaAsset from "@/assets/lide-new/veronika_subrtova_2.jpg.asset.json";
+import alfredAsset from "@/assets/lide-new/alfred_scchonberg.jpg.asset.json";
 
 export interface CoreMember {
   name: string;
@@ -16,10 +16,15 @@ export interface CoreMember {
   quote?: string;
 }
 
-export interface ExternalMember {
+export interface ExternalPerson {
   name: string;
-  image?: string;
   role: string;
+  tagline?: string;
+}
+
+export interface ExternalMember extends ExternalPerson {
+  image?: string;
+  secondary?: ExternalPerson;
 }
 
 export const coreTeam: CoreMember[] = [
@@ -49,16 +54,56 @@ export const coreTeam: CoreMember[] = [
 ];
 
 export const externalTeam: ExternalMember[] = [
-  { name: "Ing. Slavomíra Vydusilová", image: slavomira, role: "PR manažerka" },
-  { name: "Franta (B)obr", image: franta, role: "technik – zvukař" },
-  { name: "Karel Hlučný", image: karel, role: "technik – osvětlovač" },
   {
-    name: "Bc. et Mgr. et doc. et JUDr. et prof. Jiřina Tlampačová Porybná CSc.",
-    image: jirina,
-    role: "projektová manažerka",
+    name: "Soňa Vávrová",
+    role: "organizátorka festivalu Zpátky ke kořenům",
+    tagline: "hnací síla Galimatyáše",
+    image: sonaAsset.url,
   },
-  { name: "Vlastimil Duchman", image: vlastimil, role: "spolkový psycholog a poradce" },
-  { name: "Rampepurda a Karlička", image: uklizecka, role: "uklízečky" },
-  { name: "Mgr. Marta Krákavá PhD.", image: marta, role: "pedagogický dozor" },
-  { name: "Muriela", image: muriela, role: "fotografka spolku" },
+  {
+    name: "Zuzana Hošková",
+    role: "propagace, finanční záležitosti",
+    tagline: "vlídná tvář Galimatyáše",
+    image: zuzanaAsset.url,
+  },
+  {
+    name: "Jana Hrochová",
+    role: "technická spolupráce",
+    tagline: "selský rozum Galimatyáše",
+    image: janaPavelAsset.url,
+    secondary: {
+      name: "Pavel Skyva",
+      role: "mistr technik",
+      tagline: "vždy rychlá záchrana Galimatyáše",
+    },
+  },
+  {
+    name: "Eva Pšenčíková",
+    role: "kreativní sektor",
+    tagline: "tichá a klidná náruč Galimatyáše",
+    image: evaAsset.url,
+  },
+  {
+    name: "Anna Muratidisová",
+    role: "kreativní sektor",
+    tagline: "humor a spříznění Galimatyáše",
+    image: annaAsset.url,
+  },
+  {
+    name: "Stanislav Kučera",
+    role: "technická spolupráce",
+    tagline: "pole zkušeností Galimatyáše",
+    image: stanislavAsset.url,
+  },
+  {
+    name: "Veronika Šubrtová",
+    role: "kreativní sektor",
+    tagline: "krásná tvář Galimatyáše",
+    image: veronikaAsset.url,
+  },
+  {
+    name: "Alfréd Schönberg",
+    role: "mecenáš a podporovatel festivalu Zpátky ke kořenům",
+    image: alfredAsset.url,
+  },
 ];

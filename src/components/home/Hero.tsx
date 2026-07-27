@@ -26,9 +26,14 @@ const Hero = () => {
             ))}
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            Divadlo, hudba a fantazie pro malé i velké. Tvoříme představení, dílny
-            a kulturní akce, které spojují generace.
+          <p className="mx-auto mt-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
+            …místo, kde se potkávají příběhy…
+          </p>
+          <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground md:text-xl">
+            …divadlo, hudba, festival, autorská čtení, besedy, výstavy, obchůdek Drzá opička…
+          </p>
+          <p className="mx-auto mt-6 font-display text-xl font-semibold uppercase tracking-wide text-primary md:text-2xl">
+            Kulturní akce, které spojují.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">

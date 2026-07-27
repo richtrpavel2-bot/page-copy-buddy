@@ -1,21 +1,21 @@
-import { Drama, Music, BookOpen } from "lucide-react";
+import { Drama, Music, Sparkles } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const pillars = [
   {
     icon: Drama,
     title: "Divadlo",
-    text: "Autorská i klasická představení pro děti, mládež a dospělé. Hrajeme doma i na zájezdech po celé Moravě.",
+    text: "Autorská divadelní představení pro veřejnost i třídní kolektivy — u nás i venku, včetně zájezdních představení.",
   },
   {
     icon: Music,
-    title: "Hudba & volný čas",
-    text: "Kroužky, dílny a tvořivá odpoledne, kde se potkávají zpěv, rytmus a fantazie.",
+    title: "Volnočasové aktivity",
+    text: "Široká nabídka divadelních skupin i hodin zpěvu. Účastníme se celostátních divadelních přehlídek.",
   },
   {
-    icon: BookOpen,
-    title: "Vzdělávání",
-    text: "Semináře a workshopy pro učitele, lektory i amatérské soubory. Předáváme zkušenosti dál.",
+    icon: Sparkles,
+    title: "Zpátky ke kořenům",
+    text: "Kulturní festival určený široké veřejnosti — představení, besedy, koncerty, výstavy.",
   },
 ];
 
@@ -28,7 +28,7 @@ const PillarsSection = () => {
             Tři pilíře naší práce
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Spolek Galimatyáš stojí na třech nohách — divadle, volnočasových aktivitách a vzdělávání.
+            Spolek Galimatyáš ve třech podobách, do kterých můžete nahlédnout.
           </p>
         </div>
 
