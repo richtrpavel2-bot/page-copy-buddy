@@ -322,12 +322,12 @@ export const offerGroups: { id: OfferGroup; label: string; description: string }
     id: "volny-cas",
     label: "Volnočasové aktivity",
     description:
-      "Pravidelné dílny, zpěv a tábory pro děti, mládež i dospělé — celoroční program i prázdninové akce.",
+      "Divadelní dílny a zpěv pro děti, mládež i dospělé — celoroční program i vzpomínka na tábory.",
   },
   {
     id: "vzdelavani",
-    label: "Vzdělávací a kulturní akce",
+    label: "Divadelní představení a další akce pro veřejnost",
     description:
-      "Akreditované semináře pro pedagogy a kulturní program pro širokou veřejnost.",
+      "Divadelní představení umělecké platformy Galimatyáš, komponované večery hudby a přednesu i autorská čtení.",
   },
 ];
