@@ -64,6 +64,9 @@ export interface OfferItem {
   body?: string;
 }
 
+const kontakty =
+  "Přihlášky a informace: spolek.galimatyas@seznam.cz, tel. 732 921 452 (Lucie) nebo 605 173 410 (Tereza).";
+
 export const offer: OfferItem[] = [
   {
     slug: "pro-deti",
@@ -74,58 +77,59 @@ export const offer: OfferItem[] = [
     shortText:
       "Hudebně-dramatické a literárně divadelní dílny pro děti od školky po střední školu.",
     intro:
-      "Volnočasové aktivity pro děti ve školním roce 2025/2026. Naše dílny vedou děti k radosti z divadla, ke spolupráci v kolektivu a k objevování vlastní fantazie.",
+      "Umělecké vzdělávání divadlem není jen pro extroverty. Pro děti, které se rády předvádějí, mluví nahlas a nebojí se. U nás najde místo každý, kdo chce objevovat svět kolem i sám sebe jinak než se to děje doma či ve škole. Jsme místem, kde se tvoří příběhy od počátku. Místem přátelství a divadelních úspěchů. Některé skupiny si více hrají, jiné více hrají pro někoho. To vše záleží na tobě a domluvě s námi.",
     courses: [
       {
         title: "Připravit k odletu RAZ DVA TŘI! (hudebně-dramatická přípravka)",
-        audience: "MŠ a 1.–3. třída (5–9 let)",
-        schedule: "Středa 14:00 – 15:30",
-        text: "Hudebně-dramatická průprava. Prostřednictvím příběhů ze světa kouzel si děti osvojí základy dramatické výchovy. Budeme si hrát, zpívat, tančit a naučíme se společně fungovat jako kolektiv.",
+        audience: "MŠ a 1.–2. třída (5–8 let)",
+        schedule: "Den a čas bude upřesněn",
+        text: "Hudebně-dramatická průprava. Prostřednictvím příběhů ze světa kouzel si děti osvojí základy dramatické výchovy. Budeme si hrát, zpívat, tančit a naučíme se společně fungovat jako kolektiv. To vše na pozadí příběhu, který nás bude celý rok provázet. A na konci roku výstup v Divadle Šumperk na velkém jevišti jako ta největší odměna pro malé začínající herce.",
+      },
+      {
+        title: "KDO (SI) HRAJE, NEZLOBÍ!",
+        audience: "3.–5. třída ZŠ (8–10 let)",
+        schedule: "Den a čas bude upřesněn",
+        text: "Tato divadelní skupina navazuje na přípravné oddělení. Děti již pracují samostatně a prostřednictvím divadelních metod, rytmiky a práce s hlasem se připravují na divadelní představení stejně jako starší děti. V letošním roce s příslibem divadelní soutěže. Tak uvidíme…:) Skupina je vhodná pro nováčky, kteří doplní malé zkušené herečky.",
       },
       {
         title: "KDO HRAJE, JE FRAJER(KA)!",
-        audience: "5.–7. třída (9–12 let)",
+        audience: "7.–9. třída (11–15 let)",
         schedule: "Čtvrtek 15:00 – 16:30",
-        text: "Literárně dramatická průprava. Učitel vede děti prostřednictvím dramatických metod k prožitku, rozvoji fantazie, osobnostnímu růstu. Divadelní představení není v literárně dramatické průpravě hlavním cílem — hlavní je naučit se fungovat ve skupině, spolupracovat s kamarády, respektovat společná pravidla, hrát si. Skupina spolu funguje už několik let a má za sebou krajskou divadelní přehlídku v Olomouci s doporučením do celostátní přehlídky Dětská scéna ve Svitavách.",
+        text: "Literárně dramatická průprava. Učitel vede děti prostřednictvím dramatických metod k prožitku, rozvoji fantazie, osobnostnímu růstu. Divadelní představení není v literárně dramatické průpravě hlavním cílem — hlavní je naučit se fungovat ve skupině, spolupracovat s kamarády, respektovat společná pravidla, hrát si. Skupina spolu funguje už několik let a má za sebou krajskou divadelní přehlídku v Olomouci s doporučením do celostátní přehlídky Dětská scéna ve Svitavách. A to již dvakrát za sebou. Skupina nyní nedobírá nové členy, jen na individuální domluvu.",
         full: true,
         images: [kdoHraje1, kdoHraje2, kdoHraje3, kdoHraje4],
       },
       {
         title: "PRVOH(O)RY",
-        audience: "4.–8. třída (9–13 let)",
-        schedule: "Středa 16:00 – 17:30",
-        text: "Literárně divadelní dílna pro děti s větší či menší zkušeností s dramatickou výchovou. Setkání jsou koncipována jako dlouhá tvůrčí cesta za tvarem, který na jejím konci může být nazván divadelním představením. Skupina vznikla loni — ideální pro nováčky.",
+        audience: "6.–9. třída (10–15 let)",
+        schedule: "Den a čas bude upřesněn",
+        text: "Literárně divadelní dílna pro děti s větší či menší zkušeností s dramatickou výchovou. Setkání jsou koncipována jako dlouhá tvůrčí cesta za tvarem, který na jejím konci může být nazván divadelním představením. Skupina je ideální pro nováčky. Budeme začínat úplně od tvůrčího bodu nula.",
         images: [deti3, deti7],
       },
       {
         title: "TVAROH(R)Y",
-        audience: "7.–9. třída (10–14 let)",
+        audience: "7.–9. třída ZŠ a 1. ročník SŠ (13–16 let)",
         schedule: "Pondělí 16:30 – 18:00",
-        text: "Literárně dramatická průprava navazující na předchozí dílny. Cílem je plnohodnotná divadelní inscenace. Skupina patří k nejzkušenějším — má za sebou dva přímé postupy na celostátní přehlídku Dětská scéna. Volné místo po domluvě.",
-        full: true,
+        text: "Literárně dramatická průprava navazující na předchozí dílny. Cílem je plnohodnotná divadelní inscenace. Skupina patří k nejzkušenějším — má za sebou tři přímé postupy na celostátní přehlídku Dětská scéna. Volné místo po domluvě a následné talentové zkoušce. V letošním roce se však dobírá o nové šikovné členy, kterým by nevadilo skočit do toho po hlavě a rovnou do divadelních soutěží.",
         images: [deti2, deti9],
       },
       {
         title: "DIVADOVÁDIDLO",
         audience: "SŠ (15–18 let)",
         schedule: "Pátek 16:00 – 17:30",
-        text: "Literárně divadelní dílna pro zkušené hráče. Skupina má za sebou mnoho představení a zájezdů po České republice včetně celostátní přehlídky Mladá scéna v Ústí nad Orlicí. Přijetí možné po domluvě a talentové zkoušce.",
+        text: "Literárně divadelní dílna pro zkušené hráče. Skupina má za sebou mnoho představení a zájezdů po České republice včetně celostátní přehlídky Mladá scéna v Ústí nad Orlicí a v letošním roce vítězství na přehlídce Nonverbálního divadla Kolín Otevřeno 2026 s následným postupem na Jiráskův Hronov. Jedná se o uzavřenou skupinu. Je však velkou inspirací pro všechny, co vytrvají stejně jako tyto děti.",
+        full: true,
         images: [deti1, deti8],
       },
       {
         title: "DIVA DIVY",
         audience: "9. třída ZŠ a SŠ (15–19 let)",
         schedule: "Úterý 16:30 – 18:00",
-        text: "Literárně divadelní dílna na principech Divadovádidla. Učitel se zde stává průvodcem a koordinátorem nápadů a tvůrčích pokusů. Skupina spolu funguje osm let; vhodné i jako příprava na talentové zkoušky uměleckých škol.",
+        text: "Literárně divadelní dílna na principech Divadovádidla. Učitel se zde stává průvodcem a koordinátorem nápadů a tvůrčích pokusů. Skupina spolu funguje osm let, každoročně se však obnovuje a obměňuje. V letošním roce to opět vypadá na velmi zajímavou tvůrčí partu; vhodné i jako příprava na talentové zkoušky uměleckých škol. Pokud tedy rosteš a s tebou stále touha zkusit si divadelní proces, je tato skupina ideálním odrazovým můstkem.",
         images: [deti4, deti6],
       },
-      {
-        title: "SÓLOVÝ ZPĚV",
-        audience: "děti i dospělí",
-        text: "Hodiny zpěvu jednou týdně doplněné o průpravu mluvní i pohybovou. Možné využít jako přípravu na talentové zkoušky či jen tak pro radost.",
-        images: [deti5],
-      },
     ],
+    body: kontakty,
   },
   {
     slug: "pro-dospele",
@@ -142,9 +146,36 @@ export const offer: OfferItem[] = [
         title: "TAK UVIDÍME!",
         audience: "studenti SŠ a dospělí",
         schedule: "Úterý 18:30 – 20:00",
-        text: "Literárně-dramatická dílna. Hledání, objevování, ztrácení, nacházení, hledání, objevování, ztrácení, nacházení, a tak pořád dokola…",
+        text: "Literárně-dramatická dílna. Hledání, objevování, ztrácení, nacházení, hledání, objevování, ztrácení, nacházení, a tak pořád dokola… Skupina je tvořena pevným základem žen, co docházejí již několik let. Není však problém se k nim přidat. Každá změna obohacuje a vytrhává nás ze stereotypu. A o to v umění jde.",
       },
     ],
+    body: kontakty,
+  },
+  {
+    slug: "zpev",
+    title: "Zpěv",
+    group: "volny-cas",
+    groupLabel: "Volnočasové aktivity",
+    image: deti5,
+    shortText:
+      "Individuální hodiny zpěvu a ženský sbor ŠuŠuŽEŠ — pro všechny, kdo chtějí, aby jejich hlas zazněl.",
+    intro:
+      "Co je to hlas? Je to jen prostředek k vyjádření? Je to jen součást našeho projevu? V jiných kulturách je hlas prostředníkem k naší podstatě. Je to něco, co o nás vypovídá více než to, jak vypadáme. Zdravý hlas značí zdravou sebedůvěru a úctu k tomu, že se můžeme projevit. A tak jako dříve se zpívalo při každé práci či rodinném rituálu, dnes máme strach, že nejsme dostatečně dobří zpěváci na to, abychom vůbec začali.",
+    courses: [
+      {
+        title: "(NA)HLAS — individuální výuka",
+        audience: "pro děti i dospělé",
+        schedule: "Po jednom či v malých skupinách, den a čas dle domluvy",
+        text: "Srdečně vás zvu na roční hlasovou dílnu, ve které se seznámíme se základními technikami práce s hlasem. Budeme zpívat, mluvit, pohybovat se. Vše tak, aby nezůstal jediný sval v těle napjatý. Společnost nás příliš dlouho svazovala, je čas nechat náš hlas znít. Dílna je určená pro všechny bez rozdílu věku a předchozích zkušeností. Všichni jsme zpěváci. Netřeba se omezovat tím, co nám někdo řekl nebo jsme si řekli sami.",
+      },
+      {
+        title: "Ženský sbor ŠuŠuŽEŠ",
+        audience: "určeno pro ženy",
+        schedule: "Středa 18:00 – 19:00",
+        text: "Ženské hlasy měly od pradávna velkou sílu. Léčily, hladily na duši, konejšily neklidnou krajinu, předvídaly, uchovávaly vzpomínky. A když zaznívají společně, o to větší mají moc. Přidej se k nám. Zpívat budeme různý repertoár — lidové písně, gospely, spirituály i populární skladby. To vše pro nás ženy a naše krásné muže. Není nutná předchozí zkušenost ani talent…:)",
+      },
+    ],
+    body: kontakty,
   },
   {
     slug: "prazdninove-akce",
@@ -153,9 +184,9 @@ export const offer: OfferItem[] = [
     groupLabel: "Volnočasové aktivity",
     image: prazdninoveImg,
     shortText:
-      "Letní příměstské i pobytové tábory pro děti — příběhové, dobrodružné, plné fantazie.",
+      "V současné době tábory nepořádáme — zde jen vzpomínka na příběhy, kterými jsme s dětmi prošly.",
     intro:
-      "Naše tábory jsou příběhové — staneme se hlavními hybateli děje na dobrodružné cestě. Jsou koncipované tak, abychom v dětech podporovali jejich fantazii. Pořádáme je každý rok ve spolupráci se SVČ Doris Šumperk.",
+      "V současné době tábory nepořádáme. Zde naleznete jen malou vzpomínku na všechny ty krásné příběhy, kterými jsme s dětmi prošly.",
     gallery: [taborGalerie1, taborGalerie2],
     editions: [
       {
@@ -181,7 +212,7 @@ export const offer: OfferItem[] = [
         image: tabor2020Zvirata,
         youtubeId: "p4rkfZ6nLMQ",
         text:
-          "Kdysi dávno, když ještě neexistovalo nic z toho, co máme jako lidé k dispozici, existovala posvátná zvířata. Po pokroku se ze strachu o své kouzelné schopnosti odebrala do ústraní — a po tisíce let o nich nikdo nevěděl. Až nyní. Po letním slunovratu se odvážila znovu prozkoumat tento svět a naplnit jej dávnou indiánskou magií. Jsi nositelem kouzelné indiánské magie. Jsi předurčen. Přijď a tvůj život nikdy nebude jako dřív.",
+          "Kdysi dávno, když ještě neexistovalo nic z toho, co máme jako lidé k dispozici, existovala posvátná zvířata. Po pokroku se ze strachu o své kouzelné schopnosti odebrala do ústraní — a po tisíce let o nich nikdo nevěděl. Až nyní. Po letním slunovratu se odvážila znovu prozkoumat tento svět a naplnit jej dávnou indiánskou magií.",
       },
       {
         year: "2020",
@@ -214,7 +245,6 @@ export const offer: OfferItem[] = [
           "Země Nezemě je v ohrožení. Děti přestaly snít. Vílí prášek se rozpadl v prach. Indiáni nerozumí řeči ptáků a neslyší šeptat stromy. Mořské víly ztratily svůj hlas ukrytý v lastuře a piráti mají strach vyplout zpět na moře… Kdo ovládl Zemi Nezemi? Kdo ukradl dětem snění? Pomozte!",
       },
     ],
-    body: "Konkrétní termíny a přihlašování k aktuálnímu ročníku najdete v sekci Aktuálně nebo na vyžádání e-mailem.",
   },
   {
     slug: "pro-pedagogy",
@@ -251,8 +281,16 @@ export const offer: OfferItem[] = [
     shortText:
       "Divadelní představení, komponované večery a autorská čtení pro širokou veřejnost.",
     intro:
-      "Pro veřejnost připravujeme divadelní představení umělecké platformy Galimatyáš, komponované večery hudby a přednesu i autorská čtení. Aktuální termíny najdete v sekci Aktuálně.",
+      "Pro veřejnost připravujeme divadelní představení umělecké platformy Galimatyáš, komponované večery hudby a přednesu i autorská čtení. Aktuální termíny najdete v sekci Aktuálně nebo také v záložce Zpátky ke kořenům či Komorní divadlo.",
     editions: [
+      {
+        year: "2025",
+        title: "Rybářova žena",
+        subtitle: "Premiéra · sezóna 2025/2026",
+        meta: "27. 9. 2025",
+        text:
+          "Srdečně zveme na premiéru nového divadelního představení na sezónu 2025/2026. Tentokrát s přičichnutím k tomu dospělému světu, na který bychom neměli být pyšní a o kterém psal už pan Werich…",
+      },
       {
         year: "2025",
         title: "Člověče, nezlob se na nás!",
@@ -262,6 +300,30 @@ export const offer: OfferItem[] = [
           "Sobota 18. 10. 2025 v 17:00 · Starobranská 16, Šumperk · vstupné 200 / 150 Kč",
         text:
           "Galimatyáš — umělecká platforma (divadlo, koncerty, galerie) — vás srdečně zve na divadelní představení Člověče, nezlob se na nás! na motivy světových pohádek. Žal i štěstí, smích i zamyšlení v jednom večeru.",
+      },
+      {
+        year: "2025",
+        title: "Rybářova žena",
+        subtitle: "Repríza",
+        meta: "22. 11. 2025",
+        text:
+          "Pro všechny ty, co už o rybářově ženě slyšely, ale chtějí to zažít na vlastní kůži.",
+      },
+      {
+        year: "2025",
+        title: "Kam se poděla betlémská hvězda?",
+        subtitle: "Divadelní představení",
+        meta: "14. 12. 2025",
+        text:
+          "Představení o tom, jak je důležité věřit na kouzla a zaměřovat se na ty správné hodnoty, které nejdou sice vidět, ale cítíme je.",
+      },
+      {
+        year: "2026",
+        title: "Domov je tam, kde koště mám",
+        subtitle: "Divadelní představení",
+        meta: "7. 3. 2026",
+        text:
+          "Představení o jedné malé bláznivé čarodějce, která se bojí udělat krok mezi lidi. Proč? Protože vnitřní boje jsou vždy nejtěžší. Představení naleznete také v záložce Zpátky ke kořenům, protože proběhlo v rámci této krásné akce.",
       },
     ],
     body:
@@ -275,7 +337,7 @@ export const offerGroups: { id: OfferGroup; label: string; description: string }
     id: "volny-cas",
     label: "Volnočasové aktivity",
     description:
-      "Pravidelné dílny a tábory pro děti, mládež i dospělé — celoroční program i prázdninové akce.",
+      "Pravidelné dílny, zpěv a tábory pro děti, mládež i dospělé — celoroční program i prázdninové akce.",
   },
   {
     id: "vzdelavani",
