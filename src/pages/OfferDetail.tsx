@@ -151,12 +151,16 @@ const OfferDetail = () => {
       {item.editions && item.editions.length > 0 && (
         <section className="mx-auto mt-16 max-w-5xl">
           <h2 className="font-display text-2xl text-primary md:text-3xl">
-            Z archivu táborů
+            {item.slug === "prazdninove-akce"
+              ? "Z archivu táborů"
+              : item.slug === "pro-verejnost"
+              ? "Představení a akce"
+              : "Ročníky"}
           </h2>
           <div className="mt-8 space-y-12">
             {item.editions.map((e, i) => (
               <article
-                key={`${e.year}-${e.title}`}
+                key={`${e.year}-${e.title}-${i}`}
                 className="grid gap-6 md:grid-cols-[5fr_7fr] md:gap-10"
               >
                 <div className="overflow-hidden rounded-3xl bg-muted aspect-[4/5]">
