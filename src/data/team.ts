@@ -1,13 +1,13 @@
 import tereza from "@/assets/lide/tereza.jpg";
 import lucie from "@/assets/lide/lucie.jpg";
-import sonaAsset from "@/assets/lide-new/sona_vavrova.jpg.asset.json";
-import zuzanaAsset from "@/assets/lide-new/zuzana_hoskova.jpg.asset.json";
-import janaPavelAsset from "@/assets/lide-new/jana_hrochova_pavel_skyva.jpg.asset.json";
-import evaAsset from "@/assets/lide-new/eva_psencikova.jpg.asset.json";
-import annaAsset from "@/assets/lide-new/anna_muratidisova.jpg.asset.json";
-import stanislavAsset from "@/assets/lide-new/stanislav_kucera.jpg.asset.json";
-import veronikaAsset from "@/assets/lide-new/veronika_subrtova_2.jpg.asset.json";
-import alfredAsset from "@/assets/lide-new/alfred_scchonberg.jpg.asset.json";
+import sonaAsset from "@/assets/lide-new/sona_vavrova.jpg";
+import zuzanaAsset from "@/assets/lide-new/zuzana_hoskova.jpg";
+import janaPavelAsset from "@/assets/lide-new/jana_hrochova_pavel_skyva.jpg";
+import evaAsset from "@/assets/lide-new/eva_psencikova.jpg";
+import annaAsset from "@/assets/lide-new/anna_muratidisova.jpg";
+import stanislavAsset from "@/assets/lide-new/stanislav_kucera.jpg";
+import veronikaAsset from "@/assets/lide-new/veronika_subrtova_2.jpg";
+import alfredAsset from "@/assets/lide-new/alfred_scchonberg.jpg";
 
 export interface CoreMember {
   name: string;
