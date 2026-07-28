@@ -1,7 +1,7 @@
 import proDetiImg from "@/assets/offer/pro-deti.jpg";
 import proDospeleImg from "@/assets/offer/pro-dospele.jpg";
 import prazdninoveImg from "@/assets/offer/prazdninove-akce.jpg";
-import proPedagogyImg from "@/assets/offer/pro-pedagogy.jpg";
+
 import proVerejnostImg from "@/assets/offer/pro-verejnost.jpg";
 import tabor2021Vesmir from "@/assets/offer/tabor-2021-vesmir.jpg";
 import tabor2021Draci from "@/assets/offer/tabor-2021-draci.jpg";
@@ -255,36 +255,10 @@ export const offer: OfferItem[] = [
     ],
   },
   {
-    slug: "pro-pedagogy",
-    title: "Pro pedagogické pracovníky",
-    group: "vzdelavani",
-    groupLabel: "Vzdělávací a kulturní akce",
-    image: proPedagogyImg,
-    shortText:
-      "Akreditované semináře DVPP zaměřené na divadelní a literární výchovu.",
-    intro:
-      "Hudebně-dramatickému centru Galimatyáš byla udělena akreditace instituce a akreditace v systému DVPP (další vzdělávání pedagogických pracovníků) v těchto kurzech:",
-    courses: [
-      {
-        title: "Divadelní výchova na pozadí současné dětské literatury",
-        text: "Akreditovaný kurz DVPP. Jak propojit současnou dětskou literaturu s divadelními metodami ve školní praxi.",
-      },
-      {
-        title: "Archetypy pohádkových postav a divadelní práce s nimi",
-        text: "Akreditovaný kurz DVPP. Pohádkové archetypy jako klíč k porozumění příběhu a k práci s dětským kolektivem.",
-      },
-      {
-        title: "Jak vybrat a připravit text na přednesové recitační přehlídky",
-        text: "Akreditovaný kurz DVPP. Praktický průvodce výběrem, úpravou a nastudováním textu pro recitační soutěže.",
-      },
-    ],
-    body: "O termíny a podrobnosti k jednotlivým kurzům si napište — kurzy realizujeme po domluvě pro skupiny i jednotlivce.",
-  },
-  {
     slug: "pro-verejnost",
     title: "Pro veřejnost",
     group: "vzdelavani",
-    groupLabel: "Vzdělávací a kulturní akce",
+    groupLabel: "Divadelní představení a další akce pro veřejnost",
     image: cloveceNezlobNaNas,
     shortText:
       "Divadelní představení, komponované večery a autorská čtení pro širokou veřejnost.",
@@ -339,7 +313,6 @@ export const offer: OfferItem[] = [
       },
     ],
     body:
-      "Mezi naše opakující se akce patří například Komponovaný večer hudby a přednesu v klášterním kostele v Šumperku, autorské večery k novým knihám nakladatelství LIMONÁDA a doprovodné programy k představením Studia My dvě.\n\n" +
       "Pokud máte zájem o konkrétní program pro vaši obec, knihovnu, školu nebo spolek, ozvěte se nám — připravíme nabídku na míru.",
   },
 ];
@@ -349,12 +322,12 @@ export const offerGroups: { id: OfferGroup; label: string; description: string }
     id: "volny-cas",
     label: "Volnočasové aktivity",
     description:
-      "Pravidelné dílny, zpěv a tábory pro děti, mládež i dospělé — celoroční program i prázdninové akce.",
+      "Divadelní dílny a zpěv pro děti, mládež i dospělé — celoroční program i vzpomínka na tábory.",
   },
   {
     id: "vzdelavani",
-    label: "Vzdělávací a kulturní akce",
+    label: "Divadelní představení a další akce pro veřejnost",
     description:
-      "Akreditované semináře pro pedagogy a kulturní program pro širokou veřejnost.",
+      "Divadelní představení umělecké platformy Galimatyáš, komponované večery hudby a přednesu i autorská čtení.",
   },
 ];
