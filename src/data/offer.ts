@@ -313,7 +313,6 @@ export const offer: OfferItem[] = [
       },
     ],
     body:
-      "Mezi naše opakující se akce patří například Komponovaný večer hudby a přednesu v klášterním kostele v Šumperku, autorské večery k novým knihám nakladatelství LIMONÁDA a doprovodné programy k představením Studia My dvě.\n\n" +
       "Pokud máte zájem o konkrétní program pro vaši obec, knihovnu, školu nebo spolek, ozvěte se nám — připravíme nabídku na míru.",
   },
 ];
