@@ -14,11 +14,18 @@ const Offer = () => {
               Co nabízíme
             </p>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary md:text-6xl">
-              Od malých dílen po velká představení
+              Pohybem, hlasem, obrazem a vždy s úsměvem…
             </h1>
             <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-              Naše činnost stojí na dvou pilířích — pravidelných volnočasových aktivitách
-              a vzdělávacích či kulturních akcích. Vyberte si oblast, která vás zajímá.
+              Právě se nacházíš v oblasti, která je určená třeba i tobě. Podívej se
+              na nabídku volnočasových aktivit zaměřených na divadlo i zpěv. A pokud
+              ne jako účastník, staň se našim divákem při divadelních představeních,
+              workshopech a jiných kulturních akcích.
+            </p>
+            <p className="mt-4 text-base text-muted-foreground md:text-lg">
+              Těšíme se na tebe, protože divadlo má dvě velmi důležité strany.
+              Aktéři a diváci jsou si rovni — bez jejich vzájemného vztahu by to
+              kouzelné umělecké dílo nevzniklo.
             </p>
           </div>
         </div>
