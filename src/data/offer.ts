@@ -1,7 +1,7 @@
 import proDetiImg from "@/assets/offer/pro-deti.jpg";
 import proDospeleImg from "@/assets/offer/pro-dospele.jpg";
 import prazdninoveImg from "@/assets/offer/prazdninove-akce.jpg";
-import proPedagogyImg from "@/assets/offer/pro-pedagogy.jpg";
+
 import proVerejnostImg from "@/assets/offer/pro-verejnost.jpg";
 import tabor2021Vesmir from "@/assets/offer/tabor-2021-vesmir.jpg";
 import tabor2021Draci from "@/assets/offer/tabor-2021-draci.jpg";
