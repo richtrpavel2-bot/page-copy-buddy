@@ -1,8 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Feather, Users, Sparkles, Images, ArrowRight, UserCircle2, HandHeart, HeartHandshake, Sparkle, BookMarked } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroAboutAsset from "@/assets/o-spolku/o-spolku-hero.jpg.asset.json";
-const heroAbout = heroAboutAsset.url;
+import heroAbout from "@/assets/o-spolku/o-spolku-hero.jpg";
 
 const subpages = [
   { to: "/o-nas/spolek", title: "Spolek GALIMATYÁŠ", text: "Kdo jsme, co děláme a výroční zpráva ke stažení.", icon: BookMarked },
