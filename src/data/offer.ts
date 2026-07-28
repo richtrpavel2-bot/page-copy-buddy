@@ -255,32 +255,6 @@ export const offer: OfferItem[] = [
     ],
   },
   {
-    slug: "pro-pedagogy",
-    title: "Pro pedagogické pracovníky",
-    group: "vzdelavani",
-    groupLabel: "Vzdělávací a kulturní akce",
-    image: proPedagogyImg,
-    shortText:
-      "Akreditované semináře DVPP zaměřené na divadelní a literární výchovu.",
-    intro:
-      "Hudebně-dramatickému centru Galimatyáš byla udělena akreditace instituce a akreditace v systému DVPP (další vzdělávání pedagogických pracovníků) v těchto kurzech:",
-    courses: [
-      {
-        title: "Divadelní výchova na pozadí současné dětské literatury",
-        text: "Akreditovaný kurz DVPP. Jak propojit současnou dětskou literaturu s divadelními metodami ve školní praxi.",
-      },
-      {
-        title: "Archetypy pohádkových postav a divadelní práce s nimi",
-        text: "Akreditovaný kurz DVPP. Pohádkové archetypy jako klíč k porozumění příběhu a k práci s dětským kolektivem.",
-      },
-      {
-        title: "Jak vybrat a připravit text na přednesové recitační přehlídky",
-        text: "Akreditovaný kurz DVPP. Praktický průvodce výběrem, úpravou a nastudováním textu pro recitační soutěže.",
-      },
-    ],
-    body: "O termíny a podrobnosti k jednotlivým kurzům si napište — kurzy realizujeme po domluvě pro skupiny i jednotlivce.",
-  },
-  {
     slug: "pro-verejnost",
     title: "Pro veřejnost",
     group: "vzdelavani",
