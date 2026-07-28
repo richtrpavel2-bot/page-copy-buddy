@@ -258,7 +258,7 @@ export const offer: OfferItem[] = [
     slug: "pro-verejnost",
     title: "Pro veřejnost",
     group: "vzdelavani",
-    groupLabel: "Vzdělávací a kulturní akce",
+    groupLabel: "Divadelní představení a další akce pro veřejnost",
     image: cloveceNezlobNaNas,
     shortText:
       "Divadelní představení, komponované večery a autorská čtení pro širokou veřejnost.",
