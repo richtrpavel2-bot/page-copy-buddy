@@ -12,6 +12,14 @@ import tabor2020Zvirata from "@/assets/offer/tabor-2020-zvirata.jpg";
 import taborGalerie1 from "@/assets/offer/tabor-galerie-1.jpg";
 import taborGalerie2 from "@/assets/offer/tabor-galerie-2.jpg";
 import cloveceNezlobNaNas from "@/assets/offer/clovece-nezlob-na-nas.jpg";
+import rybarovaPremieraAsset from "@/assets/predstaveni/rybarova-zena-premiera.jpg.asset.json";
+import rybarovaReprizaAsset from "@/assets/predstaveni/rybarova-zena-repriza.png.asset.json";
+import betlemskaAsset from "@/assets/predstaveni/betlemska-hvezda.png.asset.json";
+import domovKosteAsset from "@/assets/predstaveni/domov-koste.jpg.asset.json";
+const rybarovaPremiera = rybarovaPremieraAsset.url;
+const rybarovaRepriza = rybarovaReprizaAsset.url;
+const betlemska = betlemskaAsset.url;
+const domovKoste = domovKosteAsset.url;
 import kdoHraje1 from "@/assets/offer/kdo-hraje-1.jpg";
 import kdoHraje2 from "@/assets/offer/kdo-hraje-2.jpg";
 import kdoHraje3 from "@/assets/offer/kdo-hraje-3.jpg";
@@ -287,6 +295,7 @@ export const offer: OfferItem[] = [
         year: "2025",
         title: "Rybářova žena",
         subtitle: "Premiéra · sezóna 2025/2026",
+        image: rybarovaPremiera,
         meta: "27. 9. 2025",
         text:
           "Srdečně zveme na premiéru nového divadelního představení na sezónu 2025/2026. Tentokrát s přičichnutím k tomu dospělému světu, na který bychom neměli být pyšní a o kterém psal už pan Werich…",
@@ -305,6 +314,7 @@ export const offer: OfferItem[] = [
         year: "2025",
         title: "Rybářova žena",
         subtitle: "Repríza",
+        image: rybarovaRepriza,
         meta: "22. 11. 2025",
         text:
           "Pro všechny ty, co už o rybářově ženě slyšely, ale chtějí to zažít na vlastní kůži.",
@@ -312,18 +322,20 @@ export const offer: OfferItem[] = [
       {
         year: "2025",
         title: "Kam se poděla betlémská hvězda?",
-        subtitle: "Divadelní představení",
-        meta: "14. 12. 2025",
+        subtitle: "Vánoční představení o skutečných hodnotách Vánoc",
+        image: betlemska,
+        meta: "Neděle 14. 12. 2025 v 15:00 · Starobranská 16, Šumperk · vstupné 200 / 150 Kč",
         text:
           "Představení o tom, jak je důležité věřit na kouzla a zaměřovat se na ty správné hodnoty, které nejdou sice vidět, ale cítíme je.",
       },
       {
         year: "2026",
         title: "Domov je tam, kde koště mám",
-        subtitle: "Divadelní představení",
-        meta: "7. 3. 2026",
+        subtitle: "Divadelní představení pro děti i dospělé",
+        image: domovKoste,
+        meta: "Sobota 7. 3. 2026 v 15:00 · Starobranská 16, Šumperk · v rámci festivalu Zpátky ke kořenům",
         text:
-          "Představení o jedné malé bláznivé čarodějce, která se bojí udělat krok mezi lidi. Proč? Protože vnitřní boje jsou vždy nejtěžší. Představení naleznete také v záložce Zpátky ke kořenům, protože proběhlo v rámci této krásné akce.",
+          "Představení o jedné malé bláznivé čarodějce, která se bojí udělat krok mezi lidi. Proč? Protože vnitřní boje jsou vždy nejtěžší. Krok, který je velkým nejen pro ni, ale pro celé lidstvo. Hrají: Lucie Kučerová a Tereza Karlíková.",
       },
     ],
     body:
