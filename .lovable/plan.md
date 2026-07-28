@@ -1,17 +1,38 @@
-## Plán: Přidat logo Hudebniny Nový Malín
+## Co udělám
 
-Uživatel poslal dvě loga:
-- `Ag_Logo.bmp` — grafické logo (BMP formát)
-- `logo_hudebniny_malin.png` — textové logo "HUDEBNINY NOVÝ MALÍN"
+### 1. Loga sponzorů (oprava + přidání)
+- Znovu nahraju **Hudebniny Nový Malín** — přes `lovable-assets` z `logo_hudebniny_malin-2.png` (současný `hudebniny_malin.jpg` 23 kB je nekvalitní, nový PNG je ostrý). Přepíšu `src/data/partners.ts`, aby ukazoval na nový asset.
+- Přidám nového sponzora **Ag** (`Ag_Logo-2.bmp`) — převedu BMP na PNG (BMP prohlížeče neumí spolehlivě), nahraju přes `lovable-assets`, doplním do `corporatePartners`.
 
-### Otázka před realizací
-Které logo použít na stránce **Podporují nás**? Karta má formát 3:2 a v ní bývá kompaktní značka.
+### 2. Co nabízíme — přepsat `src/data/offer.ts` podle nového textu
+- **Pro děti** — aktualizovat úvodní text a kontakty (spolek.galimatyas@seznam.cz, 732 921 452 Lucie, 605 173 410 Tereza).
+- Kurzy — upravit názvy, věkové skupiny, časy („den a čas bude upřesněn“ tam, kde je to potřeba), texty:
+  - **Připravit k odletu RAZ DVA TŘI!** — MŠ a 1.–2. třída (5–8 let).
+  - **KDO (SI) HRAJE, NEZLOBÍ!** — nový kurz, 3.–5. třída (8–10 let).
+  - **KDO HRAJE, JE FRAJER(KA)!** — 7.–9. třída (11–15 let), plná.
+  - **PRVOH(O)RY** — 6.–9. třída (10–15 let).
+  - **TVAROH(R)Y** — 7.–9. ZŠ a 1. SŠ (13–16 let), zmínka o postupu na Dětskou scénu 3× + hledá nové členy.
+  - **DIVADOVÁDIDLO** — plná; doplnit vítězství Otevřeno Kolín 2026 + Jiráskův Hronov.
+  - **DIVA DIVY** — 9. ZŠ a SŠ (15–19 let), 8 let.
+  - **Odstranit** samostatnou položku *SÓLOVÝ ZPĚV* (přesune se pod ZPĚV).
+- **Pro dospělé** — text kurzu **TAK UVIDÍME!** upravit, doplnit kontakty.
+- **Nová sekce Zpěv** — doplnit dva kurzy jako samostatnou stránku nebo jako podsekci uvnitř *Pro dospělé/Pro děti*. Nejjednodušší je založit novou položku offer **„Zpěv"** (group `volny-cas`) s kurzy:
+  - **(NA)HLAS** — individuální výuka, děti i dospělí, dle domluvy.
+  - **Ženský sbor ŠuŠuŽEŠ** — ženy, středa 18:00–19:00.
+- **Prázdninové akce** — nahradit intro větou „V současné době tábory nepořádáme. Zde naleznete jen malou vzpomínku…" a ponechat editions jako vzpomínkovou galerii. Odstranit duplicity typu „Z archivu táborů" jinde.
+- **Pro veřejnost** — přepsat anotace a doplnit 4 nová představení (Rybářova žena premiéra 27.9.2025, repríza 22.11.2025; Kam se poděla betlémská hvězda 14.12.2025; Domov je tam, kde koště mám 7.3.2026). Odstranit tábory a zmínku „DÁT PRYČ".
 
-Doporučuji **`Ag_Logo.bmp`** (grafické logo se lépe hodí do čtvercové karty), převedu ho na JPG pro kompatibilitu prohlížečů (BMP je velké a některé prohlížeče ho nezobrazí ideálně).
+### 3. Rozšiřitelnost
+Aktuálně už jsou stránky snadno rozšiřitelné přes datové soubory (`src/data/news.ts`, `offer.ts`, `galleries.ts`). Nic strukturálního neměním — jen potvrdím, že přidání další stránky = přidat položku do příslušného `data/*.ts`. E-shop (`Limonada.tsx`) je připravený, obsah se dá přidávat postupně později.
 
-### Kroky
-1. Převést `Ag_Logo.bmp` → JPG (nebo použít PNG textové logo, pokud chceš)
-2. Nahrát přes `lovable-assets` → `src/assets/loga/hudebniny_malin.jpg.asset.json`
-3. V `src/data/partners.ts` doplnit `logo` k položce `Hudebniny Nový Malín`
+### 4. Lovable
+V uživatelsky viditelném kódu žádné zmínky nejsou (index.html, README, UI). Zbývá jen `lovable-tagger` v `vite.config.ts` / `package.json` — to je build-plugin platformy, nutný pro chod editoru; nemažu.
 
-Pokud chceš raději textové PNG logo (širší, bude působit jinak vedle ostatních), řekni a použiji to.
+### 5. Co ještě potřebuji od tebe
+- **Plakáty k veřejným akcím** — v příloze nejsou (přišel jen `Z_emailu.docx`, portréty a loga). Až je pošleš, doplním je ke konkrétním představením v „Pro veřejnost".
+- **Fotky divadelních skupin** — počkám na úschovnu, pak přiřadím ke kurzům v „Pro děti"/„Pro dospělé"/„Zpěv".
+
+## Technické poznámky
+- Nový sponzor Ag = BMP; převedu na PNG přes ImageMagick (`convert Ag_Logo-2.bmp -resize 600x -strip Ag.png`), pak `lovable-assets create`.
+- `hudebniny_malin.jpg.asset.json` starý pointer smažu (`lovable-assets delete`), nahradím novým z PNG.
+- Ověření: `bun run build` + vizuální kontrola stránek `/co-nabizime/pro-deti`, `/o-nas/podporuji-nas`.
