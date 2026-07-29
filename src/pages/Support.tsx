@@ -1,13 +1,15 @@
 import { Heart, Share2, ShoppingBag, FileSignature, Calendar, ExternalLink, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import qrPodpora from "@/assets/qr-podpora.png.asset.json";
 
 const ways = [
   { icon: Calendar, title: "Navštěvujte naše akce", text: "Každý divák je pro nás povzbuzením pokračovat." },
   { icon: Heart, title: "Hezky o nás mluvte", text: "Doporučení od přátel je ta nejlepší reklama." },
   { icon: Share2, title: "Sdílejte nás", text: "Najdete nás i na Facebooku — sdílejte naše akce se svými přáteli." },
   { icon: ShoppingBag, title: "Nakupujte v obchůdku DRZÁ OPIČKA", text: "Každý nákup nás podpoří." },
-  { icon: FileSignature, title: "Finanční dar", text: "Chcete-li nás podpořit finančně, sepíšeme s vámi darovací smlouvu." },
+  { icon: FileSignature, title: "Finanční dar", text: "Podpořit nás můžete QR platbou, převodem na účet, nebo přes portál Darujme.cz. U větších darů rádi sepíšeme darovací smlouvu." },
 ];
+
 
 const Support = () => {
   return (
