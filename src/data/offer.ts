@@ -153,6 +153,7 @@ export const offer: OfferItem[] = [
         audience: "studenti SŠ a dospělí",
         schedule: "Úterý 18:30 – 20:00",
         text: "Literárně-dramatická dílna. Hledání, objevování, ztrácení, nacházení, hledání, objevování, ztrácení, nacházení, a tak pořád dokola… Skupina je tvořena pevným základem žen, co docházejí již několik let. Není však problém se k nim přidat. Každá změna obohacuje a vytrhává nás ze stereotypu. A o to v umění jde.",
+        images: [takUvidimeImg],
       },
     ],
     body: kontakty,
