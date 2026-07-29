@@ -163,7 +163,7 @@ export const offer: OfferItem[] = [
     title: "Zpěv",
     group: "volny-cas",
     groupLabel: "Volnočasové aktivity",
-    image: deti5,
+    image: zpevImg,
     shortText:
       "Individuální hodiny zpěvu a ženský sbor ŠuŠuŽEŠ — pro všechny, kdo chtějí, aby jejich hlas zazněl.",
     intro:
