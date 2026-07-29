@@ -1,8 +1,19 @@
-import proDetiImg from "@/assets/offer/pro-deti.jpg";
-import proDospeleImg from "@/assets/offer/pro-dospele.jpg";
-import prazdninoveImg from "@/assets/offer/prazdninove-akce.jpg";
+import proDetiImg from "@/assets/offer/nabizime/pro-deti.jpg";
+import proDospeleImg from "@/assets/offer/nabizime/pro-dospele.jpg";
+import prazdninoveImg from "@/assets/offer/nabizime/prazdninove-akce.jpg";
+import zpevImg from "@/assets/offer/nabizime/zpev.jpg";
 
-import proVerejnostImg from "@/assets/offer/pro-verejnost.jpg";
+import proVerejnostImg from "@/assets/offer/nabizime/pro-verejnost.jpg";
+import razDvaTriImg from "@/assets/offer/nabizime/raz-dva-tri.jpg";
+import kdoSiHrajeImg from "@/assets/offer/nabizime/kdo-si-hraje.jpg";
+import kdoHrajeFrajerkaImg from "@/assets/offer/nabizime/kdo-hraje-frajerka.jpg";
+import prvohoryImg from "@/assets/offer/nabizime/prvohory.jpg";
+import tvarohryImg from "@/assets/offer/nabizime/tvarohry.jpg";
+import divadovadidloImg from "@/assets/offer/nabizime/divadovadidlo.jpg";
+import divaDivyImg from "@/assets/offer/nabizime/diva-divy.jpg";
+import takUvidimeImg from "@/assets/offer/nabizime/tak-uvidime.jpg";
+import individualniZpevImg from "@/assets/offer/nabizime/individualni-zpev.jpg";
+import zenskySborImg from "@/assets/offer/nabizime/zensky-sbor.jpg";
 import tabor2021Vesmir from "@/assets/offer/tabor-2021-vesmir.jpg";
 import tabor2021Draci from "@/assets/offer/tabor-2021-draci.jpg";
 import tabor2020Vyska from "@/assets/offer/tabor-2020-vyska.jpg";
@@ -16,19 +27,7 @@ import rybarovaPremiera from "@/assets/predstaveni/rybarova-zena-premiera.jpg";
 import rybarovaRepriza from "@/assets/predstaveni/rybarova-zena-repriza.png";
 import betlemska from "@/assets/predstaveni/betlemska-hvezda.png";
 import domovKoste from "@/assets/predstaveni/domov-koste.jpg";
-import kdoHraje1 from "@/assets/offer/kdo-hraje-1.jpg";
-import kdoHraje2 from "@/assets/offer/kdo-hraje-2.jpg";
-import kdoHraje3 from "@/assets/offer/kdo-hraje-3.jpg";
-import kdoHraje4 from "@/assets/offer/kdo-hraje-4.jpg";
-import deti1 from "@/assets/offer/deti-1.jpg";
-import deti2 from "@/assets/offer/deti-2.jpg";
-import deti3 from "@/assets/offer/deti-3.jpg";
-import deti4 from "@/assets/offer/deti-4.jpg";
-import deti5 from "@/assets/offer/deti-5.jpg";
-import deti6 from "@/assets/offer/deti-6.jpg";
-import deti7 from "@/assets/offer/deti-7.jpg";
-import deti8 from "@/assets/offer/deti-8.jpg";
-import deti9 from "@/assets/offer/deti-9.jpg";
+
 
 export type OfferGroup = "volny-cas" | "vzdelavani";
 
@@ -88,12 +87,14 @@ export const offer: OfferItem[] = [
         audience: "MŠ a 1.–2. třída (5–8 let)",
         schedule: "Den a čas bude upřesněn",
         text: "Hudebně-dramatická průprava. Prostřednictvím příběhů ze světa kouzel si děti osvojí základy dramatické výchovy. Budeme si hrát, zpívat, tančit a naučíme se společně fungovat jako kolektiv. To vše na pozadí příběhu, který nás bude celý rok provázet. A na konci roku výstup v Divadle Šumperk na velkém jevišti jako ta největší odměna pro malé začínající herce.",
+        images: [razDvaTriImg],
       },
       {
         title: "KDO (SI) HRAJE, NEZLOBÍ!",
         audience: "3.–5. třída ZŠ (8–10 let)",
         schedule: "Den a čas bude upřesněn",
         text: "Tato divadelní skupina navazuje na přípravné oddělení. Děti již pracují samostatně a prostřednictvím divadelních metod, rytmiky a práce s hlasem se připravují na divadelní představení stejně jako starší děti. V letošním roce s příslibem divadelní soutěže. Tak uvidíme…:) Skupina je vhodná pro nováčky, kteří doplní malé zkušené herečky.",
+        images: [kdoSiHrajeImg],
       },
       {
         title: "KDO HRAJE, JE FRAJER(KA)!",
@@ -101,21 +102,21 @@ export const offer: OfferItem[] = [
         schedule: "Čtvrtek 15:00 – 16:30",
         text: "Literárně dramatická průprava. Učitel vede děti prostřednictvím dramatických metod k prožitku, rozvoji fantazie, osobnostnímu růstu. Divadelní představení není v literárně dramatické průpravě hlavním cílem — hlavní je naučit se fungovat ve skupině, spolupracovat s kamarády, respektovat společná pravidla, hrát si. Skupina spolu funguje už několik let a má za sebou krajskou divadelní přehlídku v Olomouci s doporučením do celostátní přehlídky Dětská scéna ve Svitavách. A to již dvakrát za sebou. Skupina nyní nedobírá nové členy, jen na individuální domluvu.",
         full: true,
-        images: [kdoHraje1, kdoHraje2, kdoHraje3, kdoHraje4],
+        images: [kdoHrajeFrajerkaImg],
       },
       {
         title: "PRVOH(O)RY",
         audience: "6.–9. třída (10–15 let)",
         schedule: "Den a čas bude upřesněn",
         text: "Literárně divadelní dílna pro děti s větší či menší zkušeností s dramatickou výchovou. Setkání jsou koncipována jako dlouhá tvůrčí cesta za tvarem, který na jejím konci může být nazván divadelním představením. Skupina je ideální pro nováčky. Budeme začínat úplně od tvůrčího bodu nula.",
-        images: [deti3, deti7],
+        images: [prvohoryImg],
       },
       {
         title: "TVAROH(R)Y",
         audience: "7.–9. třída ZŠ a 1. ročník SŠ (13–16 let)",
         schedule: "Pondělí 16:30 – 18:00",
         text: "Literárně dramatická průprava navazující na předchozí dílny. Cílem je plnohodnotná divadelní inscenace. Skupina patří k nejzkušenějším — má za sebou tři přímé postupy na celostátní přehlídku Dětská scéna. Volné místo po domluvě a následné talentové zkoušce. V letošním roce se však dobírá o nové šikovné členy, kterým by nevadilo skočit do toho po hlavě a rovnou do divadelních soutěží.",
-        images: [deti2, deti9],
+        images: [tvarohryImg],
       },
       {
         title: "DIVADOVÁDIDLO",
@@ -123,14 +124,15 @@ export const offer: OfferItem[] = [
         schedule: "Pátek 16:00 – 17:30",
         text: "Literárně divadelní dílna pro zkušené hráče. Skupina má za sebou mnoho představení a zájezdů po České republice včetně celostátní přehlídky Mladá scéna v Ústí nad Orlicí a v letošním roce vítězství na přehlídce Nonverbálního divadla Kolín Otevřeno 2026 s následným postupem na Jiráskův Hronov. Jedná se o uzavřenou skupinu. Je však velkou inspirací pro všechny, co vytrvají stejně jako tyto děti.",
         full: true,
-        images: [deti1, deti8],
+        images: [divadovadidloImg],
       },
       {
         title: "DIVA DIVY",
         audience: "9. třída ZŠ a SŠ (15–19 let)",
         schedule: "Úterý 16:30 – 18:00",
         text: "Literárně divadelní dílna na principech Divadovádidla. Učitel se zde stává průvodcem a koordinátorem nápadů a tvůrčích pokusů. Skupina spolu funguje osm let, každoročně se však obnovuje a obměňuje. V letošním roce to opět vypadá na velmi zajímavou tvůrčí partu; vhodné i jako příprava na talentové zkoušky uměleckých škol. Pokud tedy rosteš a s tebou stále touha zkusit si divadelní proces, je tato skupina ideálním odrazovým můstkem.",
-        images: [deti4, deti6],
+        images: [divaDivyImg],
+
       },
     ],
     body: kontakty,
@@ -151,6 +153,7 @@ export const offer: OfferItem[] = [
         audience: "studenti SŠ a dospělí",
         schedule: "Úterý 18:30 – 20:00",
         text: "Literárně-dramatická dílna. Hledání, objevování, ztrácení, nacházení, hledání, objevování, ztrácení, nacházení, a tak pořád dokola… Skupina je tvořena pevným základem žen, co docházejí již několik let. Není však problém se k nim přidat. Každá změna obohacuje a vytrhává nás ze stereotypu. A o to v umění jde.",
+        images: [takUvidimeImg],
       },
     ],
     body: kontakty,
@@ -160,7 +163,7 @@ export const offer: OfferItem[] = [
     title: "Zpěv",
     group: "volny-cas",
     groupLabel: "Volnočasové aktivity",
-    image: deti5,
+    image: zpevImg,
     shortText:
       "Individuální hodiny zpěvu a ženský sbor ŠuŠuŽEŠ — pro všechny, kdo chtějí, aby jejich hlas zazněl.",
     intro:
@@ -171,12 +174,14 @@ export const offer: OfferItem[] = [
         audience: "pro děti i dospělé",
         schedule: "Po jednom či v malých skupinách, den a čas dle domluvy",
         text: "Srdečně vás zvu na roční hlasovou dílnu, ve které se seznámíme se základními technikami práce s hlasem. Budeme zpívat, mluvit, pohybovat se. Vše tak, aby nezůstal jediný sval v těle napjatý. Společnost nás příliš dlouho svazovala, je čas nechat náš hlas znít. Dílna je určená pro všechny bez rozdílu věku a předchozích zkušeností. Všichni jsme zpěváci. Netřeba se omezovat tím, co nám někdo řekl nebo jsme si řekli sami.",
+        images: [individualniZpevImg],
       },
       {
         title: "Ženský sbor ŠuŠuŽEŠ",
         audience: "určeno pro ženy",
         schedule: "Středa 18:00 – 19:00",
         text: "Ženské hlasy měly od pradávna velkou sílu. Léčily, hladily na duši, konejšily neklidnou krajinu, předvídaly, uchovávaly vzpomínky. A když zaznívají společně, o to větší mají moc. Přidej se k nám. Zpívat budeme různý repertoár — lidové písně, gospely, spirituály i populární skladby. To vše pro nás ženy a naše krásné muže. Není nutná předchozí zkušenost ani talent…:)",
+        images: [zenskySborImg],
       },
     ],
     body: kontakty,
