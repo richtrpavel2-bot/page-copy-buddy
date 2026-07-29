@@ -1,8 +1,19 @@
-import proDetiImg from "@/assets/offer/pro-deti.jpg";
-import proDospeleImg from "@/assets/offer/pro-dospele.jpg";
-import prazdninoveImg from "@/assets/offer/prazdninove-akce.jpg";
+import proDetiImg from "@/assets/offer/nabizime/pro-deti.jpg";
+import proDospeleImg from "@/assets/offer/nabizime/pro-dospele.jpg";
+import prazdninoveImg from "@/assets/offer/nabizime/prazdninove-akce.jpg";
+import zpevImg from "@/assets/offer/nabizime/zpev.jpg";
 
-import proVerejnostImg from "@/assets/offer/pro-verejnost.jpg";
+import proVerejnostImg from "@/assets/offer/nabizime/pro-verejnost.jpg";
+import razDvaTriImg from "@/assets/offer/nabizime/raz-dva-tri.jpg";
+import kdoSiHrajeImg from "@/assets/offer/nabizime/kdo-si-hraje.jpg";
+import kdoHrajeFrajerkaImg from "@/assets/offer/nabizime/kdo-hraje-frajerka.jpg";
+import prvohoryImg from "@/assets/offer/nabizime/prvohory.jpg";
+import tvarohryImg from "@/assets/offer/nabizime/tvarohry.jpg";
+import divadovadidloImg from "@/assets/offer/nabizime/divadovadidlo.jpg";
+import divaDivyImg from "@/assets/offer/nabizime/diva-divy.jpg";
+import takUvidimeImg from "@/assets/offer/nabizime/tak-uvidime.jpg";
+import individualniZpevImg from "@/assets/offer/nabizime/individualni-zpev.jpg";
+import zenskySborImg from "@/assets/offer/nabizime/zensky-sbor.jpg";
 import tabor2021Vesmir from "@/assets/offer/tabor-2021-vesmir.jpg";
 import tabor2021Draci from "@/assets/offer/tabor-2021-draci.jpg";
 import tabor2020Vyska from "@/assets/offer/tabor-2020-vyska.jpg";
@@ -16,19 +27,7 @@ import rybarovaPremiera from "@/assets/predstaveni/rybarova-zena-premiera.jpg";
 import rybarovaRepriza from "@/assets/predstaveni/rybarova-zena-repriza.png";
 import betlemska from "@/assets/predstaveni/betlemska-hvezda.png";
 import domovKoste from "@/assets/predstaveni/domov-koste.jpg";
-import kdoHraje1 from "@/assets/offer/kdo-hraje-1.jpg";
-import kdoHraje2 from "@/assets/offer/kdo-hraje-2.jpg";
-import kdoHraje3 from "@/assets/offer/kdo-hraje-3.jpg";
-import kdoHraje4 from "@/assets/offer/kdo-hraje-4.jpg";
-import deti1 from "@/assets/offer/deti-1.jpg";
-import deti2 from "@/assets/offer/deti-2.jpg";
-import deti3 from "@/assets/offer/deti-3.jpg";
-import deti4 from "@/assets/offer/deti-4.jpg";
-import deti5 from "@/assets/offer/deti-5.jpg";
-import deti6 from "@/assets/offer/deti-6.jpg";
-import deti7 from "@/assets/offer/deti-7.jpg";
-import deti8 from "@/assets/offer/deti-8.jpg";
-import deti9 from "@/assets/offer/deti-9.jpg";
+
 
 export type OfferGroup = "volny-cas" | "vzdelavani";
 
