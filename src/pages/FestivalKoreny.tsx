@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, CalendarDays } from "lucide-react";
 import hlavicka from "@/assets/festival/festival-hlavicka.jpg";
 import logo from "@/assets/festival/festival-logo.jpg";
+import tym from "@/assets/festival/tym-zpatky-ke-korenum.jpg";
 
 const FestivalKoreny = () => {
   return (
@@ -89,7 +90,22 @@ const FestivalKoreny = () => {
         </div>
       </section>
 
+      <section className="pb-16">
+        <div className="container">
+          <h2 className="font-display text-3xl text-primary md:text-4xl">Náš tvůrčí tým</h2>
+          <div className="mt-6 overflow-hidden rounded-3xl border border-border/60 shadow-card">
+            <img
+              src={tym}
+              alt="Tvůrčí tým festivalu Zpátky ke kořenům"
+              className="w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="pb-20">
+
         <div className="container max-w-3xl">
           <div className="flex items-start gap-4 rounded-3xl border border-border/60 bg-secondary/40 p-8 shadow-card">
             <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-accent/15 text-accent">
