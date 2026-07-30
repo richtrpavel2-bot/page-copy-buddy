@@ -21,6 +21,7 @@ import brezenVystava from "@/assets/festival/brezen/akce-vystava.jpg";
 import brezenPredstaveni1 from "@/assets/festival/brezen/predstaveni-1.jpg";
 import brezenPredstaveni2 from "@/assets/festival/brezen/predstaveni-2.jpg";
 import brezenPredstaveni3 from "@/assets/festival/brezen/predstaveni-3.jpg";
+import brezenPredstaveni4 from "@/assets/festival/brezen/predstaveni-4.jpg";
 import brezenBeseda1 from "@/assets/festival/brezen/beseda-1.jpg";
 import brezenBeseda2 from "@/assets/festival/brezen/beseda-2.jpg";
 import brezenBeseda3 from "@/assets/festival/brezen/beseda-3.jpg";
