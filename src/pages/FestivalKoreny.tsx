@@ -3,6 +3,8 @@ import { ArrowLeft, CalendarDays } from "lucide-react";
 import hlavicka from "@/assets/festival/festival-hlavicka.jpg";
 import logo from "@/assets/festival/festival-logo.jpg";
 import tym from "@/assets/festival/tym-zpatky-ke-korenum.jpg";
+import { festivalMonths } from "@/data/festival";
+
 
 const FestivalKoreny = () => {
   return (
