@@ -13,6 +13,22 @@ import ledenKoncert1 from "@/assets/festival/leden/koncert-1.jpg";
 import ledenKoncert2 from "@/assets/festival/leden/koncert-2.jpg";
 import ledenKoncert3 from "@/assets/festival/leden/koncert-3.jpg";
 
+import brezenProgram from "@/assets/festival/brezen/program.jpg";
+import brezenDomov from "@/assets/festival/brezen/akce-domov.jpg";
+import brezenNerusit from "@/assets/festival/brezen/akce-nerusit.jpg";
+import brezenRytmus from "@/assets/festival/brezen/akce-rytmus.jpg";
+import brezenVystava from "@/assets/festival/brezen/akce-vystava.jpg";
+import brezenPredstaveni1 from "@/assets/festival/brezen/predstaveni-1.jpg";
+import brezenPredstaveni2 from "@/assets/festival/brezen/predstaveni-2.jpg";
+import brezenPredstaveni3 from "@/assets/festival/brezen/predstaveni-3.jpg";
+import brezenBeseda1 from "@/assets/festival/brezen/beseda-1.jpg";
+import brezenBeseda2 from "@/assets/festival/brezen/beseda-2.jpg";
+import brezenBeseda3 from "@/assets/festival/brezen/beseda-3.jpg";
+import brezenBeseda4 from "@/assets/festival/brezen/beseda-4.jpg";
+import brezenBubnovani1 from "@/assets/festival/brezen/bubnovani-1.jpg";
+import brezenBubnovani2 from "@/assets/festival/brezen/bubnovani-2.jpg";
+import brezenBubnovani3 from "@/assets/festival/brezen/bubnovani-3.jpg";
+
 import dubenProgram from "@/assets/festival/duben/program.jpg";
 import dubenHvezda from "@/assets/festival/duben/akce-hvezda.jpg";
 import dubenSoutezPlakat from "@/assets/festival/duben/akce-soutez.jpg";
@@ -86,6 +102,32 @@ export const festivalMonths: FestivalMonth[] = [
       { src: ledenKoncert1, alt: "Koncert – leden 2026" },
       { src: ledenKoncert2, alt: "Koncert – leden 2026" },
       { src: ledenKoncert3, alt: "Koncert – leden 2026" },
+    ],
+  },
+  {
+    id: "brezen-2026",
+    month: "Březen 2026",
+    theme: "Abrakadabraka už není v módě",
+    annotation:
+      "„Jsem čarodějka!“ Věta, co od opravdových čarodějů nahlas nikdy neuslyšíš. Protože tenkrát vzniklo mnoho křivd, které se nad Šumperkem vznáší jako opar ranní mlhy. Cítíš ten vzácný genius loci opředený tajemstvím a smutkem? Až navrátíme tyto kořeny do mystické půdy země bez studu a strachu, pak teprve můžeme oslavovat tento kraj a čerpat moudrost našich předků bez pocitů viny. Uctíme tak jednotu ženského principu tvořivosti naší planety a osvíceného mužského principu duchovního světa a našeho racia. Jedno bez druhého není.",
+    program: brezenProgram,
+    posters: [
+      { src: brezenVystava, alt: "Výstava – březen 2026" },
+      { src: brezenDomov, alt: "Domov je tam, kde koště mám – 7. 3. 2026" },
+      { src: brezenNerusit, alt: "Nerušit tvořím – 14. 3. 2026" },
+      { src: brezenRytmus, alt: "V rytmu rytmu – 28. 3. 2026" },
+    ],
+    gallery: [
+      { src: brezenPredstaveni1, alt: "Představení – březen 2026" },
+      { src: brezenPredstaveni2, alt: "Představení – březen 2026" },
+      { src: brezenPredstaveni3, alt: "Představení – březen 2026" },
+      { src: brezenBeseda1, alt: "Beseda – březen 2026" },
+      { src: brezenBeseda2, alt: "Beseda – březen 2026" },
+      { src: brezenBeseda3, alt: "Beseda – březen 2026" },
+      { src: brezenBeseda4, alt: "Beseda – březen 2026" },
+      { src: brezenBubnovani1, alt: "Bubnování – březen 2026" },
+      { src: brezenBubnovani2, alt: "Bubnování – březen 2026" },
+      { src: brezenBubnovani3, alt: "Bubnování – březen 2026" },
     ],
   },
   {
