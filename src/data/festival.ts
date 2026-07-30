@@ -21,6 +21,7 @@ import brezenVystava from "@/assets/festival/brezen/akce-vystava.jpg";
 import brezenPredstaveni1 from "@/assets/festival/brezen/predstaveni-1.jpg";
 import brezenPredstaveni2 from "@/assets/festival/brezen/predstaveni-2.jpg";
 import brezenPredstaveni3 from "@/assets/festival/brezen/predstaveni-3.jpg";
+import brezenPredstaveni4 from "@/assets/festival/brezen/predstaveni-4.jpg";
 import brezenBeseda1 from "@/assets/festival/brezen/beseda-1.jpg";
 import brezenBeseda2 from "@/assets/festival/brezen/beseda-2.jpg";
 import brezenBeseda3 from "@/assets/festival/brezen/beseda-3.jpg";
@@ -121,6 +122,7 @@ export const festivalMonths: FestivalMonth[] = [
       { src: brezenPredstaveni1, alt: "Představení – březen 2026" },
       { src: brezenPredstaveni2, alt: "Představení – březen 2026" },
       { src: brezenPredstaveni3, alt: "Představení – březen 2026" },
+      { src: brezenPredstaveni4, alt: "Představení – březen 2026" },
       { src: brezenBeseda1, alt: "Beseda – březen 2026" },
       { src: brezenBeseda2, alt: "Beseda – březen 2026" },
       { src: brezenBeseda3, alt: "Beseda – březen 2026" },
