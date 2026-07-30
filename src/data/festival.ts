@@ -105,6 +105,32 @@ export const festivalMonths: FestivalMonth[] = [
     ],
   },
   {
+    id: "brezen-2026",
+    month: "Březen 2026",
+    theme: "Abrakadabraka už není v módě",
+    annotation:
+      "„Jsem čarodějka!“ Věta, co od opravdových čarodějů nahlas nikdy neuslyšíš. Protože tenkrát vzniklo mnoho křivd, které se nad Šumperkem vznáší jako opar ranní mlhy. Cítíš ten vzácný genius loci opředený tajemstvím a smutkem? Až navrátíme tyto kořeny do mystické půdy země bez studu a strachu, pak teprve můžeme oslavovat tento kraj a čerpat moudrost našich předků bez pocitů viny. Uctíme tak jednotu ženského principu tvořivosti naší planety a osvíceného mužského principu duchovního světa a našeho racia. Jedno bez druhého není.",
+    program: brezenProgram,
+    posters: [
+      { src: brezenVystava, alt: "Výstava – březen 2026" },
+      { src: brezenDomov, alt: "Domov je tam, kde koště mám – 7. 3. 2026" },
+      { src: brezenNerusit, alt: "Nerušit tvořím – 14. 3. 2026" },
+      { src: brezenRytmus, alt: "V rytmu rytmu – 28. 3. 2026" },
+    ],
+    gallery: [
+      { src: brezenPredstaveni1, alt: "Představení – březen 2026" },
+      { src: brezenPredstaveni2, alt: "Představení – březen 2026" },
+      { src: brezenPredstaveni3, alt: "Představení – březen 2026" },
+      { src: brezenBeseda1, alt: "Beseda – březen 2026" },
+      { src: brezenBeseda2, alt: "Beseda – březen 2026" },
+      { src: brezenBeseda3, alt: "Beseda – březen 2026" },
+      { src: brezenBeseda4, alt: "Beseda – březen 2026" },
+      { src: brezenBubnovani1, alt: "Bubnování – březen 2026" },
+      { src: brezenBubnovani2, alt: "Bubnování – březen 2026" },
+      { src: brezenBubnovani3, alt: "Bubnování – březen 2026" },
+    ],
+  },
+  {
     id: "duben-2026",
     month: "Duben 2026",
     theme: "Dávno nebo včera?",
