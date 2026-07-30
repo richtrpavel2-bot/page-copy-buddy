@@ -13,6 +13,22 @@ import ledenKoncert1 from "@/assets/festival/leden/koncert-1.jpg";
 import ledenKoncert2 from "@/assets/festival/leden/koncert-2.jpg";
 import ledenKoncert3 from "@/assets/festival/leden/koncert-3.jpg";
 
+import brezenProgram from "@/assets/festival/brezen/program.jpg";
+import brezenDomov from "@/assets/festival/brezen/akce-domov.jpg";
+import brezenNerusit from "@/assets/festival/brezen/akce-nerusit.jpg";
+import brezenRytmus from "@/assets/festival/brezen/akce-rytmus.jpg";
+import brezenVystava from "@/assets/festival/brezen/akce-vystava.jpg";
+import brezenPredstaveni1 from "@/assets/festival/brezen/predstaveni-1.jpg";
+import brezenPredstaveni2 from "@/assets/festival/brezen/predstaveni-2.jpg";
+import brezenPredstaveni3 from "@/assets/festival/brezen/predstaveni-3.jpg";
+import brezenBeseda1 from "@/assets/festival/brezen/beseda-1.jpg";
+import brezenBeseda2 from "@/assets/festival/brezen/beseda-2.jpg";
+import brezenBeseda3 from "@/assets/festival/brezen/beseda-3.jpg";
+import brezenBeseda4 from "@/assets/festival/brezen/beseda-4.jpg";
+import brezenBubnovani1 from "@/assets/festival/brezen/bubnovani-1.jpg";
+import brezenBubnovani2 from "@/assets/festival/brezen/bubnovani-2.jpg";
+import brezenBubnovani3 from "@/assets/festival/brezen/bubnovani-3.jpg";
+
 import dubenProgram from "@/assets/festival/duben/program.jpg";
 import dubenHvezda from "@/assets/festival/duben/akce-hvezda.jpg";
 import dubenSoutezPlakat from "@/assets/festival/duben/akce-soutez.jpg";
