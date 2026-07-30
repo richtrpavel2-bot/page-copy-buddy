@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, CalendarDays } from "lucide-react";
 import hlavicka from "@/assets/festival/festival-hlavicka.jpg";
 import logo from "@/assets/festival/festival-logo.jpg";
+import tym from "@/assets/festival/tym-zpatky-ke-korenum.jpg";
 
 const FestivalKoreny = () => {
   return (
