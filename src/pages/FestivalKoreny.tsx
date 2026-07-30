@@ -3,6 +3,8 @@ import { ArrowLeft, CalendarDays } from "lucide-react";
 import hlavicka from "@/assets/festival/festival-hlavicka.jpg";
 import logo from "@/assets/festival/festival-logo.jpg";
 import tym from "@/assets/festival/tym-zpatky-ke-korenum.jpg";
+import { festivalMonths } from "@/data/festival";
+
 
 const FestivalKoreny = () => {
   return (
@@ -105,18 +107,87 @@ const FestivalKoreny = () => {
       </section>
 
       <section className="pb-20">
+        <div className="container">
+          <h2 className="font-display text-3xl text-primary md:text-4xl">
+            Program festivalu
+          </h2>
+          <p className="mt-3 max-w-2xl text-muted-foreground">
+            Měsíc po měsíci — téma, program, plakáty jednotlivých akcí a fotografie.
+          </p>
 
-        <div className="container max-w-3xl">
-          <div className="flex items-start gap-4 rounded-3xl border border-border/60 bg-secondary/40 p-8 shadow-card">
+          <div className="mt-10 space-y-16">
+            {festivalMonths.map((m) => (
+              <article key={m.id} className="border-t border-border/60 pt-10">
+                <div className="grid gap-8 md:grid-cols-[300px_1fr] md:items-start">
+                  <div className="overflow-hidden rounded-3xl border border-border/60 bg-muted shadow-card">
+                    <img
+                      src={m.program}
+                      alt={`Program festivalu – ${m.month}`}
+                      loading="lazy"
+                      className="w-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-accent">
+                      {m.month}
+                    </p>
+                    <h3 className="mt-2 font-display text-2xl text-primary md:text-3xl">
+                      {m.theme}
+                    </h3>
+                    <p className="mt-4 text-base leading-relaxed text-foreground/85">
+                      {m.annotation}
+                    </p>
+
+                    {m.posters.length > 0 && (
+                      <div className="mt-6 grid gap-3 sm:grid-cols-3">
+                        {m.posters.map((p) => (
+                          <div
+                            key={p.src}
+                            className="overflow-hidden rounded-2xl border border-border/60 bg-muted"
+                          >
+                            <img
+                              src={p.src}
+                              alt={p.alt}
+                              loading="lazy"
+                              className="w-full object-cover"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {m.gallery.length > 0 && (
+                  <div className="mt-6 grid gap-3 sm:grid-cols-3 lg:grid-cols-4">
+                    {m.gallery.map((g) => (
+                      <div
+                        key={g.src}
+                        className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted"
+                      >
+                        <img
+                          src={g.src}
+                          alt={g.alt}
+                          loading="lazy"
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-14 flex items-start gap-4 rounded-3xl border border-border/60 bg-secondary/40 p-8 shadow-card">
             <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-accent/15 text-accent">
               <CalendarDays className="h-6 w-6" />
             </div>
             <div>
-              <h2 className="font-display text-xl text-primary">Program festivalu</h2>
+              <h3 className="font-display text-xl text-primary">Další měsíce</h3>
               <p className="mt-2 text-muted-foreground">
-                Postupně sem doplníme jednotlivé měsíce, které už proběhly — včetně
-                fotografií, plakátů, anotací a programu. Podklady na září dodáme během
-                srpna.
+                Zbývající měsíce doplníme, jakmile dorazí podklady — fotografie,
+                plakáty, anotace a program.
               </p>
               <Link
                 to="/kontakt"
@@ -128,6 +199,7 @@ const FestivalKoreny = () => {
           </div>
         </div>
       </section>
+
     </>
   );
 };
