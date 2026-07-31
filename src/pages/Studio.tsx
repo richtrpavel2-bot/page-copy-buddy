@@ -85,16 +85,22 @@ const Studio = () => {
                 key={p.slug}
                 className="group flex flex-col overflow-hidden border-border/60 shadow-card transition-shadow hover:shadow-lg"
               >
-                <div className="relative aspect-[4/5] overflow-hidden bg-muted">
-                  <img
-                    src={p.image}
-                    alt={p.title}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
+                <Link to={`/studio-my-dve/${p.slug}`} className="block">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-muted">
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                </Link>
                 <div className="flex flex-1 flex-col p-6">
-                  <h3 className="font-display text-xl text-primary">{p.title}</h3>
+                  <h3 className="font-display text-xl text-primary">
+                    <Link to={`/studio-my-dve/${p.slug}`} className="hover:underline">
+                      {p.title}
+                    </Link>
+                  </h3>
                   {p.subtitle && (
                     <p className="mt-1 text-sm italic text-muted-foreground">{p.subtitle}</p>
                   )}
@@ -109,10 +115,17 @@ const Studio = () => {
                       {p.duration}
                     </span>
                   </div>
+                  <Link
+                    to={`/studio-my-dve/${p.slug}`}
+                    className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:underline"
+                  >
+                    Podrobnosti a termíny <ArrowRight className="h-4 w-4" />
+                  </Link>
                 </div>
               </Card>
             ))}
           </div>
+
         </div>
       </section>
 
