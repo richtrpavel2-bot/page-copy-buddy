@@ -118,6 +118,28 @@ const festivalMonthsChronological: FestivalMonth[] = [
     ],
   },
   {
+    id: "unor-2026",
+    month: "Únor 2026",
+    theme: "Opá aneb řecká party",
+    annotation:
+      "Kde mám své kořeny? Tady nebo tam? Odkud se vinou a kam mě volají? Já se tam vrátím, jen čekám na správný okamžik. Přijde, nebo jsem ho minul? Je to tak dávno a přeci jako včera. Ale až zemřu, chci, abyste mě pohřbili v zemi, kde stále bije moje srdce. Do té doby pohlédněte, jak tančím, jak umím žít. Zvu vás ke svému stolu a bouřlivě vás vyzývám, abyste plnými doušky ochutnali, jak chutná řecké víno, nasytili své žaludky jídlem řecké smyslnosti a pochopili, že nad vašimi hlavami dlí bohové řeckého panteonu. Pak teprve uvidíte, kde začíná a končí řecká hrdost.",
+    program: unorProgram,
+    posters: [
+      { src: unorHejbni, alt: "Hejbni boškem – 14. 2. 2026" },
+      { src: unorKoreny, alt: "Kam až sahají naše kořeny – 28. 2. 2026" },
+    ],
+    gallery: [
+      { src: unorTanecky1, alt: "Tanečky – únor 2026" },
+      { src: unorTanecky2, alt: "Tanečky – únor 2026" },
+      { src: unorTanecky3, alt: "Tanečky – únor 2026" },
+      { src: unorBeseda1, alt: "Beseda – únor 2026" },
+      { src: unorBeseda2, alt: "Beseda – únor 2026" },
+      { src: unorBeseda3, alt: "Beseda – únor 2026" },
+      { src: unorBeseda4, alt: "Beseda – únor 2026" },
+      { src: unorBeseda5, alt: "Beseda – únor 2026" },
+    ],
+  },
+  {
     id: "brezen-2026",
     month: "Březen 2026",
     theme: "Abrakadabraka už není v módě",
