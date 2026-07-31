@@ -21,6 +21,8 @@ export type Performance = {
   image: string;
   excerpt: string;
   active: boolean;
+  /** Tailwind object-position class pro ořez náhledu */
+  focus?: string;
   /** Podrobný popis – zobrazí se na detailu představení */
   detail?: {
     quote?: string;
@@ -93,6 +95,7 @@ export const performances: Performance[] = [
     audience: "MŠ a ZŠ, družiny a volnočasové kolektivy",
     duration: "cca 45 minut",
     image: betlemskaHvezda,
+    focus: "object-center",
     excerpt:
       "Předvánoční svět, ve kterém se všechny symboly Vánoc zbláznily. Ryby, co se nechtějí lovit, ozdoby, co se bojí výšek, a zmizelá Betlémská hvězda. Hrajeme v listopadu a prosinci.",
     active: true,

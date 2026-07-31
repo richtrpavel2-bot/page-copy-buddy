@@ -90,7 +90,7 @@ const Studio = () => {
                     <img
                       src={p.image}
                       alt={p.title}
-                      className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      className={`h-full w-full object-cover ${p.focus ?? "object-top"} transition-transform duration-500 group-hover:scale-105`}
                       loading="lazy"
                     />
                   </div>
@@ -154,7 +154,7 @@ const Studio = () => {
                   <img
                     src={p.image}
                     alt={p.title}
-                    className="h-full w-full object-cover object-top opacity-90 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100"
+                    className={`h-full w-full object-cover ${p.focus ?? "object-top"} opacity-90 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100`}
                     loading="lazy"
                   />
                 </div>
