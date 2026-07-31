@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Offer from "./pages/Offer";
 import OfferDetail from "./pages/OfferDetail";
 import Studio from "./pages/Studio";
+import StudioDetail from "./pages/StudioDetail";
 import Limonada from "./pages/Limonada";
 import BookDetail from "./pages/BookDetail";
 import EshopOchranaSoukromi from "./pages/EshopOchranaSoukromi";
@@ -49,6 +50,7 @@ const App = () => (
             <Route path="/co-nabizime" element={<Offer />} />
             <Route path="/co-nabizime/:slug" element={<OfferDetail />} />
             <Route path="/studio-my-dve" element={<Studio />} />
+            <Route path="/studio-my-dve/:slug" element={<StudioDetail />} />
             <Route path="/nakladatelstvi-limonada" element={<Limonada />} />
             <Route path="/nakladatelstvi-limonada/ochrana-soukromi" element={<EshopOchranaSoukromi />} />
             <Route path="/nakladatelstvi-limonada/obchodni-podminky" element={<EshopObchodniPodminky />} />

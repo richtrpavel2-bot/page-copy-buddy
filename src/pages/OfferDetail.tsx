@@ -29,7 +29,7 @@ const OfferDetail = () => {
           <img
             src={item.image}
             alt={item.title}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-top"
           />
         </div>
 
@@ -81,7 +81,7 @@ const OfferDetail = () => {
                   src={src}
                   alt={`${item.title} – fotka ${idx + 1}`}
                   loading="lazy"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-top"
                 />
               </div>
             ))}
@@ -136,7 +136,7 @@ const OfferDetail = () => {
                           src={src}
                           alt={`${c.title} – fotka ${idx + 1}`}
                           loading="lazy"
-                          className="h-full w-full object-cover"
+                          className="h-full w-full object-cover object-top"
                         />
                       </div>
                     ))}
@@ -178,7 +178,7 @@ const OfferDetail = () => {
                       src={e.image}
                       alt={e.title}
                       loading="lazy"
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-cover object-top"
                     />
                   ) : null}
                 </div>
