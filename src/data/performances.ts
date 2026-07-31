@@ -12,6 +12,16 @@ import podMorem from "@/assets/studio/pod-morem.jpg";
 import zalAStesti from "@/assets/studio/zal-a-stesti.jpg";
 import okolo from "@/assets/studio/okolo.jpg";
 
+const galleryDomov = Object.values(
+  import.meta.glob("@/assets/studio/galerie/domov-je-tam/*.jpg", { eager: true, import: "default" })
+) as string[];
+const galleryNuzky = Object.values(
+  import.meta.glob("@/assets/studio/galerie/na-ostri-nuzek/*.jpg", { eager: true, import: "default" })
+) as string[];
+const galleryOkolo = Object.values(
+  import.meta.glob("@/assets/studio/galerie/okolo/*.jpg", { eager: true, import: "default" })
+) as string[];
+
 export type Performance = {
   slug: string;
   title: string;
@@ -23,6 +33,8 @@ export type Performance = {
   active: boolean;
   /** Tailwind object-position class pro ořez náhledu */
   focus?: string;
+  /** Fotogalerie z představení */
+  gallery?: string[];
   /** Podrobný popis – zobrazí se na detailu představení */
   detail?: {
     quote?: string;
@@ -70,6 +82,7 @@ export const performances: Performance[] = [
     audience: "1.–5. třídy ZŠ",
     duration: "50 minut (jen představení, bez dílny)",
     image: domovJeTam,
+    gallery: galleryDomov,
     excerpt:
       "Komediální představení o mladé čarodějnici, která se bojí chodit mezi lidi. Pojednává o překonání strachu s jemným dotykem šumperské čarodějné historie.",
     active: true,
@@ -168,6 +181,7 @@ export const performances: Performance[] = [
     audience: "ZŠ a dospělí",
     duration: "50 + 50 minut",
     image: naOstriNuzek,
+    gallery: galleryNuzky,
     excerpt:
       "Na motivy pohádky Císařovy nové šaty H. Ch. Andersena. O rozpoznávání skutečného bohatství a hodnot, které se nedají koupit. Derniéra únor 2023.",
     active: false,
@@ -245,6 +259,7 @@ export const performances: Performance[] = [
     audience: "1.–5. třídy ZŠ",
     duration: "40 + 60 minut",
     image: okolo,
+    gallery: galleryOkolo,
     excerpt:
       "Poetický příběh malé Konstantiny, která je od narození nevidomá. Mít hendikep neznamená přestat snít. První inscenace studia (2017–2019), k zhlédnutí online.",
     active: false,

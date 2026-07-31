@@ -132,7 +132,31 @@ const StudioDetail = () => {
             </div>
           </aside>
         </div>
+
+        {p.gallery && p.gallery.length > 0 && (
+          <div className="mt-16">
+            <h2 className="font-display text-2xl text-primary md:text-3xl">
+              Fotogalerie z představení
+            </h2>
+            <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+              {p.gallery.map((src, i) => (
+                <div
+                  key={src}
+                  className="overflow-hidden rounded-2xl border border-border/60 bg-muted shadow-card"
+                >
+                  <img
+                    src={src}
+                    alt={`${p.title} – foto ${i + 1}`}
+                    loading="lazy"
+                    className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
+
     </section>
   );
 };
