@@ -148,28 +148,44 @@ const Studio = () => {
             {archive.map((p) => (
               <Card
                 key={p.slug}
-                className="group flex flex-col overflow-hidden border-border/60 bg-card/80 shadow-sm"
+                className="group flex flex-col overflow-hidden border-border/60 bg-card/80 shadow-sm transition-shadow hover:shadow-lg"
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-                  <img
-                    src={p.image}
-                    alt={p.title}
-                    className={`h-full w-full object-cover ${p.focus ?? "object-top"} opacity-90 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100`}
-                    loading="lazy"
-                  />
-                </div>
+                <Link to={`/studio-my-dve/${p.slug}`} className="block">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-muted">
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      className={`h-full w-full object-cover ${p.focus ?? "object-top"} opacity-90 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100`}
+                      loading="lazy"
+                    />
+                  </div>
+                </Link>
 
                 <div className="flex flex-1 flex-col p-5">
-                  <h3 className="font-display text-lg leading-tight text-primary">{p.title}</h3>
+                  <h3 className="font-display text-lg leading-tight text-primary">
+                    <Link to={`/studio-my-dve/${p.slug}`} className="hover:underline">
+                      {p.title}
+                    </Link>
+                  </h3>
                   {p.subtitle && (
                     <p className="mt-1 text-xs italic text-muted-foreground">{p.subtitle}</p>
                   )}
                   <p className="mt-3 line-clamp-3 flex-1 text-xs text-muted-foreground">
                     {p.excerpt}
                   </p>
+                  <Link
+                    to={`/studio-my-dve/${p.slug}`}
+                    className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-accent hover:underline"
+                  >
+                    {p.gallery && p.gallery.length > 0
+                      ? `Fotogalerie (${p.gallery.length})`
+                      : "Více o inscenaci"}{" "}
+                    <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
                 </div>
               </Card>
             ))}
+
           </div>
         </div>
       </section>
