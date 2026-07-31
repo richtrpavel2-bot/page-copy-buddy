@@ -210,6 +210,7 @@ const festivalMonthsChronological: FestivalMonth[] = [
       { src: kvetenBeseda4, alt: "Beseda – květen 2026" },
       { src: kvetenBeseda5, alt: "Beseda – květen 2026" },
       { src: kvetenKoncert1, alt: "Koncert – květen 2026" },
+      { src: kvetenKoncert2, alt: "Zpěv na koncertě – květen 2026" },
       
     ],
   },
