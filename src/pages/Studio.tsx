@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Clock, Users } from "lucide-react";
+import { ArrowRight, Clock, Users } from "lucide-react";
 import studioHero from "@/assets/studio/studio-hero.jpg";
 import { performances } from "@/data/performances";
 
