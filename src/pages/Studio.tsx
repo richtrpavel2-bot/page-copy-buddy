@@ -150,14 +150,15 @@ const Studio = () => {
                 key={p.slug}
                 className="group flex flex-col overflow-hidden border-border/60 bg-card/80 shadow-sm"
               >
-                <div className="relative aspect-[4/5] overflow-hidden bg-muted">
+                <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                   <img
                     src={p.image}
                     alt={p.title}
-                    className="h-full w-full object-cover opacity-90 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100"
+                    className="h-full w-full object-cover object-top opacity-90 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100"
                     loading="lazy"
                   />
                 </div>
+
                 <div className="flex flex-1 flex-col p-5">
                   <h3 className="font-display text-lg leading-tight text-primary">{p.title}</h3>
                   {p.subtitle && (
