@@ -13,6 +13,18 @@ import ledenKoncert1 from "@/assets/festival/leden/koncert-1.jpg";
 import ledenKoncert2 from "@/assets/festival/leden/koncert-2.jpg";
 import ledenKoncert3 from "@/assets/festival/leden/koncert-3.jpg";
 
+import unorProgram from "@/assets/festival/unor/program.jpg";
+import unorHejbni from "@/assets/festival/unor/akce-hejbni.jpg";
+import unorKoreny from "@/assets/festival/unor/akce-koreny.jpg";
+import unorBeseda1 from "@/assets/festival/unor/beseda-1.jpg";
+import unorBeseda2 from "@/assets/festival/unor/beseda-2.jpg";
+import unorBeseda3 from "@/assets/festival/unor/beseda-3.jpg";
+import unorBeseda4 from "@/assets/festival/unor/beseda-4.jpg";
+import unorBeseda5 from "@/assets/festival/unor/beseda-5.jpg";
+import unorTanecky1 from "@/assets/festival/unor/tanecky-1.jpg";
+import unorTanecky2 from "@/assets/festival/unor/tanecky-2.jpg";
+import unorTanecky3 from "@/assets/festival/unor/tanecky-3.jpg";
+
 import brezenProgram from "@/assets/festival/brezen/program.jpg";
 import brezenDomov from "@/assets/festival/brezen/akce-domov.jpg";
 import brezenNerusit from "@/assets/festival/brezen/akce-nerusit.jpg";
@@ -81,7 +93,7 @@ export type FestivalMonth = {
   gallery: { src: string; alt: string }[];
 };
 
-export const festivalMonths: FestivalMonth[] = [
+const festivalMonthsChronological: FestivalMonth[] = [
   {
     id: "leden-2026",
     month: "Leden 2026",
@@ -103,6 +115,28 @@ export const festivalMonths: FestivalMonth[] = [
       { src: ledenKoncert1, alt: "Koncert – leden 2026" },
       { src: ledenKoncert2, alt: "Koncert – leden 2026" },
       { src: ledenKoncert3, alt: "Koncert – leden 2026" },
+    ],
+  },
+  {
+    id: "unor-2026",
+    month: "Únor 2026",
+    theme: "Opá aneb řecká party",
+    annotation:
+      "Kde mám své kořeny? Tady nebo tam? Odkud se vinou a kam mě volají? Já se tam vrátím, jen čekám na správný okamžik. Přijde, nebo jsem ho minul? Je to tak dávno a přeci jako včera. Ale až zemřu, chci, abyste mě pohřbili v zemi, kde stále bije moje srdce. Do té doby pohlédněte, jak tančím, jak umím žít. Zvu vás ke svému stolu a bouřlivě vás vyzývám, abyste plnými doušky ochutnali, jak chutná řecké víno, nasytili své žaludky jídlem řecké smyslnosti a pochopili, že nad vašimi hlavami dlí bohové řeckého panteonu. Pak teprve uvidíte, kde začíná a končí řecká hrdost.",
+    program: unorProgram,
+    posters: [
+      { src: unorHejbni, alt: "Hejbni boškem – 14. 2. 2026" },
+      { src: unorKoreny, alt: "Kam až sahají naše kořeny – 28. 2. 2026" },
+    ],
+    gallery: [
+      { src: unorTanecky1, alt: "Tanečky – únor 2026" },
+      { src: unorTanecky2, alt: "Tanečky – únor 2026" },
+      { src: unorTanecky3, alt: "Tanečky – únor 2026" },
+      { src: unorBeseda1, alt: "Beseda – únor 2026" },
+      { src: unorBeseda2, alt: "Beseda – únor 2026" },
+      { src: unorBeseda3, alt: "Beseda – únor 2026" },
+      { src: unorBeseda4, alt: "Beseda – únor 2026" },
+      { src: unorBeseda5, alt: "Beseda – únor 2026" },
     ],
   },
   {
@@ -204,3 +238,6 @@ export const festivalMonths: FestivalMonth[] = [
     ],
   },
 ];
+
+// Nejaktuálnější měsíc nahoře
+export const festivalMonths: FestivalMonth[] = [...festivalMonthsChronological].reverse();
