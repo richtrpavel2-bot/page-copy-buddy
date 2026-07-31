@@ -66,7 +66,7 @@ import kvetenBeseda3 from "@/assets/festival/kveten/beseda-3.jpg";
 import kvetenBeseda4 from "@/assets/festival/kveten/beseda-4.jpg";
 import kvetenBeseda5 from "@/assets/festival/kveten/beseda-5.jpg";
 import kvetenKoncert1 from "@/assets/festival/kveten/koncert-1.jpg";
-import kvetenKoncert2 from "@/assets/festival/kveten/koncert-2.jpg";
+
 
 import cervenProgram from "@/assets/festival/cerven/program.jpg";
 import cervenKopnout from "@/assets/festival/cerven/akce-kopnout.jpg";
@@ -209,7 +209,7 @@ const festivalMonthsChronological: FestivalMonth[] = [
       { src: kvetenBeseda4, alt: "Beseda – květen 2026" },
       { src: kvetenBeseda5, alt: "Beseda – květen 2026" },
       { src: kvetenKoncert1, alt: "Koncert – květen 2026" },
-      { src: kvetenKoncert2, alt: "Koncert – květen 2026" },
+      
     ],
   },
   {
