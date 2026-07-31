@@ -21,6 +21,16 @@ export type Performance = {
   image: string;
   excerpt: string;
   active: boolean;
+  /** Podrobný popis – zobrazí se na detailu představení */
+  detail?: {
+    quote?: string;
+    paragraphs: string[];
+    cast?: string;
+    place?: string;
+    price?: string;
+    note?: string;
+    youtube?: string;
+  };
 };
 
 export const performances: Performance[] = [
@@ -34,7 +44,23 @@ export const performances: Performance[] = [
     excerpt:
       "Přistěhovat se do hezkého města a začít dělat svět krásnější uměním by mohlo být snadné, kdyby všude nebyla Rybářova žena. Participační představení s divadelní dílnou.",
     active: true,
+    detail: {
+      quote:
+        "„Zlatá rybo, slyš má slova, vylez z vody, zjev se znova. Mám ženu zlou jako šídlo.“ „A co chceš? Pálí ji dobré bydlo?“",
+      paragraphs: [
+        "Přistěhovat se do hezkého města a začít dělat svět krásnější uměním by mohlo být snadné, kdyby všude nebyla Rybářova žena. Ale kdo to je? Jak to, že ji nikdo nezná? A jak je možné, že je úplně všude? A kde vlastně končí její moc?",
+        "Adaptace lidové pohádky známé především v podání Jana Wericha O rybáři a jeho ženě, doplněná autobiografickými prvky obou představitelek. Pojďte s námi vyřešit detektivní případ a zjistit, kdo v našem světě vlastně tahá za pomyslné nitky.",
+        "Představení pojednává o hledání a nacházení, ztrátách a vítězstvích, ale především o spravedlnosti. Protože Boží mlýny melou, někdy pomalu, ale vždy jistě…",
+        "Divadelní představení je participační. Jeho přímou součástí je tedy i divadelní dílna, protože děti do něj budou aktivně zapojeny. Jedná se o novou formu, kterou jste s námi ještě nezažili, ale věříme, že si ji všichni užijeme.",
+      ],
+      cast: "Tereza Karlíková a Lucie Kučerová",
+      place: "Galimatyáš Šumperk, Starobranská 16, Šumperk 787 01 (bývalá Květinka)",
+      price: "100 Kč / dítě",
+      note: "Hrajeme vždy ve středu ve dvou časech (8:30 a 10:30). Termíny a rezervace na 605 173 410 (Tereza Karlíková) nebo spolek.galimatyas@seznam.cz.",
+      youtube: "https://www.youtube.com/watch?v=ENuKXc4gnjA&t=12s",
+    },
   },
+
   {
     slug: "domov-je-tam-kde-koste-mam",
     title: "Domov je tam, kde koště mám",
