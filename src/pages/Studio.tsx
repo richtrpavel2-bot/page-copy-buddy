@@ -17,33 +17,38 @@ const Studio = () => {
           <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-accent">
-                Naše divadelní studio
+                Komorní divadlo Galimatyáš
               </p>
               <h1 className="mt-3 font-display text-4xl font-bold text-primary md:text-5xl lg:text-6xl">
-                Studio „My dvě"
+                Komorní divadlo
               </h1>
               <div className="mt-6 space-y-4 text-base text-muted-foreground md:text-lg">
                 <p>
-                  Divadelní studio <strong>„My dvě"</strong> započalo svou činnost v srpnu 2017.
-                  Jeho kořeny však sahají do minulosti mnohem vzdálenější, kdy se hlavní aktérky
-                  <strong> Tereza Karlíková</strong> a <strong>Lucie Kučerová</strong> setkávaly
-                  ještě jako učitelka a žákyně.
+                  Divadlo není jen místem, událostí a komunikačním kanálem. Divadlo je
+                  mimořádným zážitkem probíhajícím mezi hledištěm a jevištěm. Až v tuto chvíli
+                  vzniká skutečné umělecké dílo.
                 </p>
                 <p>
-                  Obě s duší dítěte se rozhodly nejen hrát „si", ale také hrát „pro". A tím
-                  zahájily svou kmenovou spolupráci a založily v Šumperku divadelní studio určené
-                  převážně dětem.
+                  Komorní divadlo Galimatyáš fungující již od roku 2017 je přesně takovým
+                  místem. Prostřednictvím příběhu s aktuálním tématem se diváci noří do světa
+                  kouzel propracované scény, podmanivé hudby a osobitého hereckého projevu dvou
+                  hereček. Ač hrajících převážně pro děti, vždy s jistotou přesahu až k dospělým
+                  srdcím, protože něco v nás nestárne a je připraveno se neustále nechat
+                  překvapovat.
                 </p>
                 <p>
-                  Studio je zaměřeno na tvorbu komorních inscenací inspirovaných současnou českou
-                  i zahraniční divadelní scénou. Ačkoliv v názvu zaznívá číslovka dvě, studio by
-                  se neobešlo bez pomoci třetích, čtvrtých, pátých… Až společně s nimi vzkvétá.
+                  A tak dorazte k nám na naše představení a přijměte zase na chvíli svět kouzel
+                  divadelní iluze. Nebo to není jen iluze?
+                </p>
+                <p className="font-display text-xl text-primary">
+                  Lucie Kučerová a Tereza Karlíková
                 </p>
               </div>
               <Button asChild className="mt-8 rounded-full px-7">
                 <Link to="/kontakt">Objednat představení</Link>
               </Button>
             </div>
+
             <div className="relative">
               <div className="overflow-hidden rounded-3xl border border-border/60 shadow-card">
                 <img
