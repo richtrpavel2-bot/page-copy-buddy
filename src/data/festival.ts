@@ -93,7 +93,7 @@ export type FestivalMonth = {
   gallery: { src: string; alt: string }[];
 };
 
-export const festivalMonths: FestivalMonth[] = [
+const festivalMonthsChronological: FestivalMonth[] = [
   {
     id: "leden-2026",
     month: "Leden 2026",
