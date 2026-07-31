@@ -13,6 +13,18 @@ import ledenKoncert1 from "@/assets/festival/leden/koncert-1.jpg";
 import ledenKoncert2 from "@/assets/festival/leden/koncert-2.jpg";
 import ledenKoncert3 from "@/assets/festival/leden/koncert-3.jpg";
 
+import unorProgram from "@/assets/festival/unor/program.jpg";
+import unorHejbni from "@/assets/festival/unor/akce-hejbni.jpg";
+import unorKoreny from "@/assets/festival/unor/akce-koreny.jpg";
+import unorBeseda1 from "@/assets/festival/unor/beseda-1.jpg";
+import unorBeseda2 from "@/assets/festival/unor/beseda-2.jpg";
+import unorBeseda3 from "@/assets/festival/unor/beseda-3.jpg";
+import unorBeseda4 from "@/assets/festival/unor/beseda-4.jpg";
+import unorBeseda5 from "@/assets/festival/unor/beseda-5.jpg";
+import unorTanecky1 from "@/assets/festival/unor/tanecky-1.jpg";
+import unorTanecky2 from "@/assets/festival/unor/tanecky-2.jpg";
+import unorTanecky3 from "@/assets/festival/unor/tanecky-3.jpg";
+
 import brezenProgram from "@/assets/festival/brezen/program.jpg";
 import brezenDomov from "@/assets/festival/brezen/akce-domov.jpg";
 import brezenNerusit from "@/assets/festival/brezen/akce-nerusit.jpg";
