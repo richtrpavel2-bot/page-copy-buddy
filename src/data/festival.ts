@@ -238,3 +238,6 @@ const festivalMonthsChronological: FestivalMonth[] = [
     ],
   },
 ];
+
+// Nejaktuálnější měsíc nahoře
+export const festivalMonths: FestivalMonth[] = [...festivalMonthsChronological].reverse();
