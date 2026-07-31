@@ -66,11 +66,25 @@ export const performances: Performance[] = [
     title: "Domov je tam, kde koště mám",
     subtitle: "O síle snu a touhy po životě na Zemi",
     audience: "1.–5. třídy ZŠ",
-    duration: "50 + 50 minut (představení + dílna)",
+    duration: "50 minut (jen představení, bez dílny)",
     image: domovJeTam,
     excerpt:
       "Komediální představení o mladé čarodějnici, která se bojí chodit mezi lidi. Pojednává o překonání strachu s jemným dotykem šumperské čarodějné historie.",
     active: true,
+    detail: {
+      quote:
+        "„Půjdu tam na jaře. Ne, na jaře ne. To je úplně nejhorší čas. Půjdu v létě. Ne, v létě ne… Nechám to na jaro…“",
+      paragraphs: [
+        "Co se stane mladé čarodějnici, která se bojí chodit mezi lidi, když jí přijde dopis? Pomůže jí zjištění, že její hlas je na světě důležitý, v tom, aby překonala svůj strach a překročila hranice, které kolem ní vytvořila sama historie. A jak to bude vypadat, když se do toho všeho vloží Duch místa, který už opravdu cítí, že je čas udělat KROK?",
+        "Komediální divadelní představení Domov je tam, kde koště mám pojednává o síle snu a touhy po životě na Zemi s ohledem a jemným dotykem šumperské čarodějné historie.",
+      ],
+      cast: "Tereza Karlíková a Lucie Kučerová (Spolek Galimatyáš)",
+      place:
+        "Hudebně-dramatické centrum Galimatyáš, Starobranská 16, Šumperk 787 01",
+      price: "100 Kč / dítě",
+      note: "V případě preference jiného termínu volejte nebo pište: 605 173 410 (Tereza Karlíková), spolek.galimatyas@seznam.cz. Inscenace vznikla za podpory města Šumperk.",
+      youtube: "https://www.youtube.com/watch?v=Sxjx-LohFzg",
+    },
   },
   {
     slug: "kam-se-podela-betlemska-hvezda",
@@ -82,17 +96,40 @@ export const performances: Performance[] = [
     excerpt:
       "Předvánoční svět, ve kterém se všechny symboly Vánoc zbláznily. Ryby, co se nechtějí lovit, ozdoby, co se bojí výšek, a zmizelá Betlémská hvězda. Hrajeme v listopadu a prosinci.",
     active: true,
+    detail: {
+      quote:
+        "Ryby, co se nechtějí lovit, ozdoby, co se bojí výšek, dárky, co se nechtějí darovat – a k tomu všemu zmizela Betlémská hvězda a zavládla Tma.",
+      paragraphs: [
+        "Představte si předvánoční svět, ve kterém se všechny symboly Vánoc zbláznily a odmítají plnit svou funkci tak, jak jsme na to zvyklí. Naštěstí na tuto záchranu nejkrásnějších dnů v roce nebudeme sami. Ale o tom až se uvidíme a užijeme si tento příběh společně.",
+        "Vánočně laděný příběh pro rodiče i děti, kteří se chtějí pořádně navnadit na kouzelný vánoční čas. Protože kdy jindy věřit na kouzla než teď. A kdy jindy je začít žít než s námi.",
+      ],
+      cast: "Hrají a celé vytvořily Tereza Karlíková a Lucie Kučerová",
+      place:
+        "Starobranská 16, Šumperk 787 01 (1. patro) nebo vaše instituce",
+      price: "100 Kč / dítě pro školní kolektivy či dohodou",
+      note: "Kontakt: 605 173 410 (Tereza Karlíková), spolek.galimatyas@seznam.cz. Inscenace vznikla za podpory Olomouckého kraje a města Šumperk.",
+    },
   },
   {
     slug: "clovece-nezlob-se-na-nas",
     title: "Člověče, nezlob se na nás!",
     subtitle: "Na motivy čtyř pohádek z různých koutů světa",
     audience: "1.–5. třídy ZŠ",
-    duration: "60 + 60 minut (představení + dílna)",
+    duration: "50 minut (jen představení, bez dílny)",
     image: cloveceNezlob,
     excerpt:
       "Pohádky propojené interakcí dvou klaunů Žalu a Štěstí, kteří hrají společenskou hru. Život jako předurčená hra, jejíž pravidla můžeme měnit svým rozhodnutím.",
     active: true,
+    detail: {
+      paragraphs: [
+        "Na motivy čtyř pohádek – O Slunci a Měsíci (indiánská), Okřídlená žena (australská), Kráska s půlměsícem (africká) a Hadač osudu (arabská).",
+        "Pohádky jsou propojeny interakcí dvou klaunů Žalu a Štěstí, kteří spolu hrají společenskou hru. Úmyslem autorek je prezentovat život jako předurčenou hru mezi štěstím a žalem, kterou si nevybereme, ale jejíž pravidla můžeme měnit svým rozhodnutím.",
+      ],
+      cast: "Tereza Karlíková a Lucie Kučerová",
+      place: "HuDra centrum Galimatyáš, Starobranská 16, Šumperk",
+      price: "100 Kč / dítě",
+      note: "Představení je určeno pro jeden třídní kolektiv, je tedy nutná rezervace termínu: 605 173 410 (Tereza Karlíková), spolek.galimatyas@seznam.cz. Inscenace vznikla za finanční podpory Olomouckého kraje a města Šumperk.",
+    },
   },
   {
     slug: "ctyri-nohy-dobre-dve-nohy-spatne",
@@ -104,7 +141,22 @@ export const performances: Performance[] = [
     excerpt:
       "Inscenace o tématu strachu ve společnosti založené na frázích, síle slova a nedostatku pravdivých informací. Ideální jako doplnění hodiny českého jazyka či dějepisu.",
     active: true,
+    detail: {
+      quote:
+        "Dne 11. 3. Čtyři nohy dobré, dvě nohy špatné! Dne 25. 5. Všechny nohy dobré! Dne 10. 9. Dvě nohy dobré, čtyři nohy špatné! A zítra?",
+      paragraphs: [
+        "Volně na motivy knihy George Orwella Farma zvířat a volně na motivy českých dějin 20. století.",
+        "Setrvalý, vyšší, horší, rizikový, povinný, omezený, nedobrý, nejzasaženější, rekordní, avizovaný STRACH…",
+        "Divadelní inscenace zpracovává téma strachu ve společnosti založené na zavedených frázích, síle slova a nedostatku pravdivých informací. Na základě komediálního žánru grotesky nahlédneme do hloubky naší lidské existence na pozadí charakterů zvířat a klíčových okamžiků českých dějin 20. století.",
+      ],
+      cast: "Tereza Karlíková a Lucie Kučerová",
+      place:
+        "Hudebně-dramatické centrum Galimatyáš, Starobranská 16, Šumperk, nebo vaše instituce",
+      price: "100 Kč / dítě (pedagogický doprovod zdarma)",
+      note: "Hrajeme středa, čtvrtek, pátek, čas dle dohody. Vždy hrajeme jen pro jeden třídní kolektiv. Kontakt: spolek.galimatyas@seznam.cz, 605 173 410.",
+    },
   },
+
   // Archiv
   {
     slug: "na-ostri-nuzek",
