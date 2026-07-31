@@ -66,6 +66,7 @@ import kvetenBeseda3 from "@/assets/festival/kveten/beseda-3.jpg";
 import kvetenBeseda4 from "@/assets/festival/kveten/beseda-4.jpg";
 import kvetenBeseda5 from "@/assets/festival/kveten/beseda-5.jpg";
 import kvetenKoncert1 from "@/assets/festival/kveten/koncert-1.jpg";
+import kvetenKoncert2 from "@/assets/festival/kveten/koncert-2.jpg";
 
 
 import cervenProgram from "@/assets/festival/cerven/program.jpg";
