@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, Clock, MapPin, Ticket, Users, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { performances } from "@/data/performances";
+import PhotoLightbox from "@/components/PhotoLightbox";
 
 const StudioDetail = () => {
+  const [selectedPhoto, setSelectedPhoto] = useState<number | null>(null);
   const { slug } = useParams();
   const p = performances.find((item) => item.slug === slug);
 
@@ -22,6 +25,10 @@ const StudioDetail = () => {
   }
 
   const d = p.detail;
+  const galleryPhotos = (p.gallery ?? []).map((src, index) => ({
+    src,
+    alt: `${p.title} – foto ${index + 1}`,
+  }));
 
   return (
     <section className="py-14 md:py-20">
@@ -139,23 +146,33 @@ const StudioDetail = () => {
               Fotogalerie z představení
             </h2>
             <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
-              {p.gallery.map((src, i) => (
-                <div
-                  key={src}
-                  className="overflow-hidden rounded-2xl border border-border/60 bg-muted shadow-card"
+              {galleryPhotos.map((photo, i) => (
+                <Button
+                  type="button"
+                  variant="ghost"
+                  key={photo.src}
+                  className="h-auto overflow-hidden rounded-2xl border border-border/60 bg-muted p-0 shadow-card"
+                  aria-label={`Zvětšit fotografii ${i + 1}`}
+                  onClick={() => setSelectedPhoto(i)}
                 >
                   <img
-                    src={src}
-                    alt={`${p.title} – foto ${i + 1}`}
+                    src={photo.src}
+                    alt={photo.alt}
                     loading="lazy"
                     className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"
                   />
-                </div>
+                </Button>
               ))}
             </div>
           </div>
         )}
       </div>
+
+      <PhotoLightbox
+        photos={galleryPhotos}
+        currentIndex={selectedPhoto}
+        onChange={setSelectedPhoto}
+      />
 
     </section>
   );
