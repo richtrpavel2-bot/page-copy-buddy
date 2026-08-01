@@ -110,6 +110,8 @@ const GalleryDetail = () => {
           <img
             src={gallery.images[active]}
             alt={`${gallery.title} — fotka ${active + 1}`}
+            loading="eager"
+            decoding="async"
             className="max-h-[90vh] max-w-[95vw] object-contain"
             onClick={(e) => e.stopPropagation()}
           />
