@@ -1,5 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, CalendarDays } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import PhotoLightbox from "@/components/PhotoLightbox";
 import hlavicka from "@/assets/festival/festival-hlavicka.jpg";
 import logo from "@/assets/festival/festival-logo.jpg";
 import tym from "@/assets/festival/tym-zpatky-ke-korenum.jpg";
@@ -7,6 +10,12 @@ import { festivalMonths } from "@/data/festival";
 
 
 const FestivalKoreny = () => {
+  const [selectedPhoto, setSelectedPhoto] = useState<{ monthId: string; index: number } | null>(null);
+  const selectedMonth = festivalMonths.find((month) => month.id === selectedPhoto?.monthId);
+  const selectedMonthPhotos = selectedMonth
+    ? [...selectedMonth.posters, ...selectedMonth.gallery]
+    : [];
+
   return (
     <>
       <section className="bg-hero">
@@ -140,10 +149,14 @@ const FestivalKoreny = () => {
 
                     {m.posters.length > 0 && (
                       <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                        {m.posters.map((p) => (
-                          <div
+                        {m.posters.map((p, index) => (
+                           <Button
+                             type="button"
+                             variant="ghost"
                             key={p.src}
-                            className="overflow-hidden rounded-2xl border border-border/60 bg-muted"
+                             className="h-auto overflow-hidden rounded-2xl border border-border/60 bg-muted p-0"
+                             aria-label={`Zvětšit: ${p.alt}`}
+                             onClick={() => setSelectedPhoto({ monthId: m.id, index })}
                           >
                             <img
                               src={p.src}
@@ -151,7 +164,7 @@ const FestivalKoreny = () => {
                               loading="lazy"
                               className="w-full object-cover"
                             />
-                          </div>
+                           </Button>
                         ))}
                       </div>
                     )}
@@ -160,18 +173,25 @@ const FestivalKoreny = () => {
 
                 {m.gallery.length > 0 && (
                   <div className="mt-6 grid gap-3 sm:grid-cols-3 lg:grid-cols-4">
-                    {m.gallery.map((g) => (
-                      <div
+                    {m.gallery.map((g, index) => (
+                       <Button
+                         type="button"
+                         variant="ghost"
                         key={g.src}
-                        className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted"
+                         className="h-auto min-h-44 overflow-hidden rounded-2xl bg-muted p-0"
+                         aria-label={`Zvětšit: ${g.alt}`}
+                         onClick={() => setSelectedPhoto({
+                           monthId: m.id,
+                           index: m.posters.length + index,
+                         })}
                       >
                         <img
                           src={g.src}
                           alt={g.alt}
                           loading="lazy"
-                          className="h-full w-full object-cover"
+                          className="h-56 w-full object-contain"
                         />
-                      </div>
+                       </Button>
                     ))}
                   </div>
                 )}
@@ -199,6 +219,18 @@ const FestivalKoreny = () => {
           </div>
         </div>
       </section>
+
+      <PhotoLightbox
+        photos={selectedMonthPhotos}
+        currentIndex={selectedPhoto?.index ?? null}
+        onChange={(index) => {
+          if (index === null || !selectedPhoto) {
+            setSelectedPhoto(null);
+            return;
+          }
+          setSelectedPhoto({ ...selectedPhoto, index });
+        }}
+      />
 
     </>
   );
