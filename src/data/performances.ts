@@ -21,6 +21,24 @@ const galleryNuzky = Object.values(
 const galleryOkolo = Object.values(
   import.meta.glob("@/assets/studio/galerie/okolo/*.jpg", { eager: true, import: "default" })
 ) as string[];
+const galleryRybarova = Object.values(
+  import.meta.glob("@/assets/studio/galerie/rybarova-zena/*.jpg", { eager: true, import: "default" })
+) as string[];
+const galleryClovece = Object.values(
+  import.meta.glob("@/assets/studio/galerie/clovece-nezlob/*.jpg", { eager: true, import: "default" })
+) as string[];
+const galleryDoSmrti = Object.values(
+  import.meta.glob("@/assets/studio/galerie/do-smrti/*.jpg", { eager: true, import: "default" })
+) as string[];
+const galleryBetlem = Object.values(
+  import.meta.glob("@/assets/studio/galerie/betlemska-hvezda/*.jpg", { eager: true, import: "default" })
+) as string[];
+const galleryPodMorem = Object.values(
+  import.meta.glob("@/assets/studio/galerie/pod-morem/*.jpg", { eager: true, import: "default" })
+) as string[];
+const galleryNils = Object.values(
+  import.meta.glob("@/assets/studio/galerie/nils/*.jpg", { eager: true, import: "default" })
+) as string[];
 
 export type Performance = {
   slug: string;
