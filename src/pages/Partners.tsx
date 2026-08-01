@@ -38,6 +38,9 @@ const Partners = () => {
               >
                 {p.logo ? (
                   <img
+                    width={400}
+                    height={200}
+                    decoding="async"
                     src={p.logo}
                     alt={p.name}
                     className="max-h-full max-w-full object-contain"
@@ -61,6 +64,9 @@ const Partners = () => {
               >
                 {p.logo ? (
                   <img
+                    width={400}
+                    height={200}
+                    decoding="async"
                     src={p.logo}
                     alt={p.name}
                     className="max-h-full max-w-full object-contain"

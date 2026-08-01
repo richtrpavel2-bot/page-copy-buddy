@@ -39,6 +39,9 @@ const About = () => {
             <div className="md:col-span-2">
               <div className="overflow-hidden rounded-3xl shadow-card">
                 <img
+                  width={1200}
+                  height={900}
+                  decoding="async"
                   src={heroAbout}
                   alt="Spolek Galimatyáš — divadelní dílna Okolo"
                   className="aspect-[4/3] w-full object-cover"

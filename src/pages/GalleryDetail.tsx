@@ -62,6 +62,9 @@ const GalleryDetail = () => {
                 aria-label={`Otevřít fotku ${i + 1}`}
               >
                 <img
+                  width={1200}
+                  height={900}
+                  decoding="async"
                   src={src}
                   alt={`${gallery.title} — fotka ${i + 1}`}
                   loading="lazy"

@@ -76,6 +76,9 @@ const StudioDetail = () => {
           <aside className="space-y-6">
             <div className="overflow-hidden rounded-3xl border border-border/60 bg-muted shadow-card">
               <img
+                width={1400}
+                height={900}
+                decoding="async"
                 src={p.image}
                 alt={p.title}
                 className="w-full object-cover"
@@ -156,6 +159,9 @@ const StudioDetail = () => {
                   onClick={() => setSelectedPhoto(i)}
                 >
                   <img
+                    width={1200}
+                    height={900}
+                    decoding="async"
                     src={photo.src}
                     alt={photo.alt}
                     loading="lazy"

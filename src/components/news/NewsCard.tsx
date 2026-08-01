@@ -25,6 +25,9 @@ const NewsCard = ({ item }: { item: NewsItem }) => {
     >
       <div className="relative aspect-[4/5] overflow-hidden bg-muted">
         <img
+          width={1200}
+          height={900}
+          decoding="async"
           src={item.image}
           alt={item.title}
           loading="lazy"

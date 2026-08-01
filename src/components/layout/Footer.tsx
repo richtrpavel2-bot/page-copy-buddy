@@ -8,6 +8,10 @@ const Footer = () => {
       <div className="container grid gap-10 py-14 md:grid-cols-3">
         <div>
           <img
+            loading="lazy"
+            width={160}
+            height={160}
+            decoding="async"
             src={logo}
             alt="Spolek Galimatyáš"
             className="h-20 w-20 rounded-full"

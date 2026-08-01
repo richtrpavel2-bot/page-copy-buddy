@@ -41,6 +41,11 @@ const NewsDetail = () => {
       <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-[5fr_6fr] md:gap-12">
         <div className="overflow-hidden rounded-3xl bg-muted">
           <img
+            loading="eager"
+            fetchPriority="high"
+            width={1600}
+            height={900}
+            decoding="async"
             src={item.image}
             alt={item.title}
             className="h-full w-full object-cover"

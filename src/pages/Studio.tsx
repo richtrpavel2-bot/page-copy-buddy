@@ -52,6 +52,9 @@ const Studio = () => {
             <div className="relative">
               <div className="overflow-hidden rounded-3xl border border-border/60 shadow-card">
                 <img
+                  width={1200}
+                  height={900}
+                  decoding="async"
                   src={studioHero}
                   alt="Tereza Karlíková a Lucie Kučerová — Studio My dvě"
                   className="h-full w-full object-cover"
@@ -88,6 +91,9 @@ const Studio = () => {
                 <Link to={`/studio-my-dve/${p.slug}`} className="block">
                   <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                     <img
+                      width={1200}
+                      height={900}
+                      decoding="async"
                       src={p.image}
                       alt={p.title}
                       className={`h-full w-full object-cover ${p.focus ?? "object-top"} transition-transform duration-500 group-hover:scale-105`}
@@ -153,6 +159,9 @@ const Studio = () => {
                 <Link to={`/studio-my-dve/${p.slug}`} className="block">
                   <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                     <img
+                      width={1200}
+                      height={900}
+                      decoding="async"
                       src={p.image}
                       alt={p.title}
                       className={`h-full w-full object-cover ${p.focus ?? "object-top"} opacity-90 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100`}

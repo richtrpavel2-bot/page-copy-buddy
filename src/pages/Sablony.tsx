@@ -29,6 +29,9 @@ const Sablony = () => {
         <div className="container">
           <div className="mx-auto max-w-3xl overflow-hidden rounded-3xl bg-card shadow-card">
             <img
+              width={1200}
+              height={900}
+              decoding="async"
               src={plakat}
               alt="Projekt Šablony Galimatyáš — informační plakát"
               className="w-full"

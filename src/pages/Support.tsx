@@ -56,6 +56,9 @@ const Support = () => {
               </p>
               <div className="mt-6 flex flex-col items-start gap-6 sm:flex-row sm:items-center">
                 <img
+                  width={800}
+                  height={800}
+                  decoding="async"
                   src={qrPodpora}
                   alt="QR kód pro platbu 200 Kč pro Spolek GALIMATYÁŠ"
                   className="w-64 rounded-2xl bg-white p-3 sm:w-72"
