@@ -21,6 +21,24 @@ const galleryNuzky = Object.values(
 const galleryOkolo = Object.values(
   import.meta.glob("@/assets/studio/galerie/okolo/*.jpg", { eager: true, import: "default" })
 ) as string[];
+const galleryRybarova = Object.values(
+  import.meta.glob("@/assets/studio/galerie/rybarova-zena/*.jpg", { eager: true, import: "default" })
+) as string[];
+const galleryClovece = Object.values(
+  import.meta.glob("@/assets/studio/galerie/clovece-nezlob/*.jpg", { eager: true, import: "default" })
+) as string[];
+const galleryDoSmrti = Object.values(
+  import.meta.glob("@/assets/studio/galerie/do-smrti/*.jpg", { eager: true, import: "default" })
+) as string[];
+const galleryBetlem = Object.values(
+  import.meta.glob("@/assets/studio/galerie/betlemska-hvezda/*.jpg", { eager: true, import: "default" })
+) as string[];
+const galleryPodMorem = Object.values(
+  import.meta.glob("@/assets/studio/galerie/pod-morem/*.jpg", { eager: true, import: "default" })
+) as string[];
+const galleryNils = Object.values(
+  import.meta.glob("@/assets/studio/galerie/nils/*.jpg", { eager: true, import: "default" })
+) as string[];
 
 export type Performance = {
   slug: string;
@@ -55,6 +73,7 @@ export const performances: Performance[] = [
     audience: "2.–6. třídy ZŠ",
     duration: "60 minut",
     image: rybarovaZena,
+    gallery: galleryRybarova,
     excerpt:
       "Přistěhovat se do hezkého města a začít dělat svět krásnější uměním by mohlo být snadné, kdyby všude nebyla Rybářova žena. Participační představení s divadelní dílnou.",
     active: true,
@@ -108,6 +127,7 @@ export const performances: Performance[] = [
     audience: "MŠ a ZŠ, družiny a volnočasové kolektivy",
     duration: "cca 45 minut",
     image: betlemskaHvezda,
+    gallery: galleryBetlem,
     focus: "object-center",
     excerpt:
       "Předvánoční svět, ve kterém se všechny symboly Vánoc zbláznily. Ryby, co se nechtějí lovit, ozdoby, co se bojí výšek, a zmizelá Betlémská hvězda. Hrajeme v listopadu a prosinci.",
@@ -133,6 +153,7 @@ export const performances: Performance[] = [
     audience: "1.–5. třídy ZŠ",
     duration: "50 minut (jen představení, bez dílny)",
     image: cloveceNezlob,
+    gallery: galleryClovece,
     excerpt:
       "Pohádky propojené interakcí dvou klaunů Žalu a Štěstí, kteří hrají společenskou hru. Život jako předurčená hra, jejíž pravidla můžeme měnit svým rozhodnutím.",
     active: true,
@@ -193,6 +214,7 @@ export const performances: Performance[] = [
     audience: "MŠ, 1. stupeň ZŠ a další dětské skupiny",
     duration: "60 minut",
     image: doSmrti,
+    gallery: galleryDoSmrti,
     excerpt:
       "Myšák Šupito a Liška Bílá tlapka poznávají smrt z jiných úhlů. Téma smrti zpracované s lehkostí a nadhledem. Derniéra srpen 2023.",
     active: false,
@@ -204,6 +226,7 @@ export const performances: Performance[] = [
     audience: "1.–5. třída ZŠ",
     duration: "60 + 60 minut",
     image: nils,
+    gallery: galleryNils,
     excerpt:
       "Příběh chlapečka Nilse, který ze dne na den opustí svůj domov, aby se do něj vrátil o trošičku větší. O překonání strachu, trpělivosti a hranicích. Derniéra únor 2022.",
     active: false,
@@ -237,6 +260,7 @@ export const performances: Performance[] = [
     audience: "Třídní kolektivy",
     duration: "60 + 60 minut",
     image: podMorem,
+    gallery: galleryPodMorem,
     excerpt:
       "Co se stane, když se s princem potopí loď? O dávných křivdách a lásce bez hranic. Derniéra únor 2020 — k zhlédnutí online na YouTube.",
     active: false,

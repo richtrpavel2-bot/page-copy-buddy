@@ -1,6 +1,6 @@
 import { Heart, Share2, ShoppingBag, FileSignature, Calendar, ExternalLink, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import qrPodpora from "@/assets/qr-podpora.png.asset.json";
+import qrPodpora from "@/assets/qr-podpora.jpg";
 
 const ways = [
   { icon: Calendar, title: "Navštěvujte naše akce", text: "Každý divák je pro nás povzbuzením pokračovat." },
@@ -54,13 +54,14 @@ const Support = () => {
               <p className="mt-3 text-primary-foreground/80">
                 Líbí se vám naše práce a chtěli byste nás podpořit? Můžete jednoduše prostřednictvím QR kódu.
               </p>
-              <div className="mt-6 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+              <div className="mt-6 flex flex-col items-start gap-6 sm:flex-row sm:items-center">
                 <img
-                  src={qrPodpora.url}
+                  src={qrPodpora}
                   alt="QR kód pro platbu 200 Kč pro Spolek GALIMATYÁŠ"
-                  className="w-48 rounded-2xl"
+                  className="w-64 rounded-2xl bg-white p-3 sm:w-72"
                   loading="lazy"
                 />
+
                 <div className="text-sm">
                   <p className="text-primary-foreground/70">Doporučená částka</p>
                   <p className="font-display text-2xl">200 Kč</p>
