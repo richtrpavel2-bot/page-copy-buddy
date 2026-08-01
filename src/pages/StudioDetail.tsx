@@ -150,7 +150,7 @@ const StudioDetail = () => {
                 <Button
                   type="button"
                   variant="ghost"
-                  key={src}
+                  key={photo.src}
                   className="h-auto overflow-hidden rounded-2xl border border-border/60 bg-muted p-0 shadow-card"
                   aria-label={`Zvětšit fotografii ${i + 1}`}
                   onClick={() => setSelectedPhoto(i)}
