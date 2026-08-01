@@ -1,6 +1,6 @@
 import { Heart, Share2, ShoppingBag, FileSignature, Calendar, ExternalLink, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import qrPodpora from "@/assets/qr-podpora.png.asset.json";
+import qrPodpora from "@/assets/qr-podpora.jpg";
 
 const ways = [
   { icon: Calendar, title: "Navštěvujte naše akce", text: "Každý divák je pro nás povzbuzením pokračovat." },
