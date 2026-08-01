@@ -95,6 +95,8 @@ const PhotoLightbox = ({ photos, currentIndex, onChange }: PhotoLightboxProps) =
         <img
           src={photo.src}
           alt={photo.alt}
+          loading="eager"
+          decoding="async"
           className="max-h-[84vh] max-w-full object-contain"
           onClick={(event) => event.stopPropagation()}
         />

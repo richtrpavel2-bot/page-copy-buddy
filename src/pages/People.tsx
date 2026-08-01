@@ -32,6 +32,9 @@ const People = () => {
               <div className="mx-auto w-full max-w-[280px] md:mx-0">
                 <div className="overflow-hidden rounded-3xl bg-secondary/40 shadow-card">
                   <img
+                    width={900}
+                    height={1200}
+                    decoding="async"
                     src={m.image}
                     alt={m.name}
                     className="aspect-[3/4] w-full object-cover"
@@ -72,6 +75,9 @@ const People = () => {
               <Card key={m.name} className="overflow-hidden border-border/60 shadow-card">
                 {m.image && (
                   <img
+                    width={900}
+                    height={1200}
+                    decoding="async"
                     src={m.image}
                     alt={m.secondary ? `${m.name} & ${m.secondary.name}` : m.name}
                     className="aspect-[4/3] w-full object-cover"

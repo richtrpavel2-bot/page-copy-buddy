@@ -26,6 +26,11 @@ const BookDetail = () => {
       <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-[5fr_6fr] md:gap-12">
         <div className="overflow-hidden rounded-3xl bg-muted">
           <img
+            loading="eager"
+            fetchPriority="high"
+            width={900}
+            height={1200}
+            decoding="async"
             src={book.image}
             alt={book.title}
             className="h-full w-full object-cover"

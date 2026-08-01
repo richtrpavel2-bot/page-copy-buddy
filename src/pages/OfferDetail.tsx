@@ -27,6 +27,11 @@ const OfferDetail = () => {
       <header className="mx-auto grid max-w-5xl gap-10 md:grid-cols-[5fr_6fr] md:gap-12">
         <div className="overflow-hidden rounded-3xl bg-muted aspect-[4/5]">
           <img
+            loading="eager"
+            fetchPriority="high"
+            width={1200}
+            height={900}
+            decoding="async"
             src={item.image}
             alt={item.title}
             className="h-full w-full object-cover object-top"
@@ -78,6 +83,9 @@ const OfferDetail = () => {
                 className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted"
               >
                 <img
+                  width={1200}
+                  height={900}
+                  decoding="async"
                   src={src}
                   alt={`${item.title} – fotka ${idx + 1}`}
                   loading="lazy"
@@ -133,6 +141,9 @@ const OfferDetail = () => {
                         className="aspect-[4/3] overflow-hidden rounded-xl bg-muted"
                       >
                         <img
+                          width={1200}
+                          height={900}
+                          decoding="async"
                           src={src}
                           alt={`${c.title} – fotka ${idx + 1}`}
                           loading="lazy"
@@ -175,6 +186,9 @@ const OfferDetail = () => {
                     />
                   ) : e.image ? (
                     <img
+                      width={1000}
+                      height={1414}
+                      decoding="async"
                       src={e.image}
                       alt={e.title}
                       loading="lazy"
@@ -197,6 +211,9 @@ const OfferDetail = () => {
                   </p>
                   {e.image && e.youtubeId && (
                     <img
+                      width={1000}
+                      height={1414}
+                      decoding="async"
                       src={e.image}
                       alt={e.title}
                       loading="lazy"

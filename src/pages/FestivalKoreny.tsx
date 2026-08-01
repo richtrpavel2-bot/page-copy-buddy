@@ -29,6 +29,11 @@ const FestivalKoreny = () => {
 
           <div className="mt-8 overflow-hidden rounded-3xl border border-border/60 shadow-card">
             <img
+              loading="eager"
+              fetchPriority="high"
+              width={1600}
+              height={600}
+              decoding="async"
               src={hlavicka}
               alt="Noviny Alfréda Schönberga – Festival kulturních akcí Zpátky ke kořenům"
               className="w-full object-cover"
@@ -84,6 +89,9 @@ const FestivalKoreny = () => {
 
             <aside className="rounded-3xl border border-border/60 bg-secondary/40 p-6 text-center shadow-card">
               <img
+                width={400}
+                height={400}
+                decoding="async"
                 src={logo}
                 alt="Logo festivalu Zpátky ke kořenům – Alfréd Schönberg"
                 className="mx-auto w-40 rounded-2xl"
@@ -106,6 +114,9 @@ const FestivalKoreny = () => {
           <h2 className="font-display text-3xl text-primary md:text-4xl">Náš tvůrčí tým</h2>
           <div className="mt-6 overflow-hidden rounded-3xl border border-border/60 shadow-card">
             <img
+              width={1400}
+              height={900}
+              decoding="async"
               src={tym}
               alt="Tvůrčí tým festivalu Zpátky ke kořenům"
               className="w-full object-cover"
@@ -130,6 +141,9 @@ const FestivalKoreny = () => {
                 <div className="grid gap-8 md:grid-cols-[300px_1fr] md:items-start">
                   <div className="overflow-hidden rounded-3xl border border-border/60 bg-muted shadow-card">
                     <img
+                      width={1000}
+                      height={1414}
+                      decoding="async"
                       src={m.program}
                       alt={`Program festivalu – ${m.month}`}
                       loading="lazy"
@@ -159,6 +173,9 @@ const FestivalKoreny = () => {
                              onClick={() => setSelectedPhoto({ monthId: m.id, index })}
                           >
                             <img
+                              width={1200}
+                              height={900}
+                              decoding="async"
                               src={p.src}
                               alt={p.alt}
                               loading="lazy"
@@ -186,6 +203,9 @@ const FestivalKoreny = () => {
                          })}
                       >
                         <img
+                          width={1200}
+                          height={900}
+                          decoding="async"
                           src={g.src}
                           alt={g.alt}
                           loading="lazy"

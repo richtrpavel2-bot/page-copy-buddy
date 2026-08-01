@@ -22,6 +22,11 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between md:h-20">
         <Link to="/" className="flex items-center" aria-label="Spolek Galimatyáš — domů">
           <img
+            loading="eager"
+            fetchPriority="high"
+            width={128}
+            height={128}
+            decoding="async"
             src={logo}
             alt="Spolek Galimatyáš"
             className="h-12 w-12 rounded-full md:h-16 md:w-16"

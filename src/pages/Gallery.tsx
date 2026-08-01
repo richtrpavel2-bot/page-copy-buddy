@@ -32,6 +32,9 @@ const Gallery = () => {
               >
                 <div className="aspect-[4/3] overflow-hidden bg-secondary">
                   <img
+                    width={1200}
+                    height={900}
+                    decoding="async"
                     src={g.cover}
                     alt={g.title}
                     loading="lazy"

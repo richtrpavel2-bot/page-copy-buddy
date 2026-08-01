@@ -62,6 +62,9 @@ const GalleryDetail = () => {
                 aria-label={`Otevřít fotku ${i + 1}`}
               >
                 <img
+                  width={1200}
+                  height={900}
+                  decoding="async"
                   src={src}
                   alt={`${gallery.title} — fotka ${i + 1}`}
                   loading="lazy"
@@ -107,6 +110,8 @@ const GalleryDetail = () => {
           <img
             src={gallery.images[active]}
             alt={`${gallery.title} — fotka ${active + 1}`}
+            loading="eager"
+            decoding="async"
             className="max-h-[90vh] max-w-[95vw] object-contain"
             onClick={(e) => e.stopPropagation()}
           />

@@ -55,6 +55,9 @@ const Offer = () => {
                     <Card className="flex h-full flex-col overflow-hidden border-border/60 p-0 transition-all group-hover:-translate-y-1 group-hover:shadow-soft group-focus-visible:ring-2 group-focus-visible:ring-ring">
                       <div className="aspect-[4/5] overflow-hidden bg-muted">
                         <img
+                          width={1200}
+                          height={900}
+                          decoding="async"
                           src={item.image}
                           alt={item.title}
                           loading="lazy"
