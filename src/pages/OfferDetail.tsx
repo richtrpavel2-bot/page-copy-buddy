@@ -136,7 +136,7 @@ const OfferDetail = () => {
                 {c.images && c.images.length > 0 && (
                   <div className="mt-5 grid grid-cols-2 gap-2">
                     {c.images.map((src, idx) => (
-                      <div
+                       <div
                         key={src}
                         className="aspect-[4/3] overflow-hidden rounded-xl bg-muted"
                       >
@@ -147,7 +147,7 @@ const OfferDetail = () => {
                           src={src}
                           alt={`${c.title} – fotka ${idx + 1}`}
                           loading="lazy"
-                          className="h-full w-full object-cover object-top"
+                          className="h-full w-full object-contain"
                         />
                       </div>
                     ))}
