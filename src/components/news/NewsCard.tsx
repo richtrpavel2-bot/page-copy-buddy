@@ -23,16 +23,17 @@ const NewsCard = ({ item }: { item: NewsItem }) => {
       to={`/aktualne/${item.id}`}
       className="group flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
     >
-      <div className="relative aspect-[4/5] overflow-hidden bg-muted">
+      <div className="relative aspect-[3/4] overflow-hidden bg-muted">
         <img
-          width={1200}
-          height={900}
+          width={1100}
+          height={1500}
           decoding="async"
           src={item.image}
           alt={item.title}
           loading="lazy"
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
         />
+
         <span
           className={cn(
             "absolute left-4 top-4 inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold backdrop-blur-sm",
