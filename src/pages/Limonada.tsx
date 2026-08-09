@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ShoppingBag, ShieldCheck, FileText, ArrowRight, MapPin } from "lucide-react";
-import logoOpicka from "@/assets/limonada/drza-opicka-logo.png.asset.json";
-import vizualUzBrzy from "@/assets/limonada/drza-opicka-uz-brzy.png.asset.json";
+import logoOpicka from "@/assets/limonada/drza-opicka-logo.png";
+import vizualUzBrzy from "@/assets/limonada/drza-opicka-uz-brzy.jpg";
 
 const tiles = [
   {
@@ -44,10 +44,10 @@ const Limonada = () => {
             <img
               loading="eager"
               fetchPriority="high"
-              width={420}
-              height={420}
+              width={800}
+              height={800}
               decoding="async"
-              src={logoOpicka.url}
+              src={logoOpicka}
               alt="Logo obchůdku Drzá opička"
               className="mx-auto w-48 md:w-64"
             />
@@ -85,10 +85,10 @@ const Limonada = () => {
         <div className="container max-w-4xl">
           <img
             loading="lazy"
-            width={1740}
-            height={1240}
+            width={1600}
+            height={1135}
             decoding="async"
-            src={vizualUzBrzy.url}
+            src={vizualUzBrzy}
             alt="Už brzy — obchůdek Drzá opička, Starobranská 16, Šumperk"
             className="w-full rounded-3xl shadow-card"
           />
