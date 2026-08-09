@@ -1,12 +1,10 @@
-import { useMemo } from "react";
 import NewsCard from "@/components/news/NewsCard";
 import { news } from "@/data/news";
 
 const News = () => {
-  const sorted = useMemo(
-    () => [...news].sort((a, b) => b.date.localeCompare(a.date)),
-    [],
-  );
+  // Pořadí je dané seznamem v src/data/news.ts (nahoře nejnovější)
+  const sorted = news;
+
 
   return (
     <div className="container py-12 md:py-20">
