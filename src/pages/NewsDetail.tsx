@@ -43,14 +43,15 @@ const NewsDetail = () => {
           <img
             loading="eager"
             fetchPriority="high"
-            width={1600}
-            height={900}
+            width={1100}
+            height={1500}
             decoding="async"
             src={item.image}
             alt={item.title}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-contain"
           />
         </div>
+
 
         <div className="flex flex-col">
           <div className="flex flex-wrap items-center gap-3">
