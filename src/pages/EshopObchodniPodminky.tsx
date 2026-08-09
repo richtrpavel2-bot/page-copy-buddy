@@ -10,7 +10,7 @@ const EshopObchodniPodminky = () => {
             to="/nakladatelstvi-limonada"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
           >
-            <ArrowLeft className="h-4 w-4" /> Zpět na E-shop
+            <ArrowLeft className="h-4 w-4" /> Zpět na E-shop Drzá opička
           </Link>
           <p className="mt-6 text-xs font-semibold uppercase tracking-widest text-accent">
             E-shop

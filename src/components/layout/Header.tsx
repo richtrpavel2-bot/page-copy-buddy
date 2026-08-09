@@ -10,7 +10,7 @@ const navItems = [
   { to: "/o-nas", label: "O spolku" },
   { to: "/fotogalerie", label: "Fotogalerie" },
   { to: "/studio-my-dve", label: "Komorní divadlo" },
-  { to: "/nakladatelstvi-limonada", label: "E-shop" },
+  { to: "/nakladatelstvi-limonada", label: "E-shop Drzá opička" },
   { to: "/kontakt", label: "Kontakt" },
 ];
 

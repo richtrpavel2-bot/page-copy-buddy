@@ -12,7 +12,7 @@ import tvarohryImg from "@/assets/offer/nabizime/tvarohry.jpg";
 import divadovadidloImg from "@/assets/offer/nabizime/divadovadidlo.jpg";
 import divaDivyImg from "@/assets/offer/nabizime/diva-divy.jpg";
 import takUvidimeImg from "@/assets/offer/nabizime/tak-uvidime.jpg";
-import individualniZpevImg from "@/assets/offer/nabizime/individualni-zpev.jpg";
+import individualniZpevImg from "@/assets/offer/nabizime/individualni-zpev-v2.jpg";
 import zenskySborImg from "@/assets/offer/nabizime/zensky-sbor.jpg";
 import tabor2021Vesmir from "@/assets/offer/tabor-2021-vesmir.jpg";
 import tabor2021Draci from "@/assets/offer/tabor-2021-draci.jpg";
