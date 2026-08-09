@@ -72,7 +72,7 @@ const Footer = () => {
             <Link to="/o-nas" className="text-muted-foreground hover:text-foreground">O spolku</Link>
             <Link to="/fotogalerie" className="text-muted-foreground hover:text-foreground">Fotogalerie</Link>
             <Link to="/studio-my-dve" className="text-muted-foreground hover:text-foreground">Komorní divadlo</Link>
-            <Link to="/nakladatelstvi-limonada" className="text-muted-foreground hover:text-foreground">E-shop</Link>
+            <Link to="/nakladatelstvi-limonada" className="text-muted-foreground hover:text-foreground">E-shop Drzá opička</Link>
             <Link to="/kontakt" className="text-muted-foreground hover:text-foreground">Kontakt</Link>
           </nav>
         </div>
