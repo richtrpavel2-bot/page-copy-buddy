@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { offer, offerGroups } from "@/data/offer";
 
@@ -10,6 +10,17 @@ const Offer = () => {
       <section className="bg-hero">
         <div className="container py-20 md:py-28">
           <div className="mx-auto max-w-3xl">
+            <Button
+              asChild
+              variant="ghost"
+              className="mb-6 -ml-3 rounded-full text-muted-foreground"
+            >
+              <Link to="/o-nas">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Zpět na O spolku
+              </Link>
+            </Button>
+
             <p className="text-xs font-semibold uppercase tracking-widest text-accent">
               Co nabízíme
             </p>

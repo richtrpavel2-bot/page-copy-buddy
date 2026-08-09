@@ -48,13 +48,13 @@ const ImageZoom = () => {
 
   return (
     <div
-      className="fixed inset-0 z-[60] flex items-center justify-center overflow-auto bg-foreground/95 p-3 md:p-8"
+      className="fixed inset-0 z-[60] overflow-auto bg-foreground/95 p-3 md:p-8"
       role="dialog"
       aria-modal="true"
       aria-label="Zvětšený obrázek"
       onClick={() => setPhoto(null)}
     >
-      <div className="absolute right-4 top-4 z-10 flex gap-2">
+      <div className="fixed right-4 top-4 z-10 flex gap-2">
         <Button
           type="button"
           variant="secondary"
@@ -93,20 +93,26 @@ const ImageZoom = () => {
         </Button>
       </div>
 
-      <img
-        data-no-zoom
-        src={photo.src}
-        alt={photo.alt}
-        loading="eager"
-        decoding="async"
-        style={{ transform: `scale(${scale})` }}
-        className="max-h-[90vh] max-w-full origin-center cursor-zoom-in object-contain transition-transform duration-200"
-        onClick={(event) => {
-          event.stopPropagation();
-          setScale((s) => (s >= 4 ? 1 : s + 0.5));
-        }}
-      />
+      <div className="flex min-h-full w-full items-center justify-center">
+        <img
+          data-no-zoom
+          src={photo.src}
+          alt={photo.alt}
+          loading="eager"
+          decoding="async"
+          style={{
+            maxHeight: `calc(90vh * ${scale})`,
+            maxWidth: `${100 * scale}%`,
+          }}
+          className="m-auto cursor-zoom-in object-contain transition-all duration-200"
+          onClick={(event) => {
+            event.stopPropagation();
+            setScale((s) => (s >= 4 ? 1 : s + 0.5));
+          }}
+        />
+      </div>
     </div>
+
   );
 };
 
