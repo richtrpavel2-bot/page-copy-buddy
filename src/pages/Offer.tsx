@@ -15,7 +15,7 @@ const Offer = () => {
               variant="ghost"
               className="mb-6 -ml-3 rounded-full text-muted-foreground"
             >
-              <Link to="/o-spolku">
+              <Link to="/o-nas">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Zpět na O spolku
               </Link>
