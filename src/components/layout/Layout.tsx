@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import ImageZoom from "@/components/ImageZoom";
 
 const Layout = () => {
   const { pathname } = useLocation();
@@ -17,8 +18,10 @@ const Layout = () => {
         <Outlet />
       </main>
       <Footer />
+      <ImageZoom />
     </div>
   );
 };
+
 
 export default Layout;
