@@ -39,8 +39,8 @@ const Footer = () => {
           </p>
           <p className="flex items-center gap-2 text-muted-foreground">
             <Mail className="h-4 w-4 shrink-0 text-accent" />
-            <a href="mailto:info@spolekgalimatyas.cz" className="hover:text-foreground">
-              info@spolekgalimatyas.cz
+            <a href="mailto:spolek.galimatyas@seznam.cz" className="hover:text-foreground">
+              spolek.galimatyas@seznam.cz
             </a>
           </p>
         </div>

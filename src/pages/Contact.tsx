@@ -15,7 +15,7 @@ const Contact = () => {
     e.preventDefault();
     const subject = encodeURIComponent(`Vzkaz z webu od ${name}`);
     const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:info@spolekgalimatyas.cz?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:spolek.galimatyas@seznam.cz?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -99,8 +99,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">E-mail</p>
-                  <a href="mailto:info@spolekgalimatyas.cz" className="mt-1 block font-medium hover:text-primary">
-                    info@spolekgalimatyas.cz
+                  <a href="mailto:spolek.galimatyas@seznam.cz" className="mt-1 block font-medium hover:text-primary">
+                    spolek.galimatyas@seznam.cz
                   </a>
                 </div>
               </div>
