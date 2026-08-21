@@ -59,10 +59,10 @@ const meta: GalleryMeta[] = [
       "Fotografie z představení AntiGOna v podání divadelní skupiny Diva Divy.",
   },
   {
-    slug: "album-4",
-    title: "Představení divadelní skupiny (2026)",
+    slug: "julie-royal",
+    title: "Julie Royal — skupina Tvaroh(r)y (2026)",
     description:
-      "Fotografie z představení naší divadelní skupiny — název albumu doplníme podle tvého zadání.",
+      "Fotografie z představení Julie Royal v podání divadelní skupiny Tvaroh(r)y.",
   },
 ];
 
