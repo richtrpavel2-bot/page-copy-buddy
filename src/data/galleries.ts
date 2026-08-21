@@ -18,6 +18,12 @@ type GalleryMeta = Omit<Gallery, "images" | "cover">;
 
 const meta: GalleryMeta[] = [
   {
+    slug: "survivor-jindrich",
+    title: "Survivor. Přežij Jindřicha VIII. — skupina Kdo hraje, je frajer(ka) (2026)",
+    description:
+      "Fotografie z představení Survivor. Přežij Jindřicha VIII. v podání skupiny Kdo hraje, je frajer(ka).",
+  },
+  {
     slug: "redakce-fatal",
     title: "Redakce Fatal — skupina Tak uvidíme (2026)",
     description:
