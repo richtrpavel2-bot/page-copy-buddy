@@ -69,7 +69,14 @@ const meta: GalleryMeta[] = [
     title: "Na počátku bylo slovo (2026)",
     description: "Fotografie z představení Na počátku bylo slovo.",
   },
+  {
+    slug: "certovska-polepsovna",
+    title: "Čertovská polepšovna — skupina Prvoh(o)ry (2026)",
+    description:
+      "Fotografie z představení Čertovská polepšovna v podání divadelní skupiny Prvoh(o)ry.",
+  },
 ];
+
 
 
 
