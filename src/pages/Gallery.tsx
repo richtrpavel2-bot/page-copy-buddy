@@ -14,9 +14,10 @@ const Gallery = () => {
               Ze života spolku
             </h1>
             <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-              Představení, dílny, tábory a výstavy — fotky z akcí Galimatyáše
-              od roku 2017.
+              Poslední představení našich divadelních skupin a komorního divadla
+              Galimatyáš — fotografie z roku 2026.
             </p>
+
           </div>
         </div>
       </section>
