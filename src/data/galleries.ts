@@ -64,6 +64,11 @@ const meta: GalleryMeta[] = [
     description:
       "Fotografie z představení Julie Royal v podání divadelní skupiny Tvaroh(r)y.",
   },
+  {
+    slug: "na-pocatku-bylo-slovo",
+    title: "Na počátku bylo slovo (2026)",
+    description: "Fotografie z představení Na počátku bylo slovo.",
+  },
 ];
 
 
