@@ -18,60 +18,48 @@ type GalleryMeta = Omit<Gallery, "images" | "cover">;
 
 const meta: GalleryMeta[] = [
   {
-    slug: "cloveche-nezlob-se",
-    title: "Člověče, nezlob se na nás!",
+    slug: "redakce-fatal",
+    title: "Redakce Fatal — skupina Tak uvidíme (2026)",
     description:
-      "Divadelní představení na motivy čtyř světových pohádek: O Měsíci a Slunci (indiánská), Okřídlená žena (australská), Kráska s půlměsícem (africká), Hadač osudu (arabská).",
+      "Fotografie z představení Redakce Fatal v podání divadelní skupiny Tak uvidíme.",
   },
   {
-    slug: "co-jsme-napekli",
-    title: "Co jsme za rok napekli, to si s Vámi sníme",
+    slug: "husa-na-provazku",
+    title: "Zájezd komorního divadla Galimatyáš do Husy na provázku (2026)",
     description:
-      "Přehlídka divadelních výstupů dětí z divadelně-dramatických dílen 2018.",
+      "Komorní divadlo Galimatyáš (My dvě) na zájezdu v brněnském Divadle Husa na provázku.",
   },
   {
-    slug: "krtnik-a-medved",
-    title: "Krtník a Medvěd",
+    slug: "hleda-se-babicka",
+    title: "Hledá se babička — skupina Kdo hraje, je frajerka (2026)",
     description:
-      "Krtník žije v horách, kde zpívá vodopádu a povídá si s kamínky. Než potká Medvěda z města a pozná hodnotu přátelství. Divadelní představení o tom, jak důležité je přátelství a jak se může smutek stát nebezpečným.",
+      "Fotografie z představení Hledá se babička v podání skupiny Kdo hraje, je frajerka.",
   },
   {
-    slug: "dilna-okolo",
-    title: "Divadelní dílna k inscenaci Okolo",
+    slug: "dcery-marie-terezie",
+    title: "Dcery Marie Terezie — skupina Tvaroh(r)y (2026)",
     description:
-      "Dílna navazující na inscenaci Okolo pomáhá dětem lépe vstřebat zážitky a zamyslet se nad závažnějšími i méně závažnými tématy hravou a zábavnou formou.",
+      "Fotografie z představení Dcery Marie Terezie v podání skupiny Tvaroh(r)y.",
   },
   {
-    slug: "stati-malo",
-    title: "Divadlo aneb Stačí málo… (8. 1. 2018)",
-    description:
-      "Holky z literárně divadelní dílny Divadovádidlo II. připravily sérii obrazů, jejichž situace vám jistě nebudou cizí. V jaké pozici se dnes cítíte vy?",
+    slug: "zivot-a-dilo-basnika",
+    title: "Život a dílo básníka (2026)",
+    description: "Fotografie z představení Život a dílo básníka.",
   },
   {
-    slug: "tabor-svetadily",
-    title: "Tábor Cestou necestou za pohádkami světadílů",
+    slug: "viktorie-musi-zemrit",
+    title: "Viktorie musí zemřít — skupina Divadovádidlo (2026)",
     description:
-      "Léto 2017 — hudebně dramatický tábor inspirovaný pohádkami Afriky, Oceánie, Japonska a dalších zemí. Cesta necesta určená jen pro odvážné.",
+      "Fotografie z představení Viktorie musí zemřít v podání skupiny Divadovádidlo.",
   },
   {
-    slug: "den-otevrenych-dveri",
-    title: "Den otevřených dveří HDC Galimatyáš — Studio My dvě",
+    slug: "antigona-diva-divy",
+    title: "AntiGOna — skupina Diva Divy (2026)",
     description:
-      "Dne 2. 9. 2017 proběhl v prostorách Hudebně-dramatického centra Galimatyáš Den otevřených dveří s inscenací Studia My dvě Okolo na motivy knížky Olgy Masiukové Jak voní týden.",
-  },
-  {
-    slug: "noc-s-andersenem",
-    title: "Noc s Andersenem (31. 3. 2017)",
-    description:
-      "Poslední březnovou noc roku 2017 — první zkouška nových prostor v bývalém domě dětí a mládeže u radnice na nám. Míru, kde od nového školního roku odstartoval každodenní chod HDC Galimatyáš.",
-  },
-  {
-    slug: "mesic-v-barvach",
-    title: "Výstava Měsíc v barvách (březen 2017)",
-    description:
-      "Výstava obrázků dětí z výtvarných kroužků SVČ a ZpDVPP Doris inspirovaná Barevnými písničkami Terezy Karlíkové a Petra Vočky. K vidění v Informačním centru na Hlavní třídě 6.–31. března 2017.",
+      "Fotografie z představení AntiGOna v podání divadelní skupiny Diva Divy.",
   },
 ];
+
 
 function loadAlbum(slug: string): string[] {
   const prefix = `/src/assets/galerie/${slug}/`;
