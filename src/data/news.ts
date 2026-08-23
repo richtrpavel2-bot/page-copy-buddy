@@ -1,3 +1,5 @@
+import zapisDivadlo from "@/assets/news/zapis-divadlo-2026.jpg";
+import zapisZpev from "@/assets/news/zapis-zpev-2026.jpg";
 import patyDen from "@/assets/news/paty-den.jpg";
 import ctvrtyDen from "@/assets/news/ctvrty-den.jpg";
 import tretiDen from "@/assets/news/treti-den.jpg";
