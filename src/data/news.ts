@@ -41,6 +41,26 @@ export interface NewsItem {
  */
 export const news: NewsItem[] = [
   {
+    id: "zapis-literarne-dramaticke-dilny-2026-2027",
+    title: "Zápis do literárně-dramatických dílen Galimatyáš 2026/2027",
+    date: "2026-09-03",
+    category: "Oznámení",
+    location: "Starobranská 16, Šumperk 787 01",
+    excerpt:
+      "Čtvrtek 3. 9. a pátek 4. 9. 2026, 15:00–17:00. Kreativita, hravost, spolupráce, tvorba i divadelní soutěže. Kontakt: 605 173 410, spolek.galimatyas@seznam.cz.",
+    image: zapisDivadlo,
+  },
+  {
+    id: "zapis-centrum-zdraveho-hlasu-2026-2027",
+    title: "Zápis do Centra zdravého hlasu Galimatyáš 2026/2027",
+    date: "2026-09-03",
+    category: "Oznámení",
+    location: "Starobranská 16, Šumperk 787 01",
+    excerpt:
+      "Ženský sbor nebo sólová výuka. Čtvrtek 3. 9. a pátek 4. 9. 2026, 15:00–17:00. Kontakt: 732 921 452, spolek.galimatyas@seznam.cz.",
+    image: zapisZpev,
+  },
+  {
     id: "galimatyas-misto-kde-se-potkavaji-pribehy",
     title: "Galimatyáš – místo, kde se potkávají příběhy",
     date: "2026-08-09",
