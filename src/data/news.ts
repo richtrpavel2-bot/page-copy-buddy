@@ -1,3 +1,5 @@
+import zapisDivadlo from "@/assets/news/zapis-divadlo-2026.jpg";
+import zapisZpev from "@/assets/news/zapis-zpev-2026.jpg";
 import patyDen from "@/assets/news/paty-den.jpg";
 import ctvrtyDen from "@/assets/news/ctvrty-den.jpg";
 import tretiDen from "@/assets/news/treti-den.jpg";
@@ -38,6 +40,26 @@ export interface NewsItem {
  * Pro přidání nové položky stačí zkopírovat jeden objekt na začátek seznamu.
  */
 export const news: NewsItem[] = [
+  {
+    id: "zapis-literarne-dramaticke-dilny-2026-2027",
+    title: "Zápis do literárně-dramatických dílen Galimatyáš 2026/2027",
+    date: "2026-09-03",
+    category: "Oznámení",
+    location: "Starobranská 16, Šumperk 787 01",
+    excerpt:
+      "Čtvrtek 3. 9. a pátek 4. 9. 2026, 15:00–17:00. Kreativita, hravost, spolupráce, tvorba i divadelní soutěže. Kontakt: 605 173 410, spolek.galimatyas@seznam.cz.",
+    image: zapisDivadlo,
+  },
+  {
+    id: "zapis-centrum-zdraveho-hlasu-2026-2027",
+    title: "Zápis do Centra zdravého hlasu Galimatyáš 2026/2027",
+    date: "2026-09-03",
+    category: "Oznámení",
+    location: "Starobranská 16, Šumperk 787 01",
+    excerpt:
+      "Ženský sbor nebo sólová výuka. Čtvrtek 3. 9. a pátek 4. 9. 2026, 15:00–17:00. Kontakt: 732 921 452, spolek.galimatyas@seznam.cz.",
+    image: zapisZpev,
+  },
   {
     id: "galimatyas-misto-kde-se-potkavaji-pribehy",
     title: "Galimatyáš – místo, kde se potkávají příběhy",
