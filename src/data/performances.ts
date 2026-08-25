@@ -1,3 +1,4 @@
+import za5Minut12 from "@/assets/studio/studio-hero.jpg";
 import rybarovaZena from "@/assets/studio/rybarova-zena.jpg";
 import domovJeTam from "@/assets/studio/domov-je-tam.jpg";
 import betlemskaHvezda from "@/assets/studio/betlemska-hvezda.jpg";
@@ -66,6 +67,32 @@ export type Performance = {
 };
 
 export const performances: Performance[] = [
+  {
+    slug: "za-5-minut-12",
+    title: "Za 5 minut 12",
+    subtitle:
+      "Divadelní představení o tom, jak důležité je být sám sebou, protože všechny ostatní role už jsou obsazeny",
+    audience: "1.–5. třída ZŠ",
+    duration: "cca 70 minut (včetně diskuze a práce s třídním kolektivem)",
+    image: za5Minut12,
+    excerpt:
+      "Cirkus přijíždí bez varování a k jeho návštěvě potřebuješ osobní pozvání. To vždy přichází za pět minut dvanáct. Nová inscenace na motivy Vánoční koledy s kouzelnými prvky Nočního cirkusu.",
+    active: true,
+    detail: {
+      quote:
+        "„Cirkus přijíždí bez varování. Nikde o něm není ani zmínka, nikdo neví, odkud se bere a vůbec nic v něm není takové, jak by člověk očekával. A k tomu, abys ho mohl navštívit, potřebuješ dostat osobní pozvání. A to vždy přichází za pět minut dvanáct. Ne dřív, ne později.“",
+      paragraphs: [
+        "Pan veselý. Pan ochotný. Pan dokonalý. Pan všechno je v pohodě. Pan jsem tu pro všechny. Pan všechno zvládám. Ale kdo je ve skutečnosti?",
+        "Divadelní představení pojednává o potřebě zapadnout mezi ostatní i na úkor ztráty vlastní hodnoty a individuality. Cirkus, který přijíždí i se všemi účinkujícími v něm, je pak symbolickou paralelou minulosti, přítomnosti a budoucnosti. Uchovává v sobě všechny naše sny, rozhodnutí a možnosti. A vždy přijíždí, aby prověřil, zda žijeme v pravdě…",
+        "Představení vzniklo velmi volně na motivy Vánoční koledy Charlese Dickense s kouzelnými prvky knihy Noční cirkus Erin Morgenstern.",
+        "Součástí představení je i diskuze a práce s třídním kolektivem po představení.",
+      ],
+      cast: "Hrají a celé vytvořily Lucie Kučerová a Tereza Karlíková",
+      place: "Divadlo Galimatyáš, Starobranská 16, Šumperk 787 01",
+      price: "100 Kč / dítě (u velmi malých kolektivů možnost spojení tříd)",
+      note: "Hrajeme v pátek (termín dle individuální domluvy) ve dvou časech: 8:30 a 10:30. Kontakt: 732 921 452 (Lucie), spolek.galimatyas@seznam.cz",
+    },
+  },
   {
     slug: "rybarova-zena",
     title: "Rybářova žena",
