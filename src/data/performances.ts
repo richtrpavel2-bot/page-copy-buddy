@@ -1,4 +1,4 @@
-import za5Minut12 from "@/assets/studio/studio-hero.jpg";
+import za5Minut12 from "@/assets/studio/za-5-minut-12.jpg";
 import rybarovaZena from "@/assets/studio/rybarova-zena.jpg";
 import domovJeTam from "@/assets/studio/domov-je-tam.jpg";
 import betlemskaHvezda from "@/assets/studio/betlemska-hvezda.jpg";
