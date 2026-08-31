@@ -24,8 +24,8 @@ import taborGalerie1 from "@/assets/offer/tabor-galerie-1.jpg";
 import taborGalerie2 from "@/assets/offer/tabor-galerie-2.jpg";
 import cloveceNezlobNaNas from "@/assets/offer/clovece-nezlob-na-nas.jpg";
 import rybarovaPremiera from "@/assets/predstaveni/rybarova-zena-premiera.jpg";
-import rybarovaRepriza from "@/assets/predstaveni/rybarova-zena-repriza.png";
-import betlemska from "@/assets/predstaveni/betlemska-hvezda.png";
+import rybarovaRepriza from "@/assets/predstaveni/rybarova-zena-repriza.jpg";
+import betlemska from "@/assets/predstaveni/betlemska-hvezda.jpg";
 import domovKoste from "@/assets/predstaveni/domov-koste.jpg";
 
 
