@@ -69,6 +69,10 @@ import kvetenKoncert1 from "@/assets/festival/kveten/koncert-1.jpg";
 import kvetenKoncert2 from "@/assets/festival/kveten/koncert-2.jpg";
 
 
+import zariProgram from "@/assets/festival/zari/program.jpg";
+import zariBeseda from "@/assets/festival/zari/akce-beseda.jpg";
+import zariDivadlo from "@/assets/festival/zari/akce-divadlo.jpg";
+
 import cervenProgram from "@/assets/festival/cerven/program.jpg";
 import cervenKopnout from "@/assets/festival/cerven/akce-kopnout.jpg";
 import cervenCasobeh from "@/assets/festival/cerven/akce-casobeh.jpg";
@@ -238,6 +242,19 @@ const festivalMonthsChronological: FestivalMonth[] = [
       { src: cervenBeseda5, alt: "Beseda – červen 2026" },
       { src: cervenBeseda6, alt: "Beseda – červen 2026" },
     ],
+  },
+  {
+    id: "zari-2026",
+    month: "Září 2026",
+    theme: "Bylo tu, není tu…",
+    annotation:
+      "Stojím tu uprostřed lesů a slyším. Štěbetání drobotiny, šumění dospělých starostí, třepotání sousedského shonu, všechny projevy lidskosti. Stojím tu uprostřed lesů a listuji zpátky v kronice času. Jako fotograf vzpomínek zaostřím svůj objektiv do oken domu, ve kterém bydlel muž jako jsem já. Pojď, kamaráde, projdeme se spolu a ty mi ukážeš, kde bydlela tvá milá. Hlavní garantkou měsíce září je Eva Pšenčíková.",
+    program: zariProgram,
+    posters: [
+      { src: zariBeseda, alt: "Místa mezi vzpomínkou a tichem – beseda 20. 9. 2026" },
+      { src: zariDivadlo, alt: "Bylo tu, není tu… – komponovaný večer 21. 9. 2026, Divadlo Šumperk Hrádek" },
+    ],
+    gallery: [],
   },
 ];
 

@@ -1,3 +1,5 @@
+import besedaZari from "@/assets/news/beseda-zari-2026.jpg";
+import divadloHradekZari from "@/assets/news/divadlo-hradek-zari-2026.jpg";
 import zapisDivadlo from "@/assets/news/zapis-divadlo-2026.jpg";
 import zapisZpev from "@/assets/news/zapis-zpev-2026.jpg";
 import patyDen from "@/assets/news/paty-den.jpg";
@@ -40,6 +42,26 @@ export interface NewsItem {
  * Pro přidání nové položky stačí zkopírovat jeden objekt na začátek seznamu.
  */
 export const news: NewsItem[] = [
+  {
+    id: "bylo-tu-neni-tu-hradek-2026",
+    title: "Bylo tu, není tu… – komponovaný večer",
+    date: "2026-09-21",
+    category: "Představení",
+    location: "Divadlo Šumperk Hrádek",
+    excerpt:
+      "Pondělí 21. 9. 2026 v 18 hodin. Komponovaný večer v podání těch, kteří rostou pod křídly Galimatyáše, s představením Dům, aneb i stěny mají (D)uši. Vstupné v předprodeji Divadla Šumperk 150 Kč.",
+    image: divadloHradekZari,
+  },
+  {
+    id: "místa-mezi-vzpominkou-a-tichem-2026",
+    title: "Místa mezi vzpomínkou a tichem – beseda a vernisáž",
+    date: "2026-09-20",
+    category: "Novinka",
+    location: "Galimatyáš, Starobranská 16, Šumperk",
+    excerpt:
+      "Neděle 20. 9. 2026 v 16 hodin. Beseda s hosty Richardem Jašem a Erikou Vosáhlovou s vernisáží obrazů z litografické dílny Davida Pšenčíka. Vstupné dobrovolné, rezervace SMS na 731 186 053.",
+    image: besedaZari,
+  },
   {
     id: "zapis-literarne-dramaticke-dilny-2026-2027",
     title: "Zápis do literárně-dramatických dílen Galimatyáš 2026/2027",
