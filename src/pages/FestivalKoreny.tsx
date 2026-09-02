@@ -180,7 +180,7 @@ const FestivalKoreny = () => {
                             key={p.src}
                              className="h-auto overflow-hidden rounded-2xl border border-border/60 bg-muted p-0"
                              aria-label={`Zvětšit: ${p.alt}`}
-                             onClick={() => setSelectedPhoto({ monthId: m.id, index })}
+                             onClick={() => setSelectedPhoto({ monthId: m.id, index: index + 1 })}
                           >
                             <img
                               width={1200}
@@ -209,7 +209,7 @@ const FestivalKoreny = () => {
                          aria-label={`Zvětšit: ${g.alt}`}
                          onClick={() => setSelectedPhoto({
                            monthId: m.id,
-                           index: m.posters.length + index,
+                           index: m.posters.length + index + 1,
                          })}
                       >
                         <img
