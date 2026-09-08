@@ -8,10 +8,16 @@ const ImageZoom = lazy(() => import("@/components/ImageZoom"));
 
 const Layout = () => {
   const { pathname } = useLocation();
+  const [zoomReady, setZoomReady] = useState(false);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
   }, [pathname]);
+
+  useEffect(() => {
+    const id = window.setTimeout(() => setZoomReady(true), 1200);
+    return () => window.clearTimeout(id);
+  }, []);
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -20,7 +26,11 @@ const Layout = () => {
         <Outlet />
       </main>
       <Footer />
-      <ImageZoom />
+      {zoomReady && (
+        <Suspense fallback={null}>
+          <ImageZoom />
+        </Suspense>
+      )}
     </div>
   );
 };
