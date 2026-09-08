@@ -1,8 +1,10 @@
 import { Outlet, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import ImageZoom from "@/components/ImageZoom";
+
+// Zvětšování obrázků se načte až po vykreslení stránky (rychlejší první zobrazení)
+const ImageZoom = lazy(() => import("@/components/ImageZoom"));
 
 const Layout = () => {
   const { pathname } = useLocation();
