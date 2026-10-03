@@ -69,7 +69,7 @@ export const news: NewsItem[] = [
   {
     id: "zazij-starobranskou-2026",
     title: "Zažij Starobranskou – Člověče, nezlob se na nás",
-    date: "2026-09-26",
+    date: "2026-09-19",
     category: "Představení",
     location: "Starobranská ulice, Šumperk",
     excerpt:
@@ -79,7 +79,7 @@ export const news: NewsItem[] = [
   {
     id: "gulas-pro-galimatyas-2026",
     title: "Guláš pro Galimatyáš",
-    date: "2026-09-26",
+    date: "2026-09-19",
     category: "Novinka",
     location: "Starobranská ulice, Šumperk",
     excerpt:
