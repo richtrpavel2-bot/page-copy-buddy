@@ -1,3 +1,7 @@
+import premiera512 from "@/assets/news/premiera-za-5-minut-12.jpg";
+import vyletSvobodin from "@/assets/news/vylet-svobodin-2026.jpg";
+import zazijStarobranskou from "@/assets/news/zazij-starobranskou-2026.jpg";
+import gulasGalimatyas from "@/assets/news/gulas-pro-galimatyas-2026.jpg";
 import besedaZari from "@/assets/news/beseda-zari-2026.jpg";
 import divadloHradekZari from "@/assets/news/divadlo-hradek-zari-2026.jpg";
 import zapisDivadlo from "@/assets/news/zapis-divadlo-2026.jpg";
@@ -42,6 +46,46 @@ export interface NewsItem {
  * Pro přidání nové položky stačí zkopírovat jeden objekt na začátek seznamu.
  */
 export const news: NewsItem[] = [
+  {
+    id: "vylet-vernirovice-svobodin-2026",
+    title: "Pěší výlet z Verniřovic do Svobodína a zpět",
+    date: "2026-10-03",
+    category: "Novinka",
+    location: "Verniřovice – Svobodín",
+    excerpt:
+      "Sobota 3. 10. 2026. Společný výlet festivalu Zpátky ke kořenům, provede Eva Pšenčíková. Odjezd z autobusového nádraží v 9:25, z Verniřovic vyrážíme v 10:00 od kostela. Trasa cca 6 km, opékání špekáčků, návrat do Šumperka v 15:15. Vítány jsou všechny generace, trasa není pro kočárky.",
+    image: vyletSvobodin,
+  },
+  {
+    id: "premiera-za-5-minut-12",
+    title: "Za 5 minut 12 – premiéra divadelní laboratoře",
+    date: "2026-09-28",
+    category: "Představení",
+    location: "Starobranská 16, Šumperk",
+    excerpt:
+      "28. září 2026 v 17 hodin. Pozvánka na divadelní laboratoř o jednom, který nosil masky až do… Staňte se aktéry v cirkusu Pravdy a rozhodněte o jeho osudu. Hrají Lucie Kučerová a Tereza Karlíková.",
+    image: premiera512,
+  },
+  {
+    id: "zazij-starobranskou-2026",
+    title: "Zažij Starobranskou – Člověče, nezlob se na nás",
+    date: "2026-09-26",
+    category: "Představení",
+    location: "Starobranská ulice, Šumperk",
+    excerpt:
+      "Proběhlo: v rámci akce Zažij Starobranskou jsme na ulici zahráli představení Člověče, nezlob se na nás.",
+    image: zazijStarobranskou,
+  },
+  {
+    id: "gulas-pro-galimatyas-2026",
+    title: "Guláš pro Galimatyáš",
+    date: "2026-09-26",
+    category: "Novinka",
+    location: "Starobranská ulice, Šumperk",
+    excerpt:
+      "Proběhlo: ve stejný den jako Zažij Starobranskou se konala benefiční akce Guláš pro Galimatyáš. Radek Šinkovský vařil sám a výtěžek ze svého guláše věnoval na charitu pro spolek Galimatyáš. Děkujeme!",
+    image: gulasGalimatyas,
+  },
   {
     id: "bylo-tu-neni-tu-hradek-2026",
     title: "Bylo tu, není tu… – komponovaný večer",
