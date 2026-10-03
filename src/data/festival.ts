@@ -72,6 +72,36 @@ import kvetenKoncert2 from "@/assets/festival/kveten/koncert-2.jpg";
 import zariProgram from "@/assets/festival/zari/program.jpg";
 import zariBeseda from "@/assets/festival/zari/akce-beseda.jpg";
 import zariDivadlo from "@/assets/festival/zari/akce-divadlo.jpg";
+import zariPremiera from "@/assets/festival/zari/akce-premiera.jpg";
+import zariVylet from "@/assets/festival/zari/akce-vylet.jpg";
+import zariBeseda1 from "@/assets/festival/zari/beseda-1.jpg";
+import zariBeseda2 from "@/assets/festival/zari/beseda-2.jpg";
+import zariBeseda3 from "@/assets/festival/zari/beseda-3.jpg";
+import zariBeseda4 from "@/assets/festival/zari/beseda-4.jpg";
+import zariBeseda5 from "@/assets/festival/zari/beseda-5.jpg";
+import zariBeseda6 from "@/assets/festival/zari/beseda-6.jpg";
+import zariBeseda7 from "@/assets/festival/zari/beseda-7.jpg";
+import zariBeseda8 from "@/assets/festival/zari/beseda-8.jpg";
+import zariBeseda9 from "@/assets/festival/zari/beseda-9.jpg";
+import zariBeseda10 from "@/assets/festival/zari/beseda-10.jpg";
+import zariBeseda11 from "@/assets/festival/zari/beseda-11.jpg";
+import zariBeseda12 from "@/assets/festival/zari/beseda-12.jpg";
+import zariBeseda13 from "@/assets/festival/zari/beseda-13.jpg";
+import zariBeseda14 from "@/assets/festival/zari/beseda-14.jpg";
+import zariBeseda15 from "@/assets/festival/zari/beseda-15.jpg";
+import zariBeseda16 from "@/assets/festival/zari/beseda-16.jpg";
+import zariBeseda17 from "@/assets/festival/zari/beseda-17.jpg";
+import zariBeseda18 from "@/assets/festival/zari/beseda-18.jpg";
+import zariBeseda19 from "@/assets/festival/zari/beseda-19.jpg";
+import zariBeseda20 from "@/assets/festival/zari/beseda-20.jpg";
+import zariBeseda21 from "@/assets/festival/zari/beseda-21.jpg";
+import zariBeseda22 from "@/assets/festival/zari/beseda-22.jpg";
+import zariBeseda23 from "@/assets/festival/zari/beseda-23.jpg";
+import zariBeseda24 from "@/assets/festival/zari/beseda-24.jpg";
+import zariBeseda25 from "@/assets/festival/zari/beseda-25.jpg";
+import zariBeseda26 from "@/assets/festival/zari/beseda-26.jpg";
+import zariBeseda27 from "@/assets/festival/zari/beseda-27.jpg";
+import zariBeseda28 from "@/assets/festival/zari/beseda-28.jpg";
 
 import cervenProgram from "@/assets/festival/cerven/program.jpg";
 import cervenKopnout from "@/assets/festival/cerven/akce-kopnout.jpg";
@@ -253,8 +283,39 @@ const festivalMonthsChronological: FestivalMonth[] = [
     posters: [
       { src: zariBeseda, alt: "Místa mezi vzpomínkou a tichem – beseda 20. 9. 2026" },
       { src: zariDivadlo, alt: "Bylo tu, není tu… – komponovaný večer 21. 9. 2026, Divadlo Šumperk Hrádek" },
+      { src: zariPremiera, alt: "Za 5 minut 12 – premiéra 28. 9. 2026, Starobranská 16" },
+      { src: zariVylet, alt: "Pěší výlet z Verniřovic do Svobodína a zpět – 3. 10. 2026" },
     ],
-    gallery: [],
+    gallery: [
+      { src: zariBeseda1, alt: "Beseda – září 2026" },
+      { src: zariBeseda2, alt: "Beseda – září 2026" },
+      { src: zariBeseda3, alt: "Beseda – září 2026" },
+      { src: zariBeseda4, alt: "Beseda – září 2026" },
+      { src: zariBeseda5, alt: "Beseda – září 2026" },
+      { src: zariBeseda6, alt: "Beseda – září 2026" },
+      { src: zariBeseda7, alt: "Beseda – září 2026" },
+      { src: zariBeseda8, alt: "Beseda – září 2026" },
+      { src: zariBeseda9, alt: "Beseda – září 2026" },
+      { src: zariBeseda10, alt: "Beseda – září 2026" },
+      { src: zariBeseda11, alt: "Beseda – září 2026" },
+      { src: zariBeseda12, alt: "Beseda – září 2026" },
+      { src: zariBeseda13, alt: "Beseda – září 2026" },
+      { src: zariBeseda14, alt: "Beseda – září 2026" },
+      { src: zariBeseda15, alt: "Beseda – září 2026" },
+      { src: zariBeseda16, alt: "Beseda – září 2026" },
+      { src: zariBeseda17, alt: "Beseda – září 2026" },
+      { src: zariBeseda18, alt: "Beseda – září 2026" },
+      { src: zariBeseda19, alt: "Beseda – září 2026" },
+      { src: zariBeseda20, alt: "Beseda – září 2026" },
+      { src: zariBeseda21, alt: "Beseda – září 2026" },
+      { src: zariBeseda22, alt: "Beseda – září 2026" },
+      { src: zariBeseda23, alt: "Beseda – září 2026" },
+      { src: zariBeseda24, alt: "Beseda – září 2026" },
+      { src: zariBeseda25, alt: "Beseda – září 2026" },
+      { src: zariBeseda26, alt: "Beseda – září 2026" },
+      { src: zariBeseda27, alt: "Beseda – září 2026" },
+      { src: zariBeseda28, alt: "Beseda – září 2026" },
+    ],
   },
 ];
 

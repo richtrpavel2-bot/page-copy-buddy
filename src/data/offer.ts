@@ -7,7 +7,6 @@ import proVerejnostImg from "@/assets/offer/nabizime/pro-verejnost.jpg";
 import razDvaTriImg from "@/assets/offer/nabizime/raz-dva-tri.jpg";
 import kdoSiHrajeImg from "@/assets/offer/nabizime/kdo-si-hraje.jpg";
 import kdoHrajeFrajerkaImg from "@/assets/offer/nabizime/kdo-hraje-frajerka.jpg";
-import prvohoryImg from "@/assets/offer/nabizime/prvohory.jpg";
 import tvarohryImg from "@/assets/offer/nabizime/tvarohry.jpg";
 import divadovadidloImg from "@/assets/offer/nabizime/divadovadidlo.jpg";
 import divaDivyImg from "@/assets/offer/nabizime/diva-divy.jpg";
@@ -85,31 +84,24 @@ export const offer: OfferItem[] = [
       {
         title: "Připravit k odletu RAZ DVA TŘI! (hudebně-dramatická přípravka)",
         audience: "MŠ a 1.–2. třída (5–8 let)",
-        schedule: "Den a čas bude upřesněn",
+        schedule: "Středa 14:30 – 16:00",
         text: "Hudebně-dramatická průprava. Prostřednictvím příběhů ze světa kouzel si děti osvojí základy dramatické výchovy. Budeme si hrát, zpívat, tančit a naučíme se společně fungovat jako kolektiv. To vše na pozadí příběhu, který nás bude celý rok provázet. A na konci roku výstup v Divadle Šumperk na velkém jevišti jako ta největší odměna pro malé začínající herce.",
         images: [razDvaTriImg],
       },
       {
-        title: "KDO (SI) HRAJE, NEZLOBÍ!",
+        title: "DRAMA ZA OPONOU",
         audience: "3.–5. třída ZŠ (8–10 let)",
-        schedule: "Den a čas bude upřesněn",
+        schedule: "Čtvrtek 15:15 – 16:45",
         text: "Tato divadelní skupina navazuje na přípravné oddělení. Děti již pracují samostatně a prostřednictvím divadelních metod, rytmiky a práce s hlasem se připravují na divadelní představení stejně jako starší děti. V letošním roce s příslibem divadelní soutěže. Tak uvidíme…:) Skupina je vhodná pro nováčky, kteří doplní malé zkušené herečky.",
         images: [kdoSiHrajeImg],
       },
       {
         title: "KDO HRAJE, JE FRAJER(KA)!",
         audience: "7.–9. třída (11–15 let)",
-        schedule: "Čtvrtek 15:00 – 16:30",
+        schedule: "Středa 16:15 – 17:45",
         text: "Literárně dramatická průprava. Učitel vede děti prostřednictvím dramatických metod k prožitku, rozvoji fantazie, osobnostnímu růstu. Divadelní představení není v literárně dramatické průpravě hlavním cílem — hlavní je naučit se fungovat ve skupině, spolupracovat s kamarády, respektovat společná pravidla, hrát si. Skupina spolu funguje už několik let a má za sebou krajskou divadelní přehlídku v Olomouci s doporučením do celostátní přehlídky Dětská scéna ve Svitavách. A to již dvakrát za sebou. Skupina nyní nedobírá nové členy, jen na individuální domluvu.",
         full: true,
         images: [kdoHrajeFrajerkaImg],
-      },
-      {
-        title: "PRVOH(O)RY",
-        audience: "6.–9. třída (10–15 let)",
-        schedule: "Den a čas bude upřesněn",
-        text: "Literárně divadelní dílna pro děti s větší či menší zkušeností s dramatickou výchovou. Setkání jsou koncipována jako dlouhá tvůrčí cesta za tvarem, který na jejím konci může být nazván divadelním představením. Skupina je ideální pro nováčky. Budeme začínat úplně od tvůrčího bodu nula.",
-        images: [prvohoryImg],
       },
       {
         title: "TVAROH(R)Y",
