@@ -6,6 +6,13 @@ const imageModules = import.meta.glob("@/assets/galerie/**/*.{jpg,JPG,jpeg,png}"
   import: "default",
 }) as Record<string, string>;
 
+type AssetPointer = { url: string };
+
+const assetModules = import.meta.glob("@/assets/galerie/**/*.asset.json", {
+  eager: true,
+  import: "default",
+}) as Record<string, AssetPointer>;
+
 export type Gallery = {
   slug: string;
   title: string;
@@ -17,6 +24,12 @@ export type Gallery = {
 type GalleryMeta = Omit<Gallery, "images" | "cover">;
 
 const meta: GalleryMeta[] = [
+  {
+    slug: "bylo-tu-neni-tu-2026",
+    title: "Bylo tu, není tu — 21. 9. 2026",
+    description:
+      "Fotografie z komponovaného večera Bylo tu, není tu v Divadle Šumperk Hrádek.",
+  },
   {
     slug: "survivor-jindrich",
     title: "Survivor. Přežij Jindřicha VIII. — skupina Kdo hraje, je frajer(ka) (2026)",
@@ -88,10 +101,16 @@ const meta: GalleryMeta[] = [
 
 function loadAlbum(slug: string): string[] {
   const prefix = `/src/assets/galerie/${slug}/`;
-  return Object.entries(imageModules)
-    .filter(([path]) => path.includes(prefix))
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([, url]) => url);
+  const localImages = Object.entries(imageModules).map(([path, url]) => ({ path, url }));
+  const storedImages = Object.entries(assetModules).map(([path, asset]) => ({
+    path,
+    url: asset.url,
+  }));
+
+  return [...localImages, ...storedImages]
+    .filter(({ path }) => path.includes(prefix))
+    .sort((a, b) => a.path.localeCompare(b.path))
+    .map(({ url }) => url);
 }
 
 export const galleries: Gallery[] = meta

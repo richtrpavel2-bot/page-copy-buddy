@@ -103,6 +103,32 @@ import zariBeseda26 from "@/assets/festival/zari/beseda-26.jpg";
 import zariBeseda27 from "@/assets/festival/zari/beseda-27.jpg";
 import zariBeseda28 from "@/assets/festival/zari/beseda-28.jpg";
 
+type AssetPointer = { url: string };
+
+const zariDivadloPhotos = Object.entries(
+  import.meta.glob("@/assets/galerie/bylo-tu-neni-tu-2026/*.asset.json", {
+    eager: true,
+    import: "default",
+  }) as Record<string, AssetPointer>,
+)
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([, asset], index) => ({
+    src: asset.url,
+    alt: `Bylo tu, není tu – 21. 9. 2026 – fotografie ${index + 1}`,
+  }));
+
+const zariVyletPhotos = Object.entries(
+  import.meta.glob("@/assets/festival/zari/vylet-svobodin/*.asset.json", {
+    eager: true,
+    import: "default",
+  }) as Record<string, AssetPointer>,
+)
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([, asset], index) => ({
+    src: asset.url,
+    alt: `Výlet z Vernířovic do Svobodína – 3. 10. 2026 – fotografie ${index + 1}`,
+  }));
+
 import cervenProgram from "@/assets/festival/cerven/program.jpg";
 import cervenKopnout from "@/assets/festival/cerven/akce-kopnout.jpg";
 import cervenCasobeh from "@/assets/festival/cerven/akce-casobeh.jpg";
@@ -315,6 +341,8 @@ const festivalMonthsChronological: FestivalMonth[] = [
       { src: zariBeseda26, alt: "Beseda – září 2026" },
       { src: zariBeseda27, alt: "Beseda – září 2026" },
       { src: zariBeseda28, alt: "Beseda – září 2026" },
+      ...zariDivadloPhotos,
+      ...zariVyletPhotos,
     ],
   },
 ];
