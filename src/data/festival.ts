@@ -106,7 +106,7 @@ import zariBeseda28 from "@/assets/festival/zari/beseda-28.jpg";
 type AssetPointer = { url: string };
 
 const zariDivadloPhotos = Object.entries(
-  import.meta.glob("@/assets/festival/zari/bylo-tu-neni-tu/*.asset.json", {
+  import.meta.glob("@/assets/galerie/bylo-tu-neni-tu-2026/*.asset.json", {
     eager: true,
     import: "default",
   }) as Record<string, AssetPointer>,
