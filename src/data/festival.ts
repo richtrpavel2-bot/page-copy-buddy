@@ -106,26 +106,26 @@ import zariBeseda28 from "@/assets/festival/zari/beseda-28.jpg";
 type AssetPointer = { url: string };
 
 const zariDivadloPhotos = Object.entries(
-  import.meta.glob("@/assets/galerie/bylo-tu-neni-tu-2026/*.asset.json", {
+  import.meta.glob("@/assets/galerie/bylo-tu-neni-tu-2026/*.jpg", {
     eager: true,
     import: "default",
-  }) as Record<string, AssetPointer>,
+  }) as Record<string, string>,
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, asset], index) => ({
-    src: asset.url,
+    src: asset,
     alt: `Bylo tu, není tu – 21. 9. 2026 – fotografie ${index + 1}`,
   }));
 
 const zariVyletPhotos = Object.entries(
-  import.meta.glob("@/assets/festival/zari/vylet-svobodin/*.asset.json", {
+  import.meta.glob("@/assets/festival/zari/vylet-svobodin/*.jpg", {
     eager: true,
     import: "default",
-  }) as Record<string, AssetPointer>,
+  }) as Record<string, string>,
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, asset], index) => ({
-    src: asset.url,
+    src: asset,
     alt: `Výlet z Vernířovic do Svobodína – 3. 10. 2026 – fotografie ${index + 1}`,
   }));
 
