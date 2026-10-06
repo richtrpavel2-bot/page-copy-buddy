@@ -1,14 +1,12 @@
 ## Cíl
-Do stránky **Jak nás můžete podpořit** (`/o-nas/jak-podporit`) přidat:
-1. **QR kód pro platbu 200 Kč** (obrázek `Pink_Watercolor_Thank_You_Greeting_Card_1.png`) s číslem účtu `107-1746420217/0100`.
-2. **Odkaz na Darujme.cz** — https://www.darujme.cz/projekt/1212855 (dočasně, do listopadu 2026).
+Zařadit všechny nově dodané fotografie na správná místa webu.
 
-## Kroky
-1. Nahrát QR obrázek přes `lovable-assets` do `src/assets/qr-podpora.png.asset.json`.
-2. Upravit `src/pages/Support.tsx` — přidat novou sekci nad/pod stávající kartičky:
-   - Blok s QR kódem (obrázek), textem „Líbí se vám naše práce…", částkou 200 Kč a číslem účtu.
-   - Blok „Darujme.cz" s tlačítkem odkazujícím na projekt.
-3. Do dlaždice **Finanční dar** doplnit i zmínku o QR/Darujme, ať to spolu ladí.
+## Úpravy
+1. Rozbalit a optimalizovat 17 fotografií z představení **Bylo tu, není tu** a 33 fotografií z výletu na Svobodín pro rychlé načítání.
+2. Přidat samostatné album **Bylo tu, není tu – 21. 9. 2026** do Fotogalerie.
+3. Přidat fotografie z představení i výletu do galerie měsíce **Září 2026** na stránce Zpátky ke kořenům.
+4. Zachovat zvětšování fotografií a jejich procházení v náhledu.
+5. Ověřit načtení obou galerií a správný počet fotografií.
 
-## Poznámka
-Odkaz na Darujme je časově omezený (do listopadu). Označím ho v kódu komentářem, aby se dal později snadno odstranit.
+## Technické řešení
+Nové obrázky budou zmenšeny maximálně na 1400 px, uloženy jako kvalitní JPEG a nahrány přes úložiště obrázků. Existující fotografie ani texty se nebudou měnit.
