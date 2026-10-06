@@ -1,3 +1,3 @@
 # Project architecture rules
 
-- Store large newly supplied gallery media as Lovable Assets pointers and resolve pointer URLs in data modules, keeping the repository lightweight.
+- Store optimized gallery photos (max 1400 px JPEG) as regular files in `src/assets/` loaded via `import.meta.glob`, because CDN asset pointer URLs failed to render in the editor preview.
