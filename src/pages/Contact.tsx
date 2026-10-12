@@ -99,7 +99,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">E-mail</p>
-                  <a href="mailto:spolek.galimatyas@seznam.cz" className="mt-1 block font-medium hover:text-primary">
+                  <a href="mailto:spolek.galimatyas@seznam.cz" className="mt-1 block break-all font-medium hover:text-primary">
                     spolek.galimatyas@seznam.cz
                   </a>
                 </div>
