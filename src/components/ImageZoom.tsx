@@ -6,8 +6,10 @@ import { Button } from "@/components/ui/button";
  * Globální zvětšování obrázků: kliknutím na jakýkoli obrázek na webu
  * se otevře velký náhled (kromě log v hlavičce/patičce, odkazů a vlastních galerií).
  */
-const ImageZoom = () => {
-  const [photo, setPhoto] = useState<{ src: string; alt: string } | null>(null);
+type ZoomPhoto = { src: string; alt: string };
+
+const ImageZoom = ({ initialPhoto = null }: { initialPhoto?: ZoomPhoto | null }) => {
+  const [photo, setPhoto] = useState<ZoomPhoto | null>(initialPhoto);
   const [scale, setScale] = useState(1);
 
   useEffect(() => {
@@ -20,6 +22,7 @@ const ImageZoom = () => {
       if (img.closest("a, button, header, footer, [role='dialog'], [data-no-zoom]")) return;
       // vynechat malé ikonky a loga
       if (img.clientWidth < 90 || img.clientHeight < 90) return;
+
 
       event.preventDefault();
       event.stopPropagation();
