@@ -1,1 +1,15 @@
-/*  /index.html  200
+/                    /index.html  200
+/aktualne            /index.html  200
+/aktualne/*          /index.html  200
+/o-nas               /index.html  200
+/o-nas/*             /index.html  200
+/co-nabizime         /index.html  200
+/co-nabizime/*       /index.html  200
+/studio-my-dve       /index.html  200
+/studio-my-dve/*     /index.html  200
+/nakladatelstvi-limonada    /index.html  200
+/nakladatelstvi-limonada/*  /index.html  200
+/fotogalerie         /index.html  200
+/fotogalerie/*       /index.html  200
+/kontakt             /index.html  200
+/*                   /index.html  404
