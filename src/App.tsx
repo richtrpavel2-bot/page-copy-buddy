@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
+import CanonicalUrl from "./components/CanonicalUrl";
 
 // Ostatní stránky se načítají až při vstupu na trasu (menší první načtení)
 const News = lazy(() => import("./pages/News"));
@@ -34,6 +35,7 @@ const PageFallback = () => (
 
 const App = () => (
   <BrowserRouter>
+    <CanonicalUrl />
     <Suspense fallback={<PageFallback />}>
       <Routes>
         <Route element={<Layout />}>
