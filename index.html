@@ -59,7 +59,11 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root"><!--app-html--></div>
+    <script>
+      // Předvykreslený úvod platí jen pro úvodní stránku
+      if (location.pathname !== "/") { var r = document.getElementById("root"); if (r) r.innerHTML = ""; }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
