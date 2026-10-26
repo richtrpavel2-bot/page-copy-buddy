@@ -59,7 +59,11 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root"><div class="flex min-h-screen flex-col" id="prerender-home"><header class="sticky top-0 z-50 w-full border-b border-border/60 bg-background/85 backdrop-blur-md"><div class="container flex h-16 items-center justify-between md:h-20"></div></header><main class="flex-1"><section class="bg-hero relative overflow-hidden"><div class="container py-20 md:py-32"><div class="mx-auto max-w-4xl text-center"><span class="inline-flex items-center gap-2 rounded-full border border-border bg-background/70 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-muted-foreground backdrop-blur"><span class="h-3.5 w-3.5"></span>Hudebně-dramatické centrum · Šumperk</span><h1 class="mt-6 font-display text-5xl font-bold leading-[1.05] text-primary sm:text-6xl md:text-7xl lg:text-8xl">Galimatyáš</h1><p class="mx-auto mt-8 max-w-2xl text-lg text-muted-foreground md:text-xl">…místo, kde se potkávají příběhy…</p><p class="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground md:text-xl">…divadlo, hudba, festival, autorská čtení, besedy, výstavy, obchůdek Drzá opička…</p><p class="mx-auto mt-6 font-display text-xl font-semibold uppercase tracking-wide text-primary md:text-2xl">Kulturní akce, které spojují.</p></div></div></section></main></div></div>
+    <script>
+      // Předvykreslený úvod platí jen pro úvodní stránku
+      if (location.pathname !== "/") { var pr = document.getElementById("prerender-home"); if (pr) pr.remove(); }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
