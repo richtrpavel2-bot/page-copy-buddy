@@ -33,8 +33,8 @@ const PageFallback = () => (
   </div>
 );
 
-const App = () => (
-  <BrowserRouter>
+export const AppRoutes = () => (
+  <>
     <CanonicalUrl />
     <Suspense fallback={<PageFallback />}>
       <Routes>
@@ -65,6 +65,12 @@ const App = () => (
         </Route>
       </Routes>
     </Suspense>
+  </>
+);
+
+const App = () => (
+  <BrowserRouter>
+    <AppRoutes />
   </BrowserRouter>
 );
 
