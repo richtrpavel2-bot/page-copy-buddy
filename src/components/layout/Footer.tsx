@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
 
         <div className="space-y-2 text-sm">
-          <h4 className="mb-3 font-display text-lg font-semibold">Kontakt</h4>
+          <h2 className="mb-3 font-display text-lg font-semibold">Kontakt</h2>
           <p className="flex items-start gap-2 text-muted-foreground">
             <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
             <span>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="mb-3 font-display text-lg font-semibold">Sledujte nás</h4>
+          <h2 className="mb-3 font-display text-lg font-semibold">Sledujte nás</h2>
           <div className="flex flex-wrap gap-2">
             <a
               href="https://www.facebook.com/SpolekGalimatyas1/"
