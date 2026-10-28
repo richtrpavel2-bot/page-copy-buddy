@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "project_id": "29f59290-acaf-4281-b2f0-a9eab76f363d",
+  "audits": [
+    {
+      "date": "2026-10-17",
+      "type": "pre-deploy",
+      "environment": "preview",
+      "verdict": "READY FOR DEPLOY",
+      "source": ".lovable/audit-history/2026-10-17.md"
+    },
+    {
+      "date": "2026-10-19",
+      "type": "post-deploy",
+      "environment": "production",
+      "verdict": "PRODUKCE FUNGUJE S VÝHRADAMI",
+      "source": ".lovable/audit-history/2026-10-19.md"
+    },
+    {
+      "date": "2026-10-28",
+      "type": "pre-deploy",
+      "environment": "preview + production",
+      "verdict": "DEPLOY S UPOZORNĚNÍM",
+      "source": ".lovable/audit-history/2026-10-28.md",
+      "checks": {
+        "build": "PASS",
+        "prerender_uvodu": "PASS",
+        "secrets": "PASS",
+        "zavislosti": "WARNING",
+        "routing_a_404": "PASS",
+        "robots_sitemap": "PASS",
+        "seo_canonical_h1_noindex": "PASS",
+        "mobil_360_390_768_desktop": "PASS",
+        "alt_texty": "PASS",
+        "formular_odeslani": "NOT CHECKED",
+        "vykon_produkce_pagespeed": "NOT CHECKED",
+        "klavesnice_kontrast": "WARNING (opraveno lokálně, na produkci neověřeno)",
+        "ostatni_projekty_a_hostingy": "NOT CHECKED"
+      },
+      "fixes_applied": [
+        {
+          "fix": "kontrast štítku „Pozvánka“",
+          "result": "NEOVĚŘENO na produkci (lokálně axe 0 chyb)"
+        },
+        {
+          "fix": "nadpisy patičky h4→h2",
+          "result": "NEOVĚŘENO na produkci (lokálně axe 0 chyb)"
+        },
+        {
+          "fix": "npm audit fix (picomatch), react-router-dom 6.x",
+          "result": "NEOVĚŘENO na produkci"
+        }
+      ]
+    }
+  ],
+  "verified_fixes": [
+    {
+      "problem": "Podstránky vracely při přímém otevření HTTP 404 (Netlify)",
+      "change": "public/_redirects – SPA fallback",
+      "expected": "200 na všech podstránkách",
+      "verified": "2026-10-19 produkce: 16/16 URL ze sitemap 200; znovu 2026-10-28",
+      "result": "ÚSPĚŠNÁ"
+    },
+    {
+      "problem": "Anglická 404 stránka, neexistující adresy hlášeny jako 200",
+      "change": "česká NotFound + noindex, úprava _redirects",
+      "expected": "neexistující URL vrací 404",
+      "verified": "2026-10-28 produkce: /neexistuje → 404",
+      "result": "ÚSPĚŠNÁ"
+    }
+  ],
+  "fix_success_rate": {
+    "successful": 2,
+    "verified_total": 2,
+    "unverified": 3
+  },
+  "baseline": {
+    "date": "2026-10-28",
+    "production_url": "https://galimatyas-sumperk.cz/",
+    "build": "OK",
+    "console_errors": 0,
+    "h1_per_page": 1,
+    "missing_alt": 0,
+    "horizontal_overflow": false,
+    "canonical": "vlastní URL každé stránky",
+    "noindex": false,
+    "main_js_gzip_kb": "22 (měřeno 2026-10-19)",
+    "LCP": "NOT CHECKED",
+    "INP": "NOT CHECKED",
+    "unused_js": "NOT CHECKED",
+    "page_weight": "NOT CHECKED"
+  },
+  "performance_history": [
+    {
+      "date": "původní",
+      "source": "PageSpeed mobil (uživatel)",
+      "performance": 69,
+      "FCP_s": 4.5,
+      "LCP_s": 5.1,
+      "SI_s": 5.3,
+      "TBT_ms": 0,
+      "CLS": 0
+    },
+    {
+      "date": "2026-10-19",
+      "source": "PageSpeed mobil (uživatel)",
+      "performance": 82,
+      "FCP_s": 3.6,
+      "LCP_s": 3.6,
+      "SI_s": 3.6,
+      "TBT_ms": 0,
+      "CLS": 0
+    },
+    {
+      "date": "2026-10-26",
+      "source": "Lighthouse mobil (uživatel)",
+      "FCP_s": 3.6,
+      "LCP_s": 3.6,
+      "TBT_ms": 110,
+      "CLS": 0
+    },
+    {
+      "date": "2026-10-26",
+      "source": "lokální laboratorní test po předvykreslení (ne produkce)",
+      "LCP_s": 1.7
+    }
+  ]
+}
