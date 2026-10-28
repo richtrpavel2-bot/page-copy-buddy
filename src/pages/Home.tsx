@@ -14,7 +14,7 @@ const Home = () => {
         <div className="container">
           <div className="grid items-center gap-12 rounded-3xl bg-primary p-10 text-primary-foreground md:grid-cols-2 md:p-16 shadow-soft">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-accent">
+              <p className="text-xs font-semibold uppercase tracking-widest text-accent brightness-125">
                 Pozvánka
               </p>
               <h2 className="mt-3 font-display text-3xl font-semibold md:text-5xl">
