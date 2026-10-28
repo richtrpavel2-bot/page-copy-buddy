@@ -29,6 +29,7 @@
 
     --accent: 28 78% 55%;               /* warm ochre/curtain orange */
     --accent-foreground: 0 0% 100%;
+    --accent-light: 28 85% 66%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -71,6 +72,7 @@
     --muted-foreground: 42 15% 70%;
     --accent: 28 78% 55%;
     --accent-foreground: 0 0% 100%;
+    --accent-light: 28 85% 66%;
     --destructive: 0 62% 40%;
     --destructive-foreground: 42 38% 96%;
     --border: 162 20% 20%;
