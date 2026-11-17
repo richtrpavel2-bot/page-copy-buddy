@@ -1,5 +1,6 @@
 import olomoucky from "@/assets/loga/olomoucky.jpg";
 import sumperk from "@/assets/loga/sumperk.jpg";
+import ministerstvoKultury from "@/assets/loga/mk.jpg";
 import ceramtec from "@/assets/loga/ceramtec.png";
 import perla from "@/assets/loga/perla.png";
 import autoservis from "@/assets/loga/autoservis.jpg";
@@ -12,6 +13,7 @@ export interface Partner {
 }
 
 export const publicPartners: Partner[] = [
+  { name: "Ministerstvo kultury", logo: ministerstvoKultury },
   { name: "Olomoucký kraj", logo: olomoucky },
   { name: "Město Šumperk", logo: sumperk },
 ];
