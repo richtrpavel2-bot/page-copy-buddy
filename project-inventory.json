@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-28",
+  "updated": "2026-11-20",
   "note": "Neobsahuje žádné hodnoty klíčů ani hesel. Netlify, WEDOS, GitHub a GIGASERVER účty: NOT CHECKED (bez přístupu).",
   "projects": [
     {
@@ -15,7 +15,7 @@
       "owner": "Pavel Richtr",
       "last_deploy": "NOT CHECKED",
       "last_change": "2026-10-28",
-      "last_audit": "2026-10-28",
+      "last_audit": "2026-11-20",
       "verified_on": "2026-10-28",
       "connected_services": [
         "Google Analytics G-N5PVK572J0",
@@ -44,7 +44,17 @@
           "event": "pre-deploy audit",
           "result": "DEPLOY S UPOZORNĚNÍM"
         }
-      ]
+      ],
+      "editor_url": "https://lovable.dev/projects/29f59290-acaf-4281-b2f0-a9eab76f363d",
+      "mapping_evidence": {
+        "date": "2026-11-20",
+        "path": "/dev-server/index.html",
+        "proof": "index.html og:url + existing inventory project_id"
+      },
+      "audit_coverage": {
+        "2026-11-14": "částečná (Lighthouse mobile lab, formulář)",
+        "2026-11-20": "ověření oprav na produkci"
+      }
     },
     {
       "id": "ce5b25ce-91d5-494f-b857-b37b333bc62a",
@@ -71,7 +81,7 @@
     {
       "id": "f4c9ccf1-1568-4689-b271-ead5c2c29827",
       "name": "Slova s Úsměvem",
-      "production_domain": "https://rijacz.lovable.app",
+      "production_domain": "https://www.rija.cz/",
       "test_url": "NOT CHECKED",
       "hosting": "Lovable",
       "repository": "NOT CHECKED",
@@ -80,7 +90,7 @@
       "owner": "Pavel Richtr",
       "last_deploy": "NOT CHECKED",
       "last_change": "NOT CHECKED",
-      "last_audit": "NOT CHECKED",
+      "last_audit": "2026-11-20",
       "verified_on": "NOT CHECKED",
       "connected_services": "NOT CHECKED",
       "databases": "NOT CHECKED",
@@ -88,7 +98,19 @@
       "api_risks": "NOT CHECKED",
       "result": "NOT CHECKED",
       "evidence": "pouze výpis projektů workspace 2026-10-28; obsah neprověřen",
-      "recommendation": "Provést audit v daném projektu"
+      "recommendation": "Provést audit v daném projektu",
+      "editor_url": "https://lovable.dev/projects/f4c9ccf1-1568-4689-b271-ead5c2c29827",
+      "previous_production_domain": "https://rijacz.lovable.app",
+      "canonical_domain": "https://rija.cz/",
+      "mapping_evidence": {
+        "date": "2026-11-20",
+        "path": "index.html",
+        "proof": "index.html RIJA title and og:url https://rija.cz/; live www redirects to rija.cz; rendered live H1 Ing. arch. Jana Richtrová matches"
+      },
+      "audit_coverage": {
+        "2026-11-14": "částečná (Lighthouse mobile lab, formulář)",
+        "2026-11-20": "částečná produkční baseline DOM"
+      }
     },
     {
       "id": "6479bc56-8a53-4e3d-81f4-78d915823126",
@@ -137,7 +159,7 @@
     {
       "id": "4d8cb61a-0cc2-41c8-a045-b3fef5cea984",
       "name": "Čistá Trubka Redesigned",
-      "production_domain": "https://cista-trubka-pro.lovable.app",
+      "production_domain": "https://cista-trubka.cz/",
       "test_url": "NOT CHECKED",
       "hosting": "Lovable",
       "repository": "NOT CHECKED",
@@ -146,7 +168,7 @@
       "owner": "Pavel Richtr",
       "last_deploy": "NOT CHECKED",
       "last_change": "NOT CHECKED",
-      "last_audit": "NOT CHECKED",
+      "last_audit": "2026-11-20",
       "verified_on": "NOT CHECKED",
       "connected_services": "NOT CHECKED",
       "databases": "NOT CHECKED",
@@ -154,7 +176,18 @@
       "api_risks": "NOT CHECKED",
       "result": "NOT CHECKED",
       "evidence": "pouze výpis projektů workspace 2026-10-28; obsah neprověřen",
-      "recommendation": "Provést audit v daném projektu"
+      "recommendation": "Provést audit v daném projektu",
+      "editor_url": "https://lovable.dev/projects/4d8cb61a-0cc2-41c8-a045-b3fef5cea984",
+      "previous_production_domain": "https://cista-trubka-pro.lovable.app",
+      "mapping_evidence": {
+        "date": "2026-11-20",
+        "path": "src/routes/index.tsx; src/lib/site-data.ts; .lovable/audits/2026-10-28-pre-deploy.md",
+        "proof": "src/routes/index.tsx canonical + src/lib/site-data.ts Jan Richtr + historical .lovable/audits/2026-10-28-pre-deploy.md links both domains"
+      },
+      "audit_coverage": {
+        "2026-11-14": "částečná (Lighthouse mobile lab, formulář)",
+        "2026-11-20": "částečná produkční baseline DOM"
+      }
     },
     {
       "id": "bfcd4761-dff0-465e-a66e-1e228ddc0ad0",
@@ -203,7 +236,7 @@
     {
       "id": "8e96f204-82f5-42ed-9e90-ec4303fdc27f",
       "name": "Český Nástroj Lásky",
-      "production_domain": "NOT CHECKED",
+      "production_domain": "https://fyzioterapiesumperk.cz/",
       "test_url": "NOT CHECKED",
       "hosting": "NOT CHECKED",
       "repository": "NOT CHECKED",
@@ -212,7 +245,7 @@
       "owner": "Pavel Richtr",
       "last_deploy": "NOT CHECKED",
       "last_change": "NOT CHECKED",
-      "last_audit": "NOT CHECKED",
+      "last_audit": "2026-11-20",
       "verified_on": "NOT CHECKED",
       "connected_services": "NOT CHECKED",
       "databases": "NOT CHECKED",
@@ -220,7 +253,18 @@
       "api_risks": "NOT CHECKED",
       "result": "NOT CHECKED",
       "evidence": "pouze výpis projektů workspace 2026-10-28; obsah neprověřen",
-      "recommendation": "Provést audit v daném projektu"
+      "recommendation": "Provést audit v daném projektu",
+      "editor_url": "https://lovable.dev/projects/8e96f204-82f5-42ed-9e90-ec4303fdc27f",
+      "previous_production_domain": "NOT CHECKED",
+      "mapping_evidence": {
+        "date": "2026-11-20",
+        "path": "index.html",
+        "proof": "index.html canonical and MedicalClinic JSON-LD name match live site"
+      },
+      "audit_coverage": {
+        "2026-11-14": "částečná (Lighthouse mobile lab, formulář)",
+        "2026-11-20": "částečná produkční baseline DOM"
+      }
     },
     {
       "id": "4717c23d-de29-4d8f-b772-610414ee61d9",
@@ -705,6 +749,39 @@
       "result": "NOT CHECKED",
       "evidence": "pouze výpis projektů workspace 2026-10-28; obsah neprověřen",
       "recommendation": "Provést audit v daném projektu"
+    },
+    {
+      "id": "7bdadbf9-67d0-4fde-9d90-0e6c907ef662",
+      "name": "Pavcaposelova",
+      "production_domain": "https://pavlaposelova.cz/",
+      "test_url": "NOT CHECKED",
+      "hosting": "Lovable",
+      "repository": "NOT CHECKED",
+      "environment": "NOT CHECKED",
+      "status": "UNKNOWN",
+      "owner": "Pavel Richtr",
+      "last_deploy": "NOT CHECKED",
+      "last_change": "NOT CHECKED",
+      "last_audit": "2026-11-20",
+      "verified_on": "NOT CHECKED",
+      "connected_services": "NOT CHECKED",
+      "databases": "NOT CHECKED",
+      "security_status": "NOT CHECKED",
+      "api_risks": "NOT CHECKED",
+      "result": "NOT CHECKED",
+      "evidence": "doplněno 2026-11-20 jako chybějící projekt",
+      "recommendation": "Provést audit v daném projektu",
+      "editor_url": "https://lovable.dev/projects/7bdadbf9-67d0-4fde-9d90-0e6c907ef662",
+      "previous_production_domain": "https://cista-trubka-pro.lovable.app",
+      "mapping_evidence": {
+        "date": "2026-11-20",
+        "path": "src/routes/index.tsx; audit-history.json",
+        "proof": "src/routes/index.tsx canonical, project audit-history.json production_url and project metadata Pavcaposelova"
+      },
+      "audit_coverage": {
+        "2026-11-14": "částečná (Lighthouse mobile lab, formulář)",
+        "2026-11-20": "částečná produkční baseline DOM"
+      }
     }
   ]
 }

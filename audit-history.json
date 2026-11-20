@@ -51,6 +51,312 @@
           "result": "NEOVĚŘENO na produkci"
         }
       ]
+    },
+    {
+      "audit_id": "AUDIT-2026-11-14-R-partial",
+      "date": "2026-11-14",
+      "recorded_on": "2026-11-20",
+      "recorded_retroactively": true,
+      "type": "partial production check (historical)",
+      "project_id": "f4c9ccf1-1568-4689-b271-ead5c2c29827",
+      "production_url": "https://www.rija.cz/",
+      "source": "test provedený v ChatGPT chatu, měřeno 2026-11-14, zaznamenáno dodatečně 2026-11-20",
+      "performance": {
+        "tool": "Lighthouse 13.6.0 mobile lab (Moto G Power emulace)",
+        "report_url": "https://pagespeed.web.dev/analysis/https-rija-cz/tjcovpsqbj?form_factor=mobile",
+        "performance_score": 88,
+        "LCP_ms": 3748,
+        "CLS": 0,
+        "TBT_ms": 9,
+        "INP": "NOT CHECKED",
+        "CrUX": "No Data"
+      },
+      "mobile": "pouze vizuálně ve final screenshot Lighthouse; interakce menu NOT CHECKED",
+      "form_delivery": "N/A – v kontrolovaných kontaktních sekcích nenalezen formulář",
+      "verdict": "PARTIAL – není plný pre-deploy PASS"
+    },
+    {
+      "audit_id": "AUDIT-2026-11-14-F-partial",
+      "date": "2026-11-14",
+      "recorded_on": "2026-11-20",
+      "recorded_retroactively": true,
+      "type": "partial production check (historical)",
+      "project_id": "8e96f204-82f5-42ed-9e90-ec4303fdc27f",
+      "production_url": "https://fyzioterapiesumperk.cz/",
+      "source": "test provedený v ChatGPT chatu, měřeno 2026-11-14, zaznamenáno dodatečně 2026-11-20",
+      "performance": {
+        "tool": "Lighthouse 13.6.0 mobile lab (Moto G Power emulace)",
+        "report_url": "https://pagespeed.web.dev/analysis/https-fyzioterapiesumperk-cz/b34lkomzkj?form_factor=mobile",
+        "performance_score": 96,
+        "LCP_ms": 1862,
+        "CLS": 0,
+        "TBT_ms": 0,
+        "INP": "NOT CHECKED",
+        "CrUX": "No Data"
+      },
+      "mobile": "pouze vizuálně ve final screenshot Lighthouse; interakce menu NOT CHECKED",
+      "form_delivery": "N/A – v kontrolovaných kontaktních sekcích nenalezen formulář",
+      "verdict": "PARTIAL – není plný pre-deploy PASS"
+    },
+    {
+      "audit_id": "AUDIT-2026-11-14-P-partial",
+      "date": "2026-11-14",
+      "recorded_on": "2026-11-20",
+      "recorded_retroactively": true,
+      "type": "partial production check (historical)",
+      "project_id": "7bdadbf9-67d0-4fde-9d90-0e6c907ef662",
+      "production_url": "https://pavlaposelova.cz/",
+      "source": "test provedený v ChatGPT chatu, měřeno 2026-11-14, zaznamenáno dodatečně 2026-11-20",
+      "performance": {
+        "tool": "Lighthouse 13.6.0 mobile lab (Moto G Power emulace)",
+        "report_url": "https://pagespeed.web.dev/analysis/https-pavlaposelova-cz/pv4yzfdn72?form_factor=mobile",
+        "performance_score": 99,
+        "LCP_ms": 1951,
+        "CLS": 0,
+        "TBT_ms": 0,
+        "INP": "NOT CHECKED",
+        "CrUX": "No Data"
+      },
+      "mobile": "pouze vizuálně ve final screenshot Lighthouse; interakce menu NOT CHECKED",
+      "form_delivery": "2026-11-14 kliknuto na odeslání u označeného technického testu AUDIT-20261114-PAVLA (odesílatel audit@example.com). Pole zůstala vyplněná, žádné potvrzení ani chyba. Přijetí serverem NOT CHECKED; potvrzení příjemcem NOT CHECKED; delivery_verified NOT CHECKED. Bez důkazu selhání i doručení.",
+      "verdict": "PARTIAL – není plný pre-deploy PASS"
+    },
+    {
+      "audit_id": "AUDIT-2026-11-14-C-partial",
+      "date": "2026-11-14",
+      "recorded_on": "2026-11-20",
+      "recorded_retroactively": true,
+      "type": "partial production check (historical)",
+      "project_id": "4d8cb61a-0cc2-41c8-a045-b3fef5cea984",
+      "production_url": "https://cista-trubka.cz/",
+      "source": "test provedený v ChatGPT chatu, měřeno 2026-11-14, zaznamenáno dodatečně 2026-11-20",
+      "performance": {
+        "tool": "Lighthouse 13.6.0 mobile lab (Moto G Power emulace)",
+        "report_url": "https://pagespeed.web.dev/analysis/https-cista-trubka-cz/8oavsx4r3v?form_factor=mobile",
+        "performance_score": 86,
+        "LCP_ms": 3800,
+        "CLS": 0,
+        "TBT_ms": 0,
+        "INP": "NOT CHECKED",
+        "CrUX": "No Data"
+      },
+      "mobile": "pouze vizuálně ve final screenshot Lighthouse; interakce menu NOT CHECKED",
+      "form_delivery": "N/A – v kontrolovaných kontaktních sekcích nenalezen formulář",
+      "verdict": "PARTIAL – není plný pre-deploy PASS"
+    },
+    {
+      "audit_id": "AUDIT-2026-11-14-G-partial",
+      "date": "2026-11-14",
+      "recorded_on": "2026-11-20",
+      "recorded_retroactively": true,
+      "type": "partial production check (historical)",
+      "project_id": "29f59290-acaf-4281-b2f0-a9eab76f363d",
+      "production_url": "https://galimatyas-sumperk.cz/",
+      "source": "test provedený v ChatGPT chatu, měřeno 2026-11-14, zaznamenáno dodatečně 2026-11-20",
+      "performance": {
+        "tool": "Lighthouse 13.6.0 mobile lab (Moto G Power emulace)",
+        "report_url": "https://pagespeed.web.dev/analysis/https-galimatyas-sumperk-cz/lp9xojg3wh?form_factor=mobile",
+        "performance_score": 100,
+        "LCP_ms": 798,
+        "CLS": 0,
+        "TBT_ms": 10,
+        "INP": "NOT CHECKED",
+        "CrUX": "No Data"
+      },
+      "mobile": "pouze vizuálně ve final screenshot Lighthouse; interakce menu NOT CHECKED",
+      "form_delivery": "2026-11-14 test AUDIT-20261114-GALI otevřel mailto:spolek.galimatyas@seznam.cz místo serverového odeslání; poštovní klient v testovacím prohlížeči nedostupný. Zpráva NEODESLÁNA, potvrzení příjemcem NOT CHECKED, delivery_verified NOT CHECKED.",
+      "verdict": "PARTIAL – není plný pre-deploy PASS"
+    },
+    {
+      "audit_id": "AUDIT-2026-11-20-R-baseline",
+      "date": "2026-11-20",
+      "type": "partial production baseline",
+      "project_id": "f4c9ccf1-1568-4689-b271-ead5c2c29827",
+      "production_url": "https://www.rija.cz/",
+      "scope": "pouze vykreslený DOM veřejné úvodní stránky, desktop 1521 px; žádný nový test backendu, závislostí ani výkonu",
+      "checks": {
+        "page_loaded": "PASS",
+        "h1_count": 1,
+        "canonical_title_per_site": "PASS",
+        "horizontal_overflow_desktop": "PASS (scrollWidth=clientWidth=1521)",
+        "images": 12,
+        "missing_alt": 0,
+        "forms_on_homepage": 0,
+        "mobile_viewport": "NOT CHECKED",
+        "forms_delivery": "N/A",
+        "INP": "NOT CHECKED",
+        "build": "NOT CHECKED",
+        "security": "NOT CHECKED",
+        "dependencies": "NOT CHECKED",
+        "performance": "NOT CHECKED"
+      },
+      "verdict": "PARTIAL – není plný pre-deploy PASS"
+    },
+    {
+      "audit_id": "AUDIT-2026-11-20-F-baseline",
+      "date": "2026-11-20",
+      "type": "partial production baseline",
+      "project_id": "8e96f204-82f5-42ed-9e90-ec4303fdc27f",
+      "production_url": "https://fyzioterapiesumperk.cz/",
+      "scope": "pouze vykreslený DOM veřejné úvodní stránky, desktop 1521 px; žádný nový test backendu, závislostí ani výkonu",
+      "checks": {
+        "page_loaded": "PASS",
+        "h1_count": 1,
+        "canonical_title_per_site": "PASS",
+        "horizontal_overflow_desktop": "PASS (scrollWidth=clientWidth=1521)",
+        "images": 19,
+        "missing_alt": 0,
+        "forms_on_homepage": 0,
+        "mobile_viewport": "NOT CHECKED",
+        "forms_delivery": "N/A",
+        "INP": "NOT CHECKED",
+        "build": "NOT CHECKED",
+        "security": "NOT CHECKED",
+        "dependencies": "NOT CHECKED",
+        "performance": "NOT CHECKED"
+      },
+      "verdict": "PARTIAL – není plný pre-deploy PASS"
+    },
+    {
+      "audit_id": "AUDIT-2026-11-20-P-baseline",
+      "date": "2026-11-20",
+      "type": "partial production baseline",
+      "project_id": "7bdadbf9-67d0-4fde-9d90-0e6c907ef662",
+      "production_url": "https://pavlaposelova.cz/",
+      "scope": "pouze vykreslený DOM veřejné úvodní stránky, desktop 1521 px; žádný nový test backendu, závislostí ani výkonu",
+      "checks": {
+        "page_loaded": "PASS",
+        "h1_count": 1,
+        "canonical_title_per_site": "PASS",
+        "horizontal_overflow_desktop": "PASS (scrollWidth=clientWidth=1521)",
+        "images": 6,
+        "missing_alt": 0,
+        "forms_on_homepage": 1,
+        "mobile_viewport": "NOT CHECKED",
+        "forms_delivery": "NOT CHECKED",
+        "INP": "NOT CHECKED",
+        "build": "NOT CHECKED",
+        "security": "NOT CHECKED",
+        "dependencies": "NOT CHECKED",
+        "performance": "NOT CHECKED"
+      },
+      "verdict": "PARTIAL – není plný pre-deploy PASS"
+    },
+    {
+      "audit_id": "AUDIT-2026-11-20-C-baseline",
+      "date": "2026-11-20",
+      "type": "partial production baseline",
+      "project_id": "4d8cb61a-0cc2-41c8-a045-b3fef5cea984",
+      "production_url": "https://cista-trubka.cz/",
+      "scope": "pouze vykreslený DOM veřejné úvodní stránky, desktop 1521 px; žádný nový test backendu, závislostí ani výkonu",
+      "checks": {
+        "page_loaded": "PASS",
+        "h1_count": 1,
+        "canonical_title_per_site": "PASS",
+        "horizontal_overflow_desktop": "PASS (scrollWidth=clientWidth=1521)",
+        "images": 36,
+        "missing_alt": 0,
+        "forms_on_homepage": 0,
+        "mobile_viewport": "375/375 a 345/345 (client/scroll) – overflow nezjištěn",
+        "forms_delivery": "N/A",
+        "INP": "NOT CHECKED",
+        "build": "NOT CHECKED",
+        "security": "NOT CHECKED",
+        "dependencies": "NOT CHECKED",
+        "performance": "NOT CHECKED"
+      },
+      "verdict": "PARTIAL – není plný pre-deploy PASS"
+    },
+    {
+      "audit_id": "AUDIT-2026-11-20-G-production-verify",
+      "date": "2026-11-20",
+      "type": "production verification of 2026-10-28 fixes",
+      "project_id": "29f59290-acaf-4281-b2f0-a9eab76f363d",
+      "production_url": "https://galimatyas-sumperk.cz/",
+      "production_bundle": {
+        "url": "https://galimatyas-sumperk.cz/assets/index-CYhfk7ec.js",
+        "sha256": "e6fcb97e23e9a538e9660b017b1536148c327d31713d9b8a5ad2555a495f2e48",
+        "bytes_reported_by_assistant": 66328,
+        "bytes_downloaded_curl_2026-11-20": 66477,
+        "sha256_rechecked": "shoda"
+      },
+      "fixes": [
+        {
+          "fix": "kontrast štítku „Pozvánka“",
+          "status_2026-11-20": "OPRAVENO / OVĚŘENO / NASAZENO",
+          "evidence": {
+            "tag": "P",
+            "css": "text-xs font-semibold uppercase tracking-widest text-accent-light",
+            "color_rgb": [
+              242,
+              163,
+              95
+            ],
+            "background_rgb": [
+              32,
+              70,
+              59
+            ],
+            "ratio": 5.088177168618701,
+            "font_px": 12,
+            "result": "PASS >= 4.5"
+          }
+        },
+        {
+          "fix": "nadpisy patičky h4→h2",
+          "status_2026-11-20": "OPRAVENO / OVĚŘENO / NASAZENO",
+          "evidence": {
+            "headings": [
+              "Kontakt",
+              "Sledujte nás"
+            ],
+            "tag": "H2",
+            "result": "PASS"
+          }
+        },
+        {
+          "fix": "npm audit fix (picomatch), react-router-dom 6.x",
+          "status_2026-11-20": "NOT CHECKED – nasazení nelze doložit byte shodou",
+          "evidence": {
+            "lockfiles": {
+              "package-lock.json": {
+                "react-router-dom": "6.30.6",
+                "react-router": "6.30.6",
+                "picomatch": "2.3.1"
+              },
+              "bun.lock": {
+                "react-router-dom": "6.30.1",
+                "react-router": "6.30.1",
+                "picomatch": "4.0.4 (+2.3.1 vnořeně: anymatch, micromatch, readdirp)"
+              }
+            },
+            "local_build": "vite build z aktuálního repa (HEAD 1a5d6ed) s existujícími node_modules (odpovídají bun.lock), bez instalace a bez změny lockfile (SHA256 lockfile před/po shodné), výstup do /tmp/b",
+            "local_index_sha256": "35f0cd14a8181897d8917e81cfdab59e4193cb43cc388acc892b5350aeb0b0b8",
+            "byte_match_index": false,
+            "local_react_vendor_sha256": "a25729b9220583822dee10f7f381b15e9b126a3c6c6d16841f38a558bb4892a9",
+            "live_react_vendor_sha256": "8243123a3bd5527b76d8ea931ab80cd4fc00520f81209b5abb3c0d194829a0e2",
+            "byte_match_vendor": false,
+            "version_marker": "živý react-vendor-hV2GCfa0.js obsahuje řetězec v6.30.6 (react-router), lokální build v6.30.1 – naznačuje, že produkce sestavuje podle package-lock.json; picomatch je build nástroj a v bundlu není ověřitelný",
+            "source_map": "index-CYhfk7ec.js.map → HTTP 404 (není k dispozici)",
+            "reason": "lokální node_modules neodpovídají package-lock.json a repo obsahuje novější změny (logo MK), proto byte shoda nevznikla; npm ci nebylo spuštěno, aby se neměnily závislosti",
+            "npm_audit_json_omit_dev_2026-11-20": {
+              "total": 6,
+              "high": 1,
+              "moderate": 5,
+              "packages": {
+                "picomatch": "high <=2.3.1",
+                "react-router": "moderate 6.0.0–7.17.0",
+                "react-router-dom": "moderate",
+                "glob": "moderate",
+                "minimatch": "moderate",
+                "sucrase": "moderate"
+              },
+              "note": "pouze čtecí kontrola package-lock.json, není potvrzením bezpečnosti produkce"
+            }
+          }
+        }
+      ],
+      "verdict": "PARTIAL – 2 opravy doloženy na produkci, 1 NOT CHECKED"
     }
   ],
   "verified_fixes": [
@@ -123,6 +429,95 @@
       "date": "2026-10-26",
       "source": "lokální laboratorní test po předvykreslení (ne produkce)",
       "LCP_s": 1.7
+    },
+    {
+      "date": "2026-11-14",
+      "project_id": "f4c9ccf1-1568-4689-b271-ead5c2c29827",
+      "source": "Lighthouse 13.6.0 mobile lab, zaznamenáno 2026-11-20",
+      "score": 88,
+      "LCP_ms": 3748,
+      "CLS": 0,
+      "TBT_ms": 9,
+      "INP": "NOT CHECKED",
+      "CrUX": "No Data"
+    },
+    {
+      "date": "2026-11-14",
+      "project_id": "8e96f204-82f5-42ed-9e90-ec4303fdc27f",
+      "source": "Lighthouse 13.6.0 mobile lab, zaznamenáno 2026-11-20",
+      "score": 96,
+      "LCP_ms": 1862,
+      "CLS": 0,
+      "TBT_ms": 0,
+      "INP": "NOT CHECKED",
+      "CrUX": "No Data"
+    },
+    {
+      "date": "2026-11-14",
+      "project_id": "7bdadbf9-67d0-4fde-9d90-0e6c907ef662",
+      "source": "Lighthouse 13.6.0 mobile lab, zaznamenáno 2026-11-20",
+      "score": 99,
+      "LCP_ms": 1951,
+      "CLS": 0,
+      "TBT_ms": 0,
+      "INP": "NOT CHECKED",
+      "CrUX": "No Data"
+    },
+    {
+      "date": "2026-11-14",
+      "project_id": "4d8cb61a-0cc2-41c8-a045-b3fef5cea984",
+      "source": "Lighthouse 13.6.0 mobile lab, zaznamenáno 2026-11-20",
+      "score": 86,
+      "LCP_ms": 3800,
+      "CLS": 0,
+      "TBT_ms": 0,
+      "INP": "NOT CHECKED",
+      "CrUX": "No Data"
+    },
+    {
+      "date": "2026-11-14",
+      "project_id": "29f59290-acaf-4281-b2f0-a9eab76f363d",
+      "source": "Lighthouse 13.6.0 mobile lab, zaznamenáno 2026-11-20",
+      "score": 100,
+      "LCP_ms": 798,
+      "CLS": 0,
+      "TBT_ms": 10,
+      "INP": "NOT CHECKED",
+      "CrUX": "No Data"
+    }
+  ],
+  "project_baselines": {
+    "f4c9ccf1-1568-4689-b271-ead5c2c29827": {
+      "date": "2026-11-20",
+      "audit_id": "AUDIT-2026-11-20-R-baseline",
+      "production_url": "https://www.rija.cz/"
+    },
+    "8e96f204-82f5-42ed-9e90-ec4303fdc27f": {
+      "date": "2026-11-20",
+      "audit_id": "AUDIT-2026-11-20-F-baseline",
+      "production_url": "https://fyzioterapiesumperk.cz/"
+    },
+    "7bdadbf9-67d0-4fde-9d90-0e6c907ef662": {
+      "date": "2026-11-20",
+      "audit_id": "AUDIT-2026-11-20-P-baseline",
+      "production_url": "https://pavlaposelova.cz/"
+    },
+    "4d8cb61a-0cc2-41c8-a045-b3fef5cea984": {
+      "date": "2026-11-20",
+      "audit_id": "AUDIT-2026-11-20-C-baseline",
+      "production_url": "https://cista-trubka.cz/"
+    }
+  },
+  "verified_fixes_2026_11_20": [
+    {
+      "fix": "kontrast štítku „Pozvánka“",
+      "verified": "2026-11-20 produkce, poměr 5.09:1",
+      "result": "ÚSPĚŠNÁ"
+    },
+    {
+      "fix": "nadpisy patičky h2",
+      "verified": "2026-11-20 produkce",
+      "result": "ÚSPĚŠNÁ"
     }
   ]
 }
