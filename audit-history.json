@@ -276,9 +276,10 @@
       "production_bundle": {
         "url": "https://galimatyas-sumperk.cz/assets/index-CYhfk7ec.js",
         "sha256": "e6fcb97e23e9a538e9660b017b1536148c327d31713d9b8a5ad2555a495f2e48",
-        "bytes_reported_by_assistant": 66328,
-        "bytes_downloaded_curl_2026-11-20": 66477,
-        "sha256_rechecked": "shoda"
+        "sha256_rechecked": "shoda",
+        "bytes": 66477,
+        "decoded_characters": 66328,
+        "bytes_note": "66477 = skutečná délka UTF-8 souboru v bajtech; 66328 = počet znaků dekódovaného Unicode řetězce v Pythonu (není údaj o bajtech). SHA256 shodný."
       },
       "fixes": [
         {
@@ -519,5 +520,43 @@
       "verified": "2026-11-20 produkce",
       "result": "ÚSPĚŠNÁ"
     }
-  ]
+  ],
+  "fix_success_rate_metadata": {
+    "as_of": "2026-10-28",
+    "note": "historický souhrn, hodnoty nepřepsány"
+  },
+  "latest_fix_status": {
+    "as_of": "2026-11-20",
+    "project_id": "29f59290-acaf-4281-b2f0-a9eab76f363d",
+    "audit_id": "AUDIT-2026-11-20-G-production-verify",
+    "verified_total": 4,
+    "verified": [
+      {
+        "fix": "SPA fallback podstránek",
+        "verified": "2026-10-19/28"
+      },
+      {
+        "fix": "česká 404 + stav 404",
+        "verified": "2026-10-28"
+      },
+      {
+        "fix": "kontrast štítku „Pozvánka“",
+        "verified": "2026-11-20"
+      },
+      {
+        "fix": "nadpisy patičky h2",
+        "verified": "2026-11-20"
+      }
+    ],
+    "unverified_total": 1,
+    "unverified": [
+      {
+        "fix": "npm audit fix (picomatch), react-router-dom 6.x",
+        "result": "WARNING – úplné nasazení neprokázáno",
+        "checks_done": "lokální vite build bez instalace a bez změny lockfilu, SHA256 porovnání se živými soubory (bez shody), hledání verze v živém bundlu (v6.30.6), npm audit --json --omit=dev",
+        "lockfile_conflict": "package-lock.json: react-router(-dom) 6.30.6, picomatch 2.3.1; bun.lock: 6.30.1, picomatch 4.0.4 (+2.3.1 vnořeně)",
+        "npm_audit": "6 nálezů (1 high picomatch, 5 moderate) v package-lock.json; samo o sobě neznamená zranitelnost produkčního runtime"
+      }
+    ]
+  }
 }
